@@ -1,6 +1,11 @@
+/* @media screen (){
+    
+} */
+
 #banner {
     width: 100%;
     height: 100vh;
+    text-align: center;
     background-position: center;
 
     background-size: cover;
@@ -50,6 +55,11 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
+}
+
+#centre-fix {
+    position: relative;
+    top: 30%;
 }
 
 #banner-logo {
