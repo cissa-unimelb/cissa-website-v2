@@ -1,7 +1,3 @@
-/* @media screen (){
-    
-} */
-
 #banner {
     width: 100%;
     height: 100vh;
@@ -16,6 +12,24 @@
     -webkit-animation: crossfade-banner 20s ease infinite;
     animation: crossfade-banner 20s ease infinite;
 
+}
+
+@media screen and (max-width: 730px){
+    #banner {
+        width: 100%;
+        height: 70vh;
+        text-align: center;
+        background-position: center;
+    
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    
+        -webkit-animation: crossfade-banner 20s ease infinite;
+        animation: crossfade-banner 20s ease infinite;
+    
+    }    
 }
 
 @keyframes crossfade-banner {
@@ -57,13 +71,8 @@
     text-align: center;
 }
 
-#centre-fix {
-    position: relative;
-    top: 30%;
-}
-
 #banner-logo {
-    margin-top: 10%;
+    /* margin-top: 10%; */
     width: 50%;
     height: auto;
 }

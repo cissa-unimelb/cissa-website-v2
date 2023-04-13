@@ -5,7 +5,7 @@ function HeroPanel(props) {
   return (
     <div id='banner'>
       <div id='banner-overlay'>
-        <div id='centre-fix'>
+        <div style={{position: 'relative', top: '35%'}}>
             <img src={logo} id='banner-logo' />
             <div id='tagline-container'>
             <span id='tagline'>UniMelb's Premier Tech Society</span>
