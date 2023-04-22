@@ -35,4 +35,4 @@ function HeroPanel(props) {
   );
 }
 
-export default HeroPanel
+export default HeroPanel;
