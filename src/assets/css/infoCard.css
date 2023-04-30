@@ -1,0 +1,14 @@
+.main-icon {
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    font-size: 100px;
+    color: #2333c1;
+}
+
+.cards {
+    border: 5px solid #0a192f;
+    border-radius: 50px;
+}
+

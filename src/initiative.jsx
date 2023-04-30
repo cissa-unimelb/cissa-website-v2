@@ -9,8 +9,7 @@ function Initiative(props){
                 <p class="cissa-intro mt-5">
                     We hold social, industry and networking events regularly. Whether you are looking 
                     for academic courses or searching for work opportunities in different IT-related areas, CISSA is the place to go. 
-                    If you are more of a hands-on type of person, you will enjoy Codebrew, our annual hackathon. 
-                    <a href="events.html" class="dark-link">Check out our upcoming events!</a>
+                    If you are more of a hands-on type of person, you will enjoy Codebrew, our annual hackathon. <a href="events.html" class="dark-link">Check out our upcoming events!</a>
                 </p>
             </div>
             <div className="col-lg-5 py-2 mt-5 justify-content-center">
