@@ -4,3 +4,12 @@ html, body{
     font-family: "poppins";
     overflow-x: hidden;
 }
+
+@media screen and (max-width: 300px) {
+    html, body{
+        font-size: 14px;
+        /* padding-top: 40px; */
+        font-family: "poppins";
+        overflow-x: hidden;
+    }
+}

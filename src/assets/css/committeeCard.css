@@ -1,0 +1,33 @@
+.team-section {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.team-section h1 {
+    font-size: 30px;
+    display: inline-block;
+    border-bottom: 3px solid;
+    padding-bottom: 10px;
+    padding-top: 40px;
+}
+
+.pe {
+    margin-bottom: 80px;
+}
+
+.pe img {
+    border-radius: 100px;
+    width: 120px;
+    height: 120px;
+}
+
+.p-name {
+    margin: 16px;
+}
+
+.p-role {
+    font-style: italic;
+    color: #3498db;
+}
