@@ -13,6 +13,16 @@
     line-height: 2em;
 }
 
+@media screen and (max-width: 993px){
+    .cissa-intro {
+        padding-right: 3%;
+        padding-left: 3%;
+        font-size: 14px;
+        text-align: center;
+        line-height: 2em;
+    }
+}
+
 .img-about{
     width:100%;
 }
