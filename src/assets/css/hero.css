@@ -71,10 +71,18 @@
     text-align: center;
 }
 
+#banner-logo-position {
+    position: relative;
+    top: 35%;
+}
+
 #banner-logo {
     /* margin-top: 10%; */
     width: 50%;
     height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #tagline-container {

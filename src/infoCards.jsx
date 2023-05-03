@@ -22,7 +22,7 @@ const WhatWeDo = (props) => {
     <div class='section px-2 py-4 text-center'>
       <h3 class='mt-5 section-title'>What We Do</h3>
       <div class='row d-flex justify-content-center py-5 mx-2'>
-        {cardDetails.map((detail) => { return <InfoCards {...detail} /> })}
+        {cardDetails.map((detail) => <InfoCards {...detail} />)}
       </div>
     </div>
   )

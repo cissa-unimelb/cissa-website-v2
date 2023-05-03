@@ -6,7 +6,7 @@ function HeroPanel (props) {
   return (
     <div id='banner'>
       <div id='banner-overlay'>
-        <div style={{ position: 'relative', top: '35%' }}>
+        <div id="banner-logo-position">
           <img src={logo} id='banner-logo' />
           <div id='tagline-container'>
             <span id='tagline'>
