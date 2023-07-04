@@ -12,7 +12,6 @@
     width: 100%;
     z-index: 1;
     background-color: black;
-    /* filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); */
     opacity: 0.8;
     /* display: none; */
 }
