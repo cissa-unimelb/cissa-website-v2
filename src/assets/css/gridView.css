@@ -1,0 +1,16 @@
+.img-box {
+    margin: 10px;
+    height: 250px;
+    width: 350px;
+    display: inline-block;
+}
+
+.img-box:hover img {
+transform: scale(1.01);
+opacity: 0.9;
+transition:0.8s;
+}
+
+.img-box:hover {
+cursor: pointer;
+}

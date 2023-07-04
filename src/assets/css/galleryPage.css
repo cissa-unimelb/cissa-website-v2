@@ -1,3 +1,9 @@
+.gallery {
+    position: relative;
+    display: flex;
+    width: 100vw;
+}
+
 .black-header{
     padding: 5em 0 5em 0;
     background-image: linear-gradient(#020A23, #020A23);
@@ -18,6 +24,21 @@
     font-weight: 800;
 }
 
+.section-title{
+    position: relative;    
+}
+
+.section-title::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: #007bff;
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+    bottom: -20px;
+}
+
 .gallery-image {
     padding: 20px;
     display: flex;
@@ -33,17 +54,14 @@
     object-fit: cover;
 }
 
-.section-title{
-    position: relative;    
+.grid {
+    position: absolute;
+    z-index: 1;
 }
 
-.section-title::after {
-    content: '';
-    width: 30px;
-    height: 2px;
-    background: #007bff;
+.lightboxObj{
     position: absolute;
-    left: 50%;
-    margin-left: -15px;
-    bottom: -20px;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
 }

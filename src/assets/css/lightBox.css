@@ -1,0 +1,88 @@
+.lightboxContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.lightboxOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: black;
+    /* filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); */
+    opacity: 0.8;
+    /* display: none; */
+}
+
+.lightbox {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+    line-height: 0;
+    font-weight: normal;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox img{
+    display: block;
+    height: auto;
+    width: 80%;
+    max-height: 100%;
+    max-width: inherit;
+    border-radius: 3px;
+    border: 4px solid white;
+}
+
+.lb-nav {
+    position: absolute;
+    top: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.lb-nav .lb-prev {
+    width: 50%;
+    height: 100%;
+    float: left;
+    border: none;
+    outline: none;
+    background: url(https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/images/prev.png) left 48% no-repeat;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    -o-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+}
+
+.lb-nav .lb-prev:hover {
+    opacity: 0.6;
+}
+
+.lb-nav .lb-next {
+    width: 50%;
+    height: 100%;
+    float: right;
+    border: none;
+    outline: none;
+    background: url(https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/images/next.png) right 48% no-repeat;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    -o-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+}
+
+.lb-nav .lb-next:hover {
+    opacity: 0.6;
+}

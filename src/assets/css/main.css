@@ -3,6 +3,8 @@ html, body{
     /* padding-top: 40px; */
     font-family: "poppins";
     overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
 }
 
 @media screen and (max-width: 300px) {
