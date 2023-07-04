@@ -43,8 +43,8 @@
 .lb-nav {
     position: absolute;
     top: 0;
-    padding-left: 10%;
-    padding-right: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
     height: 100%;
     width: 100%;
     z-index: 1;

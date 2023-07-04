@@ -9,8 +9,8 @@ import Im1 from "./assets/images/gallery_1.jpg";
 
 
 const Gallery = (props) => {
-    const [lightBoxDisplay, setLightBoxDisplay] = useState(true);
-    const [currImg, setCurrImg] = useState(Im1);    
+    const [lightBoxDisplay, setLightBoxDisplay] = useState(false);
+    const [currIndex, setCurrIndex] = useState(0);    
 
     return (
         <div>
@@ -23,13 +23,17 @@ const Gallery = (props) => {
                 {
                     lightBoxDisplay? 
                     <div className="lightboxObj">
-                        <LightBox img_src={currImg} display={lightBoxDisplay}/>
+                        <LightBox img_ind={currIndex}
+                            setCurrIndex={setCurrIndex} 
+                            display={lightBoxDisplay}
+                            setDisplay={setLightBoxDisplay}/>
                     </div>
                     :"" 
                 }
 
                 <div className="grid">
-                    <GridView setCurrImg={setCurrImg} setLightBoxDisplay={setLightBoxDisplay}/>
+                    <GridView setLightBoxDisplay={setLightBoxDisplay}
+                        setCurrIndex={setCurrIndex}/>
                 </div>
             </div>
         </div>

@@ -12,8 +12,8 @@ const GridView = (props) => {
                         <div className="img-box" key={index}>
                             <img src={image} alt="1" 
                             onClick={() => {
-                                props.setCurrImg(image);
                                 props.setLightBoxDisplay(true);
+                                props.setCurrIndex(index);
                             }}/>
                         </div>
                     );
