@@ -9,7 +9,7 @@ html, body{
 
 @media screen and (max-width: 320px) {
     html, body{
-        font-size: 14px;
+        font-size: 12px;
         /* padding-top: 40px; */
         font-family: "poppins";
         /* overflow-x: hidden; */

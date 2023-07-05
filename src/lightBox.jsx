@@ -25,15 +25,18 @@ const LightBox = (props) => {
 
     return (
         <div className="lightboxContainer">
-            <div className="lightboxOverlay" 
-                onClick={() => props.setDisplay(false)}></div>
-            <div className="lightbox">
-                <img src={all_image[props.img_ind]} />
-                <div className="lb-nav">
-                    <button className="lb-prev" 
-                        onClick={() => move_image(props.setCurrIndex, props.img_ind, -1)}/>
-                    <button className="lb-next" 
-                        onClick={() => move_image(props.setCurrIndex, props.img_ind, 1)}/>
+            <div className = "lightbox-center">
+                <div className="lightboxOverlay" 
+                    onClick={() => props.setDisplay(false)}></div>
+            
+                <div className="lightbox">
+                    <img src={all_image[props.img_ind]} />
+                    <div className="lb-nav">
+                        <button className="lb-prev" 
+                            onClick={() => move_image(props.setCurrIndex, props.img_ind, -1)}/>
+                        <button className="lb-next" 
+                            onClick={() => move_image(props.setCurrIndex, props.img_ind, 1)}/>
+                    </div>
                 </div>
             </div>
         </div>

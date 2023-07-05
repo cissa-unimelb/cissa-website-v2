@@ -2,6 +2,7 @@
     margin: 10px;
     height: 250px;
     width: 350px;
+    max-width: 80vw;
 }
 
 
