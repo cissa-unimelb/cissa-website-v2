@@ -1,0 +1,15 @@
+html, body{
+    font-size:16px;
+    /* padding-top: 40px; */
+    font-family: "poppins";
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 300px) {
+    html, body{
+        font-size: 12px;
+        /* padding-top: 40px; */
+        font-family: "poppins";
+        overflow-x: hidden;
+    }
+}
