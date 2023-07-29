@@ -1,0 +1,35 @@
+header h1 {
+    font-size: 3em;
+    margin: 0 0 0.5em 0;
+    color: #ffffff;
+    letter-spacing: 0.2em;
+    text-align: center;
+    font-weight: 800;
+}
+
+#commitee-cover {
+    background-image: url(../../images/committee-2023.JPG);
+    background-position: center;
+    background-size: 100%;
+    background-attachment: scroll;
+    padding-top: 75%;
+    background-repeat: no-repeat;
+}
+
+header {
+    padding: 5em 0 5em 0;
+    background-image: linear-gradient(#020A23, #020A23);
+    /* background-image: -webkit-linear-gradient(top,#020A23, #020A23); */
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+}
+
+.cissa-intro {
+    padding-right: 8%;
+    padding-left: 8%;
+    line-height:2em;
+    text-align: justify;
+    text-justify: inter-word;
+}
