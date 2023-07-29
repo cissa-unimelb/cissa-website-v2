@@ -1,5 +1,5 @@
-import './assets/css/hero.css'
-import logo from './assets/images/logo_transparent.png'
+import '../assets/css/hero/hero.css'
+import logo from '../assets/images/logo_transparent.png'
 import Typewriter from 'typewriter-effect'
 
 function HeroPanel (props) {

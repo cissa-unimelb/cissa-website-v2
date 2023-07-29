@@ -1,4 +1,4 @@
-import './assets/css/infoCard.css'
+import '../assets/css/hero/infoCard.css'
 
 const InfoCards = (props) => {
   return (

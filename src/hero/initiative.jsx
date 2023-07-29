@@ -1,5 +1,5 @@
-import './assets/css/initiative.css'
-import cissa_all from './assets/images/cissa_all.jpg'
+import '../assets/css/hero/initiative.css'
+import cissa_all from '../assets/images/cissa_all.jpg'
 
 function Initiative (props) {
   return (

@@ -1,5 +1,5 @@
-import './assets/css/uni_affiliation.css'
-import logo from "./assets/images/UMSU-Affiliated.png"
+import '../assets/css/hero/uni_affiliation.css'
+import logo from "../assets/images/UMSU-Affiliated.png"
 
 function UniAfflict (props) {
   return (
