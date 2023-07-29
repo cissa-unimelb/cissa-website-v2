@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
+import UpEventPage from './upEvent/upEventPage'
 import PastEventPage from './pastEvent/pastEventPage'
 import HeroPage from './hero/heroPage'
 
