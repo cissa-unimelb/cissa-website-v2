@@ -2,6 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './assets/css/main.css'
 
+
+import Gallery from './gallery/gallery'
 import AboutPage from './about/aboutPage.jsx'
 import UpEventPage from './upEvent/upEventPage'
 import PastEventPage from './pastEvent/pastEventPage'

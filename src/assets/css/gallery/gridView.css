@@ -1,0 +1,28 @@
+.img-box {
+    margin: 10px;
+    height: 250px;
+    width: 350px;
+    max-width: 80vw;
+}
+
+
+
+.img-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: inline-block;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+}
+
+
+.img-box:hover img {
+transform: scale(1.01);
+opacity: 0.9;
+transition:0.8s;
+}
+
+.img-box:hover {
+cursor: pointer;
+}
