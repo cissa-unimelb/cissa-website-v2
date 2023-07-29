@@ -1,4 +1,4 @@
-import "./assets/css/upEventPage.css";
+import "../assets/css/upEvent/upEventPage.css";
 
 const UpEventPage = (props) => {
     // Needs redirecting for past events
