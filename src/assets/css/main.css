@@ -1,0 +1,19 @@
+html, body{
+    font-size:16px;
+    /* padding-top: 40px; */
+    font-family: "poppins";
+    /* overflow-x: scroll; */
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 320px) {
+    html, body{
+        font-size: 12px;
+        /* padding-top: 40px; */
+        font-family: "poppins";
+        /* overflow-x: hidden; */
+        width: 100%;
+        height: 100%;
+    }
+}
