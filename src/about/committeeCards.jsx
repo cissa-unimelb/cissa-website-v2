@@ -1,18 +1,18 @@
-import './assets/css/committeeCard.css'
-import jianImage from './assets/images/jian.jpeg'
-import charlieImage from './assets/images/zhicheng-ding.jpg'
-import jamesImage from './assets/images/james-xu.jpeg'
-import kasieImage from './assets/images/kasie.jpg'
-import selenaImage from './assets/images/selena.jpg'
-import chloeImage from './assets/images/chloe-zhang.jpg'
-import jamesDImage from './assets/images/james-dinh.png' // Png?
-import ivanImage from './assets/images/ivan-zhuang.jpg'
-import jenniferImage from './assets/images/jennifer-soo.jpg'
-import bowenImage from './assets/images/bowen-feng.jpg'
-import florenceImage from './assets/images/florence-tang.jpg'
-import harrisonImage from './assets/images/harrison-langdon.jpg' // Some have incompatible .JPG (uppercase)
-import aimeeImage from './assets/images/aimee-liang.jpg'
-import amandaImage from './assets/images/amanda-chao.jpg'
+import '../assets/css/about/committeeCard.css'
+import jianImage from '../assets/images/jian.jpeg'
+import charlieImage from '../assets/images/zhicheng-ding.jpg'
+import jamesImage from '../assets/images/james-xu.jpeg'
+import kasieImage from '../assets/images/kasie.jpg'
+import selenaImage from '../assets/images/selena.jpg'
+import chloeImage from '../assets/images/chloe-zhang.jpg'
+import jamesDImage from '../assets/images/james-dinh.png' // Png?
+import ivanImage from '../assets/images/ivan-zhuang.jpg'
+import jenniferImage from '../assets/images/jennifer-soo.jpg'
+import bowenImage from '../assets/images/bowen-feng.jpg'
+import florenceImage from '../assets/images/florence-tang.jpg'
+import harrisonImage from '../assets/images/harrison-langdon.jpg' // Some have incompatible .JPG (uppercase)
+import aimeeImage from '../assets/images/aimee-liang.jpg'
+import amandaImage from '../assets/images/amanda-chao.jpg'
 
 const CommitteeCards = (props) => {
   return (

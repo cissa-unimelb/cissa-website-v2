@@ -1,4 +1,4 @@
-import "./assets/css/aboutPage.css";
+import "../assets/css/about/aboutPage.css";
 import CommitteeList from "./committeeCards";
 
 const AboutPage = (props) => {
