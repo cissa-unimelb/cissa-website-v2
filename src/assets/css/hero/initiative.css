@@ -1,0 +1,55 @@
+.semi-dark {
+    background: #0a192f;
+    color: rgb(211, 211, 211);
+}
+
+.white-text {
+    color: white;
+}
+
+.cissa-intro {
+    padding-right: 3%;
+    padding-left: 3%;
+    line-height: 2em;
+}
+
+@media screen and (max-width: 993px){
+    .cissa-intro {
+        padding-right: 5.5%;
+        padding-left: 5.5%;
+        font-size: 14px;
+        text-align: center;
+        line-height: 2em;
+    }
+}
+
+.img-about{
+    width:100%;
+}
+
+.dark-link {
+    color:rgb(100,255,218);
+    text-decoration: underline;
+}
+
+.dark-link:hover {
+    color:rgb(171, 248, 230);
+    text-decoration: underline;
+}
+
+
+.section-title{
+    position: relative;    
+}
+
+.section-title::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: #007bff;
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+    bottom: -20px;
+}
+
