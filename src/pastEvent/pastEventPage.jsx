@@ -1,4 +1,4 @@
-import "./assets/css/pastEventPage.css";
+import "../assets/css/pastEvent/pastEventPage.css";
 
 const SectionSemester = (props) => {
     return(
