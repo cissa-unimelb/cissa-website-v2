@@ -12,8 +12,8 @@ const ContactPage = (props) => {
             
 
             <div id="contactSection">
-                <div class="mt-5 text-center important-text">
-                    Do you have any general inquiries or want to suggest awesome ideas?
+                <div class="mt-5 text-center">
+                    Do you have any general inquiries or want to suggest awesome ideas?<br/><br/>
                     Email us at <a href="mailto:executives@cissa.org.au">executives@cissa.org.au</a><br/><br/>
                     Feel free to have a chat with us on <a href="https://discord.gg/qD6yd9jDpG">Discord</a> as well!
                 </div>

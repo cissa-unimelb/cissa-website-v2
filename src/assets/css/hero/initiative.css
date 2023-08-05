@@ -36,20 +36,3 @@
     color:rgb(171, 248, 230);
     text-decoration: underline;
 }
-
-
-.section-title{
-    position: relative;    
-}
-
-.section-title::after {
-    content: '';
-    width: 30px;
-    height: 2px;
-    background: #007bff;
-    position: absolute;
-    left: 50%;
-    margin-left: -15px;
-    bottom: -20px;
-}
-

@@ -1,41 +1,6 @@
-.black-header{
-    padding: 5em 0 5em 0;
-    background-image: linear-gradient(#020A23, #020A23);
-    background-image: -webkit-linear-gradient(top,#020A23, #020A23);
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-}
-
-.white-header-text {
-    font-size: 3em;
-    margin: 0 0 0.5em 0;
-    color: #ffffff;
-    letter-spacing: 0.2em;
-    text-align: center;
-    font-weight: 800;
-}
-
 .airtable-embed{
     background: transparent; 
     border: 1px solid #ccc;
     width: 100%;
     min-height: 533px;
-}
-
-.section-title{
-    position: relative;    
-}
-
-.section-title::after {
-    content: '';
-    width: 30px;
-    height: 2px;
-    background: #007bff;
-    position: absolute;
-    left: 50%;
-    margin-left: -15px;
-    bottom: -20px;
 }

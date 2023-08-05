@@ -11,8 +11,8 @@ const Gallery = (props) => {
 
   return (
     <div>
-      <header className='black-header'>
-        <h1 className='section-title white-header-text'>GALLERY</h1>
+      <header>
+        <h1 className='section-title'>GALLERY</h1>
       </header>
 
       <div className='gallery'>
@@ -41,4 +41,4 @@ const Gallery = (props) => {
   )
 }
 
-export default Gallery
+export default Gallery;
