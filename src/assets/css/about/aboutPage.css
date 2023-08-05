@@ -16,15 +16,6 @@ header h1 {
     background-repeat: no-repeat;
 }
 
-header {
-    padding: 5em 0 5em 0;
-    background-image: linear-gradient(#020A23, #020A23);
-    /* background-image: -webkit-linear-gradient(top,#020A23, #020A23); */
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-    text-align: center;
-}
 
 .cissa-intro {
     padding-right: 8%;
