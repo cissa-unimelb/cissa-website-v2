@@ -18,17 +18,17 @@ const Gallery = (props) => {
       <div className='gallery'>
 
         {
-                    lightBoxDisplay
-                      ? <div className='lightboxObj'>
-                        <LightBox
-                          img_ind={currIndex}
-                          setCurrIndex={setCurrIndex}
-                          display={lightBoxDisplay}
-                          setDisplay={setLightBoxDisplay}
-                        />
-                      </div>
-                      : ''
-                }
+          lightBoxDisplay
+            ? <div className='lightboxObj'>
+                <LightBox
+                  img_ind={currIndex}
+                  setCurrIndex={setCurrIndex}
+                  display={lightBoxDisplay}
+                  setDisplay={setLightBoxDisplay}
+                />
+              </div>
+            : ''
+        }
 
         <div className='grid'>
           <GridView
