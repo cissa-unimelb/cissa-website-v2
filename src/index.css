@@ -1,0 +1,230 @@
+:root {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    --bgcolor-primary-700: #020A23;
+
+    --text-color-dark: #687079;
+    --text-color-light: #c9c3c3;
+    --text-color-white: white;
+
+    --fw-bold: 700;
+    --fw-normal: 400;
+    --fw-semibold: 600;
+
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+  
+.flex {
+    display: flex;
+}
+
+.none {
+  display: none;
+}
+
+.flex--col {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.content {
+  padding-top: 8.5rem;
+}
+
+nav {
+    background-color: var(--bgcolor-primary-700);
+    color: var(--text-color-dark);
+    padding-block: 0.8rem;
+    position: fixed;
+    width: 100%;
+}
+
+
+.nav__content {
+  display: flex;
+}
+
+.nav__list {
+  list-style-type: none;
+  margin-left: auto;
+  gap: 1rem;
+  align-self: center;
+}
+
+.nav__list--open {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.5rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--text-color-dark);
+  display: inline-block;
+  position: relative;
+}
+
+.nav__link--bold {
+  font-weight: var(--fw-semibold);
+  color: var(--text-color-light);
+}
+
+.nav__link:hover {
+  color: var(--text-color-white); 
+}
+
+.nav__link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--text-color-white);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav__link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.burger {
+  margin-left: auto;
+  align-self: center;
+}
+
+footer {
+  background-color: var(--bgcolor-primary-700);
+  color: var(--text-color-dark);
+  position: static;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-block: 5rem;
+}
+
+.footer__content {
+  width: 40%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}
+
+.icons {
+  display: flex;
+}
+
+.icon {
+  --b: 0.1em;   /* the thickness of the line */
+  --c: #1095c1; /* the color */
+
+  width: auto;
+  margin-left: auto;
+
+  color: #0000;
+  padding-block: var(--b);
+  background: 
+    linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+          transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+}
+
+.icon:first-of-type{
+  margin-left: 0;
+}
+
+.icon:hover {
+  cursor: pointer;
+  --_p: 100%;
+  --_s: .3s;
+}
+
+.copyright {
+  margin: 0 auto;
+}
