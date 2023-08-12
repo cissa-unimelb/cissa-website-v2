@@ -1,15 +1,16 @@
 import NavLink from './NavLink'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
 function NavList ({ isOpen, isMobile }) {
   const navLinkItems = [
-    { id: 1, text: 'Events', link: '#', isDropDown: true },
-    { id: 2, text: 'Committee', link: '#' },
-    { id: 3, text: 'Sponsors', link: '#' },
-    { id: 4, text: 'Careers Portal', link: '#' },
-    { id: 5, text: 'Blog', link: '#' },
-    { id: 6, text: 'Contact', link: '#' },
-    { id: 7, text: 'Join us', link: '#', isBold: true }
+    { id: 1, text: 'Events', link: "events", isDropDown: true },
+    { id: 2, text: 'Committee', link: "/about" },
+    { id: 3, text: 'Sponsors', link: "" },
+    { id: 4, text: 'Careers Portal', link: "" },
+    { id: 5, text: 'Blog', link: "" },
+    { id: 6, text: 'Contact', link: "/contact" },
+    { id: 7, text: 'Join us', link: "", isBold: true }
   ]
   let classes = 'nav__list'
   if (!isMobile) {
