@@ -16,4 +16,5 @@
 .logo {
     max-width: 70%;
     height: auto;
+    display: inline-block;
 }
