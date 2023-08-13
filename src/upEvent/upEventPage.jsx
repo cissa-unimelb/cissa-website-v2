@@ -11,7 +11,7 @@ const UpEventPage = (props) => {
             <iframe className="airtable-embed" src="https://airtable.com/embed/shr9puuNFsGBcB5Wl?backgroundColor=pink"></iframe>
             
             <h5 className="text-center py-5">
-                Check out our past events <a href="">here</a>
+                Check out our past events <a href="/past_events">here</a>
             </h5>
         </div>
     )
