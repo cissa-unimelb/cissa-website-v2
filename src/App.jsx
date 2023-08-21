@@ -12,6 +12,9 @@ import PastEventPage from './pastEvent/pastEventPage'
 import HeroPage from './hero/heroPage'
 import ContactPage from './contact/contactPage'
 
+import SharedLayout from './sharedLayout/sharedLayout'
+import CommitteeArchive from './committeeArchive/CommitteeArchive'
+import './assets/css/main.css'
 
 
 function App(){
@@ -33,6 +36,25 @@ function App(){
       </Routes>
       <Footer />
     </>
+
+// function App() {
+//   return (
+//     <div>
+//       <HashRouter>
+//         <Routes>
+//           <Route path="/" element={<SharedLayout />}>
+//             <Route index element={<HeroPage />}></Route>
+//             <Route path="about" element={<AboutPage />} />
+//             <Route path="committee-archive" element={<CommitteeArchive />} />
+//             <Route path="gallery" element={<Gallery />} />
+//             <Route path="contact" element={<ContactPage />} />
+//             <Route path="upcoming-events" element={<UpEventPage />} />
+//             <Route path="previous-events" element={<PastEventPage />} />
+//             <Route path="*" element={<Error />} />
+//           </Route>
+//         </Routes>
+//       </HashRouter>
+//     </div>
   )
 }
 
