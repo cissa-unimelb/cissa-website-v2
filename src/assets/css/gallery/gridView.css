@@ -18,11 +18,11 @@
 
 
 .img-box:hover img {
-transform: scale(1.01);
-opacity: 0.9;
-transition:0.8s;
+    transform: scale(1.01);
+    opacity: 0.9;
+    transition:0.8s;
 }
 
 .img-box:hover {
-cursor: pointer;
+    cursor: pointer;
 }

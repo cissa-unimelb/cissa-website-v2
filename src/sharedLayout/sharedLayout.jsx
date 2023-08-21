@@ -1,13 +1,17 @@
 import { Outlet } from 'react-router-dom'
-import PlaceHolderNav from '../placeholderNav/placeHolderNav'
+import Header from '../header_footer/Header'
+import Footer from '../header_footer/Footer'
 
 const SharedLayout = () => {
   return (
     <div>
-      <PlaceHolderNav className="z-10 sticky top-0" />
+      <Header mobileBreakpoint={1000}/>
+
       <section>
         <Outlet />
       </section>
+
+      <Footer />
     </div>
   )
 }
