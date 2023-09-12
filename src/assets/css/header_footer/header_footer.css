@@ -115,6 +115,7 @@ nav {
     color: var(--text-color-dark);
     padding-block: 0.8rem;
     position: fixed;
+    z-index: 1;
     width: 100%;
 }
 

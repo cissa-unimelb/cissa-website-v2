@@ -30,7 +30,7 @@ const Gallery = (props) => {
             : ''
         }
 
-        <div className='grid'>
+        <div>
           <GridView
             setLightBoxDisplay={setLightBoxDisplay}
             setCurrIndex={setCurrIndex}
