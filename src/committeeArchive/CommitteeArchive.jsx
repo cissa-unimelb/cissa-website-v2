@@ -1,5 +1,6 @@
+import '../assets/css/committeeArchive/committeeArchive.css';
 import { committeeData } from './committeeData'
-import archiveGraphic from './archiveGraphic.png'
+
 
 const executives = [
   'President',
@@ -14,48 +15,76 @@ const executives = [
 
 const CommitteeArchive = () => {
   return (
-    <div className="flex flex-column justify-center p-32">
-      <h1 className="text-4xl font-bold text-center">Committee Archive</h1>
+    <div>
+      <div>
+          <header>
+              <h1 className="section-title text-center"> COMMITTEE ARCHIVE </h1>
+          </header>
+      </div>
 
-      <div className="flex flex-wrap justify-center">
+      <div className="">
         {Object.entries(committeeData).map(([year, roles]) => (
-          <div className="card w-1/2 m-4 bg-base-100 shadow-md" key={year}>
+          <div className="card w-75">
+
             <div className="card-body">
-              <h2 className="text-xl font-bold">{year}</h2>
-              <div className="flex">
-                <ul className="w-1/2">
-                  <h2 className="text-lg font-medium">Executives</h2>
-                  {roles
-                    .filter((roleData) => {
-                      const [role] = Object.entries(roleData)[0]
-                      return executives.includes(role)
-                    })
-                    .map((roleData, idx) => {
-                      const [role, name] = Object.entries(roleData)[0]
-                      return (
-                        <li key={idx} className="py-0.5">
-                          <strong>{role}:</strong> {name}
-                        </li>
-                      )
-                    })}
-                </ul>
-                <ul className="w-1/2">
-                  <h2 className="text-lg font-medium">General Committee</h2>
-                  {roles
-                    .filter((roleData) => {
-                      const [role] = Object.entries(roleData)[0]
-                      return !executives.includes(role)
-                    })
-                    .map((roleData, idx) => {
-                      const [role, name] = Object.entries(roleData)[0]
-                      return (
-                        <li key={idx} className="py-0.5">
-                          <strong>{role}:</strong> {name}
-                        </li>
-                      )
-                    })}
-                </ul>
+              <div className='container'>
+                <div className='row'>
+                  <h3 className='card-title'> {year} </h3>
+                  <br/>
+                </div>
+
+                <div className='row'>
+                  <div className='col'>
+                    <h3>Executives</h3> 
+                  </div>
+
+                  <div className='col'>
+                    <h3>General Committee</h3>
+                  </div>
+                </div>
+
+                <div className='row'>
+                  <div className='col'>
+                    
+                    <ul className="w-1/2">
+                      {roles
+                        .filter((roleData) => {
+                          const [role] = Object.entries(roleData)[0]
+                          return executives.includes(role)
+                        })
+                        .map((roleData, idx) => {
+                          const [role, name] = Object.entries(roleData)[0]
+                          return (
+                            <li key={idx} className="py-0.5">
+                              <strong>{role}:</strong> {name}
+                            </li>
+                          )
+                        })}
+                    </ul>
+                  </div>
+
+                  <div className='col'>
+                    
+                    <ul className="w-1/2">
+                      {roles
+                        .filter((roleData) => {
+                          const [role] = Object.entries(roleData)[0]
+                          return !executives.includes(role)
+                        })
+                        .map((roleData, idx) => {
+                          const [role, name] = Object.entries(roleData)[0]
+                          return (
+                            <li key={idx} className="py-0.5">
+                              <strong>{role}:</strong> {name}
+                            </li>
+                          )
+                        })}
+                    </ul>
+                  </div>
+                </div>
               </div>
+              
+              
             </div>
           </div>
         ))}

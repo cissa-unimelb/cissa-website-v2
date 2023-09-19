@@ -150,10 +150,12 @@ nav {
 }
 
 .nav__link:hover {
+  text-decoration: none;
   color: var(--text-color-white); 
 }
 
 .nav__link::after {
+  text-decoration: none;
   content: '';
   position: absolute;
   width: 100%;
@@ -167,6 +169,7 @@ nav {
 }
 
 .nav__link:hover::after {
+  text-decoration: none;
   transform: scaleX(1);
   transform-origin: bottom left;
 }
