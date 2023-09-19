@@ -46,7 +46,7 @@ const CommitteeArchive = () => {
                 <div className='row'>
                   <div className='col'>
                     
-                    <ul className="w-1/2">
+                    <ul>
                       {roles
                         .filter((roleData) => {
                           const [role] = Object.entries(roleData)[0]
@@ -55,7 +55,7 @@ const CommitteeArchive = () => {
                         .map((roleData, idx) => {
                           const [role, name] = Object.entries(roleData)[0]
                           return (
-                            <li key={idx} className="py-0.5">
+                            <li key={idx}>
                               <strong>{role}:</strong> {name}
                             </li>
                           )
@@ -65,7 +65,7 @@ const CommitteeArchive = () => {
 
                   <div className='col'>
                     
-                    <ul className="w-1/2">
+                    <ul>
                       {roles
                         .filter((roleData) => {
                           const [role] = Object.entries(roleData)[0]
@@ -74,7 +74,7 @@ const CommitteeArchive = () => {
                         .map((roleData, idx) => {
                           const [role, name] = Object.entries(roleData)[0]
                           return (
-                            <li key={idx} className="py-0.5">
+                            <li key={idx}>
                               <strong>{role}:</strong> {name}
                             </li>
                           )
