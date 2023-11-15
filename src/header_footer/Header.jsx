@@ -38,7 +38,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  mobileBreakpoint: 1000
+  mobileBreakpoint: 1075
 }
 
 export default Header

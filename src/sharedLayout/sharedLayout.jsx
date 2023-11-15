@@ -5,7 +5,7 @@ import Footer from '../header_footer/Footer'
 const SharedLayout = () => {
   return (
     <div>
-      <Header mobileBreakpoint={1000}/>
+      <Header mobileBreakpoint={1075}/>
 
       <section>
         <Outlet />
