@@ -10,31 +10,13 @@ import UpEventPage from './upEvent/upEventPage'
 import PastEventPage from './pastEvent/pastEventPage'
 import HeroPage from './hero/heroPage'
 import ContactPage from './contact/contactPage'
+import SponsorsPage from "./sponsors/sponsorsPage.jsx"
 
 import SharedLayout from './sharedLayout/sharedLayout'
 import CommitteeArchive from './committeeArchive/CommitteeArchive'
 import './assets/css/main.css'
 
 
-// function App(){
-//   return(
-//     <>
-//       <Header mobileBreakpoint={1000} />
-//       <Routes>
-//           <Route path="/" element={<HeroPage />} />
-
-//           <Route path="/about" element={<AboutPage />} />
-
-//           <Route path="/events" element={<UpEventPage />} />
-
-//           <Route path="/past_events" element={<PastEventPage />} />
-
-//           <Route path="/gallery" element={<Gallery />}/>
-
-//           <Route path="/contact" element={<ContactPage />} />
-//       </Routes>
-//       <Footer />
-//     </>
 
 function App() {
   return (
@@ -45,6 +27,7 @@ function App() {
             <Route index element={<HeroPage />}></Route>
             <Route path="about" element={<AboutPage />} />
             <Route path="committee-archive" element={<CommitteeArchive />} />
+            <Route path="sponsors" element={<SponsorsPage />} />
             <Route path="gallery" element={<Gallery />} />
             <Route path="contact" element={<ContactPage />} />
             <Route path="upcoming-events" element={<UpEventPage />} />

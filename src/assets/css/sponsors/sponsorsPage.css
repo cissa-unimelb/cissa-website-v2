@@ -1,0 +1,26 @@
+.sponsors {
+    max-height: 115px;
+    max-width: 250px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sponsor-intro {
+    padding-top: 55px;
+}
+
+.sponsor-email{
+    padding-top: 55px;
+    font-size: 20px;
+    font-family: 'poppins';
+}
+
+hr {
+    border-width: 2px;
+    color: #000000;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
