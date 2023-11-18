@@ -57,3 +57,11 @@ header h1 {
   margin-left: -15px;
   bottom: -20px;
 }
+
+
+hr {
+  border-width: 2px;
+  color: #000000;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}

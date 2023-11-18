@@ -11,6 +11,7 @@ import PastEventPage from './pastEvent/pastEventPage'
 import HeroPage from './hero/heroPage'
 import ContactPage from './contact/contactPage'
 import SponsorsPage from "./sponsors/sponsorsPage.jsx"
+import CareersPage from "./careers/careersPage.jsx"
 
 import SharedLayout from './sharedLayout/sharedLayout'
 import CommitteeArchive from './committeeArchive/CommitteeArchive'
@@ -28,6 +29,7 @@ function App() {
             <Route path="about" element={<AboutPage />} />
             <Route path="committee-archive" element={<CommitteeArchive />} />
             <Route path="sponsors" element={<SponsorsPage />} />
+            <Route path="careers" element={<CareersPage />} />
             <Route path="gallery" element={<Gallery />} />
             <Route path="contact" element={<ContactPage />} />
             <Route path="upcoming-events" element={<UpEventPage />} />

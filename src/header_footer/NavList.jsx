@@ -8,7 +8,7 @@ function NavList ({ isOpen, isMobile }) {
     { id: 2, text: 'Committee', link: "/about" },
     { id: 3, text: 'Committee Archive', link: "/committee-archive"}, 
     { id: 4, text: 'Sponsors', link: "/sponsors" },
-    { id: 5, text: 'Careers Portal', link: "" },
+    { id: 5, text: 'Careers Portal', link: "/careers" },
     { id: 6, text: 'Blog', link: "https://medium.com/cissa-unimelb" },
     { id: 7, text: 'Contact', link: "/contact" },
     { id: 8, text: 'Join us', link: "", isBold: true }
