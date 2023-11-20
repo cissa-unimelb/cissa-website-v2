@@ -4,7 +4,12 @@ import { Link } from 'react-router-dom'
 
 function NavList ({ isOpen, isMobile }) {
   const navLinkItems = [
-    { id: 1, text: 'Events', link: "/upcoming-events", isDropDown: true },
+    { id: 1, text: 'Events', link: "", isDropDown: true, 
+      dropDownElements: [
+        {text: 'Upcoming Events', link: "/upcoming-events"},
+        {text: 'Gallery', link: "/gallery"},
+        {text: 'Past Events', link: "/past-events"}
+      ]},
     { id: 2, text: 'Committee', link: "/about" },
     { id: 3, text: 'Committee Archive', link: "/committee-archive"}, 
     { id: 4, text: 'Sponsors', link: "/sponsors" },
@@ -30,7 +35,8 @@ function NavList ({ isOpen, isMobile }) {
       {navLinkItems.map((item) => {
         return (
           <li key={item.id}>
-            <NavLink text={item.text} link={item.link} isBold={item.isBold} isDropDown={item.isDropDown} />
+            <NavLink text={item.text} link={item.link} isBold={item.isBold} 
+              isDropDown={item.isDropDown} dropDownElements={item.dropDownElements}/>
           </li>
         )
       })}

@@ -21,10 +21,12 @@ function Header ({ mobileBreakpoint }) {
   }, [])
 
   return (
-    <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
-      <div className={`container ${!isMobile && 'flex'}`}>
+    <nav>
+      <div className={`container ${!isMobile && 'flex'} container-fluid`}>
         <div className='nav__content'>
-          <img className='nav__logo' width='70' height='70' src='only_circle_white.svg' alt='Logo' />
+          <a href="/">
+            <img className='nav__logo' width='50' height='50' src='only_circle_white.svg' alt='Logo' />
+          </a>
           <Hamburger clickHandler={handleToggle} isOpen={isOpen} isMobile={isMobile} />
         </div>
         <NavList isOpen={isOpen} isMobile={isMobile} />
