@@ -21,7 +21,7 @@ function Header ({ mobileBreakpoint }) {
   }, [])
 
   return (
-    <nav>
+    <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
       <div className={`container ${!isMobile && 'flex'}`}>
         <div className='nav__content'>
           <img className='nav__logo' width='70' height='70' src='only_circle_white.svg' alt='Logo' />
