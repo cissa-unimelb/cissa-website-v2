@@ -15,10 +15,14 @@
 .career_card{
     display: flex; 
     align-self: flex-start; 
-    flex-direction: column; 
+    flex-direction: column;
+    
+    flex-basis: 367px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    
     row-gap: 10px; 
     align-items: center; 
-    width: 367px; 
     background-color: #FFFFFF; 
     border-radius: 20px; 
     padding: 50px;
