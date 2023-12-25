@@ -1,16 +1,57 @@
 export const committeeData = {
+  '2023/2024': [
+    {
+      'President': 'Cinque Howells',
+    },
+    {
+      'Vice-President': 'Kasie Wang',
+    },
+    {
+      'Secretary': 'Ileana Huang',
+    },
+    {
+      'Treasurer': 'Jennifer Soo',
+    },
+    {
+      'Education Director': 'Kevin Zhou',
+    },
+    {
+      'Events Director': 'Kevin Wu',
+    },
+    {
+      'Publicity Director': 'Aarushi Dua',
+    },
+    {
+      'Industry Liaison': 'Margaret Xu',
+    },
+    {
+      'IT Director': 'Kailai Dong',
+    },
+    {
+      'Diversity Director': 'Zhen Liu',
+    },
+    {
+      'Product Director': 'Sean Khoo',
+    },
+    {
+      'Competitions Director': 'Josh Heng',
+    },
+    {
+      'People & Culture Director': 'Tyana Tsai',
+    }
+  ],
   '2022/2023': [
     {
-      President: 'Jian Pan',
+      'President': 'Jian Pan',
     },
     {
       'Vice-President': 'Zhicheng (Charlie) Ding',
     },
     {
-      Secretary: 'James Xu',
+      'Secretary': 'James Xu',
     },
     {
-      Treasurer: 'Selena Lee',
+      'Treasurer': 'Selena Lee',
     },
     {
       'Education Director': 'Kasie Wang',
@@ -45,16 +86,16 @@ export const committeeData = {
   ],
   '2021/2022': [
     {
-      President: 'Mustafa Awni',
+      'President': 'Mustafa Awni',
     },
     {
       'Vice-President': 'Daniel Digby',
     },
     {
-      Secretary: 'Kyla Canares',
+      'Secretary': 'Kyla Canares',
     },
     {
-      Treasurer: 'Jian Pan',
+      'Treasurer': 'Jian Pan',
     },
     {
       'Education Director': 'Prashansa Singh',
@@ -86,16 +127,16 @@ export const committeeData = {
   ],
   '2020/2021': [
     {
-      President: 'Andy Jiang',
+      'President': 'Andy Jiang',
     },
     {
       'Vice-President': 'Betty Lin',
     },
     {
-      Secretary: 'Xue Qian',
+      'Secretary': 'Xue Qian',
     },
     {
-      Treasurer: 'Calvin Ho',
+      'Treasurer': 'Calvin Ho',
     },
     {
       'Education Officer': 'Andrew Shen',
@@ -121,16 +162,16 @@ export const committeeData = {
   ],
   '2019/2020': [
     {
-      President: 'Peter Shi',
+      'President': 'Peter Shi',
     },
     {
       'Vice-President': 'Angela Chan',
     },
     {
-      Secretary: 'Uvin Abeysinghe',
+      'Secretary': 'Uvin Abeysinghe',
     },
     {
-      Treasurer: 'Eyre Mamintada',
+      'Treasurer': 'Eyre Mamintada',
     },
     {
       'Education Officer': 'Xue Qian',
@@ -156,16 +197,16 @@ export const committeeData = {
   ],
   '2018/2019': [
     {
-      President: 'Jonathan Tran',
+      'President': 'Jonathan Tran',
     },
     {
       'Vice-President': 'Michael Manoussakis',
     },
     {
-      Secretary: 'Raj Shee',
+      'Secretary': 'Raj Shee',
     },
     {
-      Treasurer: 'Daniel Sutherland',
+      'Treasurer': 'Daniel Sutherland',
     },
     {
       'Education Officer': 'Karl Flores',
@@ -191,16 +232,16 @@ export const committeeData = {
   ],
   '2017/2018': [
     {
-      President: 'Raisa Litchfield',
+      'President': 'Raisa Litchfield',
     },
     {
       'Vice-President': 'Ilan Rosen',
     },
     {
-      Secretary: 'Haohai (Harrison) Liu',
+      'Secretary': 'Haohai (Harrison) Liu',
     },
     {
-      Treasurer: 'My Nguyen',
+      'Treasurer': 'My Nguyen',
     },
     {
       'Education Officer': 'Sarina Moshfegh',
@@ -226,16 +267,16 @@ export const committeeData = {
   ],
   '2016/2017': [
     {
-      President: 'Hao Le',
+      'President': 'Hao Le',
     },
     {
       'Vice-President': 'Lachlan Dee',
     },
     {
-      Secretary: 'Nitin Aggarwal',
+      'Secretary': 'Nitin Aggarwal',
     },
     {
-      Treasurer: 'Matthew Perrott',
+      'Treasurer': 'Matthew Perrott',
     },
     {
       'Education Officer': 'Daniel Ip',
@@ -261,16 +302,16 @@ export const committeeData = {
   ],
   '2015/2016': [
     {
-      President: 'Hao Le',
+      'President': 'Hao Le',
     },
     {
       'Vice-President': 'Lachlan Dee',
     },
     {
-      Secretary: 'Nathanial James Malishev',
+      'Secretary': 'Nathanial James Malishev',
     },
     {
-      Treasurer: 'Matthew Perrott',
+      'Treasurer': 'Matthew Perrott',
     },
     {
       'Education Officer': 'Jonathan Villegas',
@@ -296,16 +337,16 @@ export const committeeData = {
   ],
   '2014/2015': [
     {
-      President: 'Ben Gray',
+      'President': 'Ben Gray',
     },
     {
       'Vice-President': 'Tae Noppakun Wongsrinoppakun',
     },
     {
-      Secretary: 'Jake Moxey',
+      'Secretary': 'Jake Moxey',
     },
     {
-      Treasurer: 'Jun E Cheong',
+      'Treasurer': 'Jun E Cheong',
     },
     {
       'Education Officer': 'Jerry Liu',
@@ -331,16 +372,16 @@ export const committeeData = {
   ],
   '2013/2014': [
     {
-      President: 'Matthew Rossi',
+      'President': 'Matthew Rossi',
     },
     {
       'Vice-President': 'Seunghwa (Brian) Kang',
     },
     {
-      Secretary: 'Avin Chadee',
+      'Secretary': 'Avin Chadee',
     },
     {
-      Treasurer: 'Renlord Yang',
+      'Treasurer': 'Renlord Yang',
     },
     {
       'Education Officer': 'Ming Sheng Tee',
@@ -357,16 +398,16 @@ export const committeeData = {
   ],
   '2012/2013': [
     {
-      President: 'Jim Smith',
+      'President': 'Jim Smith',
     },
     {
       'Vice-President': 'Kim Bratzel',
     },
     {
-      Secretary: 'Avin Chadee',
+      'Secretary': 'Avin Chadee',
     },
     {
-      Treasurer: 'Sindre Seppola',
+      'Treasurer': 'Sindre Seppola',
     },
     {
       'Education Officer': 'Patrick Clarke',
@@ -389,16 +430,16 @@ export const committeeData = {
   ],
   '2011/2012': [
     {
-      President: 'Luke Parkinson',
+      'President': 'Luke Parkinson',
     },
     {
       'Vice-President': 'Reinaldo Gunawaan',
     },
     {
-      Secretary: 'Ryan Briscoe',
+      'Secretary': 'Ryan Briscoe',
     },
     {
-      Treasurer: 'Anthony Tambasco',
+      'Treasurer': 'Anthony Tambasco',
     },
     {
       'Education Officer': 'Aidan Nagorcka-Smith',
@@ -421,16 +462,16 @@ export const committeeData = {
   ],
   '2010/2011': [
     {
-      President: 'Sumeet Ekbote',
+      'President': 'Sumeet Ekbote',
     },
     {
       'Vice-President': 'Ryan Briscoe',
     },
     {
-      Secretary: 'Reinaldo Gunawan',
+      'Secretary': 'Reinaldo Gunawan',
     },
     {
-      Treasurer: 'James Nugent',
+      'Treasurer': 'James Nugent',
     },
     {
       'Education Officer': 'Luke Parkinson',
@@ -453,16 +494,16 @@ export const committeeData = {
   ],
   '2009/2010': [
     {
-      President: 'Scott Richie',
+      'President': 'Scott Richie',
     },
     {
       'Vice-President': 'David Coles',
     },
     {
-      Secretary: 'Daniel Drentin',
+      'Secretary': 'Daniel Drentin',
     },
     {
-      Treasurer: 'James Nugent',
+      'Treasurer': 'James Nugent',
     },
     {
       'Education Officer': 'Maun Suang Boey',
