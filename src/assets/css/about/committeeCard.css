@@ -1,34 +1,81 @@
-.team-section {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+.team-container {
+    display: grid;
+    gap: 80px;
+    max-width: 900px;
+    margin: 80px auto;
 }
 
-.team-section h1 {
+.team {
+    display: grid;
+    gap: 60px;
+}
+
+.team > .name {
     font-size: 30px;
     display: inline-block;
     border-bottom: 3px solid;
-    padding-bottom: 10px;
-    padding-top: 40px;
+    margin: 0 auto;
 }
 
-.pe {
-    margin-bottom: 80px;
+.member-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
 }
 
-.pe img {
-    border-radius: 100px;
-    width: 120px;
-    height: 120px;
-    margin: auto;
+.member-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 200px;
 }
 
-.p-name {
-    margin: 16px;
+.member-card .avatar {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+    box-shadow: none;
+    margin: 0 auto 5px;
 }
 
-.p-role {
+.member-card .name, .member-card .role {
+    line-height: 1.3em;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.member-card .role {
     font-style: italic;
     color: #3498db;
+}
+
+@media only screen and (max-width: 600px) {
+    .team-container {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        gap: 60px;
+    }
+
+    .team {
+        gap: 40px;
+    }
+
+    .team > .name {
+        font-size: 1.5em;
+    }
+
+    .member-container {
+        gap: 30px;
+    }
+
+    .member-card {
+        width: 180px;
+    }
+
+    .member-card .avatar { 
+        width: 120px;
+        height: 120px;
+    }
 }
