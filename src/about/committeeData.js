@@ -19,7 +19,7 @@ export const teams = [
       { name: 'Cinque Howells', avatar: presidentImage, role: 'President' },
       { name: 'Kasie', avatar: vicePresidentImage, role: 'Vice President' },
       { name: 'Ileana Huang', avatar: secretaryImage, role: 'Secretary '},
-      { name: 'Kevin Z', avatar: educationImage, role: 'Education Director' },
+      { name: 'Kevin Zhou', avatar: educationImage, role: 'Education Director' },
       { name: 'Jennifer Soo', avatar: treasurerImage, role: 'Treasurer' },
       { name: 'Kevin Wu', avatar: eventsDirectorImage, role: 'Events Director '}
     ]
@@ -31,7 +31,7 @@ export const teams = [
       { name: 'Aarushi Dua', avatar: publicityDirectorImage, role: 'Publicity Director' },
       { name: 'Kailai Dong', avatar: ITDirectorImage, role: 'IT Director' },
       { name: 'Sean Khoo', avatar: productDirectorImage, role: 'Product Director' },
-      { name: 'Josh', avatar: competitionsDirectorImage, role: 'Competitions Director '},
+      { name: 'Josh Heng', avatar: competitionsDirectorImage, role: 'Competitions Director '},
       { name: 'Zhen', avatar: diversityDirectorImage, role: 'Diversity Director' },
       { name: 'Tyana Tsai', avatar: peopleDirectorImage, role: 'People & Culture Director '}
     ]
