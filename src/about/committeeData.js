@@ -32,7 +32,7 @@ export const teams = [
       { name: 'Kailai Dong', avatar: ITDirectorImage, role: 'IT Director' },
       { name: 'Sean Khoo', avatar: productDirectorImage, role: 'Product Director' },
       { name: 'Josh Heng', avatar: competitionsDirectorImage, role: 'Competitions Director '},
-      { name: 'Zhen', avatar: diversityDirectorImage, role: 'Diversity Director' },
+      { name: 'Zhen Liu', avatar: diversityDirectorImage, role: 'Diversity Director' },
       { name: 'Tyana Tsai', avatar: peopleDirectorImage, role: 'People & Culture Director '}
     ]
   }
