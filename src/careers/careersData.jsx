@@ -26,15 +26,15 @@ const allCardsInfo = {
         image: IMC_img,
         link: "https://careers.imc.com/ap/en",
         opportunities: [
-            {name: "Ladies in Tech", type: "Program", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02772/Ladies-In-Tech"},
-            {name: "Ladies in Trading", type: "Program", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02853/Ladies-In-Trading"},
-            {name: "Software Engineer Intern 2023/2024", type: "Internship", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02573/Software-Engineer-Intern-2023-2024"},
-            {name: "Trader Intern 2023/2024", type: "Internship", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02503/Trader-Intern-2023-2024"},
-            {name: "Hardware Engineer Intern 2023/2024", type: "Internship", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02574/Hardware-Engineer-Intern-2023-2024"},
-            {name: "Graduate Software Engineer 2023/2024", type: "Graduate role", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02570/Graduate-Software-Engineer-2023-2024"},
-            {name: "Graduate Trader 2023/2024", type: "Graduate role", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02569/Graduate-Trader-2023-2024"},
-            {name: "Graduate Quantitative Researcher 2023/2024", type: "Graduate role", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02781/Graduate-Quantitative-Researcher-2023-2024"},
-            {name: "Graduate Hardware Engineer 2023/2024", type: "Graduate role", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02571/Graduate-Hardware-Engineer-2023-2024"}
+            // {name: "Ladies in Tech", type: "Program", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02772/Ladies-In-Tech"},
+            // {name: "Ladies in Trading", type: "Program", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02853/Ladies-In-Trading"},
+            // {name: "Software Engineer Intern 2023/2024", type: "Internship", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02573/Software-Engineer-Intern-2023-2024"},
+            // {name: "Trader Intern 2023/2024", type: "Internship", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02503/Trader-Intern-2023-2024"},
+            // {name: "Hardware Engineer Intern 2023/2024", type: "Internship", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02574/Hardware-Engineer-Intern-2023-2024"},
+            // {name: "Graduate Software Engineer 2023/2024", type: "Graduate role", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02570/Graduate-Software-Engineer-2023-2024"},
+            // {name: "Graduate Trader 2023/2024", type: "Graduate role", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02569/Graduate-Trader-2023-2024"},
+            // {name: "Graduate Quantitative Researcher 2023/2024", type: "Graduate role", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02781/Graduate-Quantitative-Researcher-2023-2024"},
+            // {name: "Graduate Hardware Engineer 2023/2024", type: "Graduate role", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02571/Graduate-Hardware-Engineer-2023-2024"}
         ]
     },
 
