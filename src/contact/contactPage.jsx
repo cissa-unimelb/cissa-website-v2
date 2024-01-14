@@ -3,7 +3,6 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
 export default function ContactPage (props) {
-	const footerRef = useRef()
   const location = useLocation()
 
   useEffect(() => {
