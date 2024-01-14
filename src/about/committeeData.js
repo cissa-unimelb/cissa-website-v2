@@ -1,41 +1,39 @@
-import jianImage from '../assets/images/jian.jpeg'
-import charlieImage from '../assets/images/zhicheng-ding.jpg'
-import jamesImage from '../assets/images/james-xu.jpeg'
-import kasieImage from '../assets/images/kasie.jpg'
-import selenaImage from '../assets/images/selena.jpg'
-import chloeImage from '../assets/images/chloe-zhang.jpg'
-import jamesDImage from '../assets/images/james-dinh.png' // Png?
-import ivanImage from '../assets/images/ivan-zhuang.jpg'
-import jenniferImage from '../assets/images/jennifer-soo.jpg'
-import bowenImage from '../assets/images/bowen-feng.jpg'
-import florenceImage from '../assets/images/florence-tang.jpg'
-import harrisonImage from '../assets/images/harrison-langdon.jpg' // Some have incompatible .JPG (uppercase)
-import aimeeImage from '../assets/images/aimee-liang.jpg'
-import amandaImage from '../assets/images/amanda-chao.jpg'
+import presidentImage from '../assets/images/committee/cinque.png'
+import vicePresidentImage from '../assets/images/committee/kasie.png'
+import secretaryImage from '../assets/images/committee/ileana.png'
+import educationImage from '../assets/images/committee/kevin-z.png'
+import treasurerImage from '../assets/images/committee/jennifer.png'
+import eventsDirectorImage from '../assets/images/committee/kevin-w.png'
+import industryLiaisonImage from '../assets/images/committee/margaret.png'
+import publicityDirectorImage from '../assets/images/committee/aarushi.png'
+import ITDirectorImage from '../assets/images/committee/kai.png'
+import productDirectorImage from '../assets/images/committee/sean.png'
+import competitionsDirectorImage from '../assets/images/committee/josh.png'
+import diversityDirectorImage from '../assets/images/committee/zhen.png'
+import peopleDirectorImage from '../assets/images/committee/tyana.png'
 
 export const teams = [
   {
     name: 'Executive Team',
     members: [
-      { name: 'Jian Pan', avatar: jianImage, role: 'President' },
-      { name: 'Zhicheng (Charlie) Ding', avatar: charlieImage, role: 'Vice President' },
-      { name: 'James Xu', avatar: jamesImage, role: 'Secretary '},
-      { name: 'Kasie Wang', avatar: kasieImage, role: 'Education Director' },
-      { name: 'Selena Lee', avatar: selenaImage, role: 'Treasurer' },
-      { name: 'Chloe Zhang', avatar: chloeImage, role: 'Events Director '}
+      { name: 'Cinque Howells', avatar: presidentImage, role: 'President' },
+      { name: 'Kasie', avatar: vicePresidentImage, role: 'Vice President' },
+      { name: 'Ileana Huang', avatar: secretaryImage, role: 'Secretary '},
+      { name: 'Kevin Z', avatar: educationImage, role: 'Education Director' },
+      { name: 'Jennifer Soo', avatar: treasurerImage, role: 'Treasurer' },
+      { name: 'Kevin Wu', avatar: eventsDirectorImage, role: 'Events Director '}
     ]
   },
   {
     name: 'General Committee',
     members: [
-      { name: 'James Dinh', avatar: jamesDImage, role: 'Industry Liaison' },
-      { name: 'Ivan Zhuang', avatar: ivanImage, role: 'Publicity Director' },
-      { name: 'Jennifer Soo', avatar: jenniferImage, role: 'Experience Director '},
-      { name: 'Bowen Feng', avatar: bowenImage, role: 'IT Director' },
-      { name: 'Florence Tang', avatar: florenceImage, role: 'Product Director' },
-      { name: 'Harrison Langdon', avatar: harrisonImage, role: 'Hackathon Director '},
-      { name: 'Aimee Lang', avatar: aimeeImage, role: 'Diversity Director' },
-      { name: 'Amanda Chao', avatar: amandaImage, role: 'People & Culture Director '}
+      { name: 'Margaret', avatar: industryLiaisonImage, role: 'Industry Liaison' },
+      { name: 'Aarushi Dua', avatar: publicityDirectorImage, role: 'Publicity Director' },
+      { name: 'Kailai Dong', avatar: ITDirectorImage, role: 'IT Director' },
+      { name: 'Sean Khoo', avatar: productDirectorImage, role: 'Product Director' },
+      { name: 'Josh', avatar: competitionsDirectorImage, role: 'Competitions Director '},
+      { name: 'Zhen', avatar: diversityDirectorImage, role: 'Diversity Director' },
+      { name: 'Tyana Tsai', avatar: peopleDirectorImage, role: 'People & Culture Director '}
     ]
   }
 ]
