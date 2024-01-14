@@ -23,8 +23,6 @@ const DropDownList = (props) => {
     props.opportunities.forEach((item) => {
         total_height += 85 + Math.floor(item.name.length / CHAR_PER_LINE) * 20
     });
-
-    console.log(total_height);
     
 
     const sliderStyle = {

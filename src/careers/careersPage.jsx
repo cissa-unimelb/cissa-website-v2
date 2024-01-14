@@ -6,7 +6,6 @@ import CareersCards from "./careersCard";
 
 // TODO: 
 // Cursor shape?
-// Deal with Responsive for Mobile View
 
 
 const CareersPage = (props) => {
