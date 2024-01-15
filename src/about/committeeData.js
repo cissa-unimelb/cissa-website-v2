@@ -17,7 +17,7 @@ export const teams = [
     name: 'Executive Team',
     members: [
       { name: 'Cinque Howells', avatar: presidentImage, role: 'President' },
-      { name: 'Kasie', avatar: vicePresidentImage, role: 'Vice President' },
+      { name: 'Kasie Wang', avatar: vicePresidentImage, role: 'Vice President' },
       { name: 'Ileana Huang', avatar: secretaryImage, role: 'Secretary '},
       { name: 'Kevin Zhou', avatar: educationImage, role: 'Education Director' },
       { name: 'Jennifer Soo', avatar: treasurerImage, role: 'Treasurer' },
@@ -27,7 +27,7 @@ export const teams = [
   {
     name: 'General Committee',
     members: [
-      { name: 'Margaret', avatar: industryLiaisonImage, role: 'Industry Liaison' },
+      { name: 'Margaret Xu', avatar: industryLiaisonImage, role: 'Industry Liaison' },
       { name: 'Aarushi Dua', avatar: publicityDirectorImage, role: 'Publicity Director' },
       { name: 'Kailai Dong', avatar: ITDirectorImage, role: 'IT Director' },
       { name: 'Sean Khoo', avatar: productDirectorImage, role: 'Product Director' },
