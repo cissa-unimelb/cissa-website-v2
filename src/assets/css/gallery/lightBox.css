@@ -32,13 +32,22 @@
     position: fixed;
     z-index: 100;
     /* top: 10%; */
-    width: 70%;
     margin-left: 15%;
     margin-right: 15%;
     text-align: center;
     line-height: 0;
     font-weight: normal;
     outline: none;
+}
+
+.lightbox-width{
+    width: 70%;
+}
+
+@media screen and (max-width: 300px){
+    .lightbox-width{
+        width: 90%;
+    }
 }
 
 .lightbox img{
