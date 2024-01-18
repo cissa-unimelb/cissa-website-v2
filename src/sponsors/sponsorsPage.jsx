@@ -3,13 +3,13 @@ import "../assets/css/sponsors/sponsorsPage.css";
 // Diamond
 import ANZ_img from "../assets/images/sponsors/anz.png";
 import IMC_img from "../assets/images/sponsors/imc.png";
-import Optiver_img from "../assets/images/sponsors/optiver.png";
+import JaneStreet_img from "../assets/images/sponsors/janestreet.png";
 
 // Platinum
 import Airwallex_img from "../assets/images/sponsors/airwallex.png";
 import Algohub_img from "../assets/images/sponsors/algohub.png";
-import JaneStreet_img from "../assets/images/sponsors/janestreet.png";
 import Atlassian_img from "../assets/images/sponsors/atlassian-2022.png";
+import Optiver_img from "../assets/images/sponsors/optiver.png";
 import REA_img from "../assets/images/sponsors/rea.png";
 
 // Gold
@@ -34,13 +34,13 @@ const allSponsors = {
     "Diamond": [
         {images: ANZ_img, alt: "ANZ"},
         {images: IMC_img, alt: "IMC"},
-        {images: Optiver_img, alt: "Optiver"}
+        {images: JaneStreet_img, alt: "Jane Street"}
     ],
     "Platinium": [
         {images: Airwallex_img, alt: "Airwallex"},
         {images: Algohub_img, alt: "Algohub"},
-        {images: JaneStreet_img, alt: "Jane Street"},
         {images: Atlassian_img, alt: "Atlassian"},
+        {images: Optiver_img, alt: "Optiver"},
         {images: REA_img, alt: "REA Group"}
     ],
     "Gold": [
