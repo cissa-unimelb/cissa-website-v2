@@ -101,7 +101,7 @@ const SponsorsPage = (props) => {
         <div>
             <div>
                 <header>
-                    <h1 className="section-title text-center"> 2023 SPONSORS </h1>
+                    <h1 className="section-title text-center"> 2024 SPONSORS </h1>
                 </header>
             </div>
 
