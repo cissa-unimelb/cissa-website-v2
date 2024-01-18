@@ -71,7 +71,7 @@ const SponsorList = (props) => {
                         <div>
                             <div class="row py-4">
                                 <div class="col-md-12 text-center">
-                                    <h3 class="section-title text-center text-center"><strong>{key}</strong></h3>
+                                    <h3 class="section-title text-center text-center" className="sponsor-tier-title"><strong>{key}</strong></h3>
                                 </div>
 
                                 {allSponsors[key].map((sponsor) => {
