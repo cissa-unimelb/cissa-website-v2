@@ -1,5 +1,6 @@
-#contactSection{
-    height: 25vw; 
+#contactSection {
     text-align: center;
     font-size: 20px;
+    padding: 80px 20px;
+    background-color: #FFF;
 }

@@ -209,7 +209,8 @@ footer {
 }
 
 .footer__content {
-  width: 40%;
+  width: 30%;
+  min-width: max-content;
   margin: 0 auto;
 
   display: flex;
@@ -219,6 +220,8 @@ footer {
 
 .icons {
   display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .icon {

@@ -30,15 +30,15 @@ const allCardsInfo = {
         image: IMC_img,
         link: "https://careers.imc.com/ap/en",
         opportunities: [
-            {name: "Ladies in Tech", type: "Program", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02772/Ladies-In-Tech"},
-            {name: "Ladies in Trading", type: "Program", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02853/Ladies-In-Trading"},
-            {name: "Software Engineer Intern 2023/2024", type: "Internship", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02573/Software-Engineer-Intern-2023-2024"},
-            {name: "Trader Intern 2023/2024", type: "Internship", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02503/Trader-Intern-2023-2024"},
-            {name: "Hardware Engineer Intern 2023/2024", type: "Internship", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02574/Hardware-Engineer-Intern-2023-2024"},
-            {name: "Graduate Software Engineer 2023/2024", type: "Graduate role", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02570/Graduate-Software-Engineer-2023-2024"},
-            {name: "Graduate Trader 2023/2024", type: "Graduate role", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02569/Graduate-Trader-2023-2024"},
-            {name: "Graduate Quantitative Researcher 2023/2024", type: "Graduate role", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02781/Graduate-Quantitative-Researcher-2023-2024"},
-            {name: "Graduate Hardware Engineer 2023/2024", type: "Graduate role", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02571/Graduate-Hardware-Engineer-2023-2024"}
+            // {name: "Ladies in Tech", type: "Program", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02772/Ladies-In-Tech"},
+            // {name: "Ladies in Trading", type: "Program", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02853/Ladies-In-Trading"},
+            // {name: "Software Engineer Intern 2023/2024", type: "Internship", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02573/Software-Engineer-Intern-2023-2024"},
+            // {name: "Trader Intern 2023/2024", type: "Internship", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02503/Trader-Intern-2023-2024"},
+            // {name: "Hardware Engineer Intern 2023/2024", type: "Internship", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02574/Hardware-Engineer-Intern-2023-2024"},
+            // {name: "Graduate Software Engineer 2023/2024", type: "Graduate role", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02570/Graduate-Software-Engineer-2023-2024"},
+            // {name: "Graduate Trader 2023/2024", type: "Graduate role", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02569/Graduate-Trader-2023-2024"},
+            // {name: "Graduate Quantitative Researcher 2023/2024", type: "Graduate role", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02781/Graduate-Quantitative-Researcher-2023-2024"},
+            // {name: "Graduate Hardware Engineer 2023/2024", type: "Graduate role", location: "Sydney", link: "https://careers.imc.com/ap/en/job/REQ-02571/Graduate-Hardware-Engineer-2023-2024"}
         ]
     },
 
@@ -46,19 +46,19 @@ const allCardsInfo = {
         image: Atlassian_img,
         link: "https://www.atlassian.com/company/careers",
         opportunities: [
-            { name: "Software Engineer Intern", type: "Internship", location: "Sydney or Remote", link: "https://www.atlassian.com/company/careers/detail/c1d49778-c70d-4a7d-afc0-f21498a3758c"}, 
-            { name: "Data Science Intern", type: "Internship", location: "Sydney or Remote", link: "https://www.atlassian.com/company/careers/detail/be1ba776-b4c1-4b7e-b7bd-f2b408c8e9ea"}, 
-            { name: "Security Engineering / Intelligence Intern", type: "Internship", location: "Sydney or Remote", link: "https://www.atlassian.com/company/careers/detail/d0f1651f-c311-4a47-aa42-f47d1c2585bd"}, 
-            { name: "Machine Learning Intern", type: "Internship", location: "Sydney or Remote", link: "https://www.atlassian.com/company/careers/detail/55d79e5f-00f1-4c1b-afa6-8c4484187c54"}, 
-            { name: "Product Design Intern", type: "Internship", location: "Sydney or Remote", link: "https://www.atlassian.com/company/careers/detail/354f1c40-c89d-4491-a626-f617521c14aa"}, 
-            { name: "Content Design Intern", type: "Internship", location: "Sydney or Remote", link: "https://www.atlassian.com/company/careers/detail/65fa8f19-2301-40cf-a20c-f82e32c33cc7"}, 
-            { name: "Associate Product Management Intern", type: "Internship", location: "Sydney or Remote", link: "https://www.atlassian.com/company/careers/detail/59ecd539-8fe1-4870-b7c8-bda2443b46fb"},
-            { name: "Research Intern", type: "Internship", location: "Sydney or Remote", link: "https://www.atlassian.com/company/careers/detail/e2e28339-6ee3-4565-b43e-a2c5ea3ab110"},
-            { name: "Finance Data Analytics Intern", type: "Internship", location: "Sydney or Remote", link: "https://www.atlassian.com/company/careers/detail/26f43ad3-9a8e-4433-87eb-bb24a39207b7"},
-            { name: "Site Reliability Engineer Intern", type: "Internship", location: "Sydney or Remote", link: "https://www.atlassian.com/company/careers/detail/6b96ac8c-e03d-4851-85e2-251642ce31cf"},
-            { name: "Workplace Productivity Intern", type: "Internship", location: "Sydney or Remote", link: "https://www.atlassian.com/company/careers/detail/bd1a9c99-3184-485b-8de6-c44e356036a0"},
-            { name: "Procurement Intern", type: "Internship", location: "Sydney or Remote", link: "https://www.atlassian.com/company/careers/detail/f3f391e2-2795-42f3-887a-b71828fcaefc"},
-            { name: "Accounting Intern", type: "Internship", location: "Sydney or Remote", link: "https://www.atlassian.com/company/careers/detail/c57325b7-f04b-4685-8bb2-7b4c02137d92"}
+            // { name: "Software Engineer Intern", type: "Internship", location: "Sydney or Remote", link: "https://www.atlassian.com/company/careers/detail/c1d49778-c70d-4a7d-afc0-f21498a3758c"}, 
+            // { name: "Data Science Intern", type: "Internship", location: "Sydney or Remote", link: "https://www.atlassian.com/company/careers/detail/be1ba776-b4c1-4b7e-b7bd-f2b408c8e9ea"}, 
+            // { name: "Security Engineering / Intelligence Intern", type: "Internship", location: "Sydney or Remote", link: "https://www.atlassian.com/company/careers/detail/d0f1651f-c311-4a47-aa42-f47d1c2585bd"}, 
+            // { name: "Machine Learning Intern", type: "Internship", location: "Sydney or Remote", link: "https://www.atlassian.com/company/careers/detail/55d79e5f-00f1-4c1b-afa6-8c4484187c54"}, 
+            // { name: "Product Design Intern", type: "Internship", location: "Sydney or Remote", link: "https://www.atlassian.com/company/careers/detail/354f1c40-c89d-4491-a626-f617521c14aa"}, 
+            // { name: "Content Design Intern", type: "Internship", location: "Sydney or Remote", link: "https://www.atlassian.com/company/careers/detail/65fa8f19-2301-40cf-a20c-f82e32c33cc7"}, 
+            // { name: "Associate Product Management Intern", type: "Internship", location: "Sydney or Remote", link: "https://www.atlassian.com/company/careers/detail/59ecd539-8fe1-4870-b7c8-bda2443b46fb"},
+            // { name: "Research Intern", type: "Internship", location: "Sydney or Remote", link: "https://www.atlassian.com/company/careers/detail/e2e28339-6ee3-4565-b43e-a2c5ea3ab110"},
+            // { name: "Finance Data Analytics Intern", type: "Internship", location: "Sydney or Remote", link: "https://www.atlassian.com/company/careers/detail/26f43ad3-9a8e-4433-87eb-bb24a39207b7"},
+            // { name: "Site Reliability Engineer Intern", type: "Internship", location: "Sydney or Remote", link: "https://www.atlassian.com/company/careers/detail/6b96ac8c-e03d-4851-85e2-251642ce31cf"},
+            // { name: "Workplace Productivity Intern", type: "Internship", location: "Sydney or Remote", link: "https://www.atlassian.com/company/careers/detail/bd1a9c99-3184-485b-8de6-c44e356036a0"},
+            // { name: "Procurement Intern", type: "Internship", location: "Sydney or Remote", link: "https://www.atlassian.com/company/careers/detail/f3f391e2-2795-42f3-887a-b71828fcaefc"},
+            // { name: "Accounting Intern", type: "Internship", location: "Sydney or Remote", link: "https://www.atlassian.com/company/careers/detail/c57325b7-f04b-4685-8bb2-7b4c02137d92"}
         ]
     },
 
@@ -66,7 +66,7 @@ const allCardsInfo = {
         image: Commbank_img,
         link: "https://www.commbank.com.au/about-us/careers/graduate-intern-programs.html",
         opportunities: [
-            { name: "Graduate Roles (Multiple Disciplines)", type: "Graduate Role", location: "Melbourne", link: "https://www.commbank.com.au/about-us/careers/graduate-recruitment-program/applications.html"}
+            // { name: "Graduate Roles (Multiple Disciplines)", type: "Graduate Role", location: "Melbourne", link: "https://www.commbank.com.au/about-us/careers/graduate-recruitment-program/applications.html"}
         ]
     },
 
@@ -84,14 +84,14 @@ const allCardsInfo = {
         image: Citadel_img,
         link: "https://www.citadelsecurities.com/careers/",
         opportunities: [
-            { name: "Software Engineer Intern", type: "Internship", location: "Sydney", link: "https://www.citadelsecurities.com/careers/details/software-engineer-intern-australia/"},
-            { name: "Quantitative Research Intern", type: "Internship", location: "Sydney", link: "https://www.citadelsecurities.com/careers/details/quantitative-research-intern-australia/"},     
-            { name: "Trader Intern", type: "Internship", location: "Sydney", link: "https://www.citadelsecurities.com/careers/details/trader-intern-australia/"},
-            { name: "Site Reliability Engineer Intern", type: "Internship", location: "Sydney", link: "https://www.citadelsecurities.com/careers/details/site-reliability-engineer-intern-australia/"},
-            { name: "Software Engineer", type: "Graduate role", location: "Sydney", link: "https://www.citadelsecurities.com/careers/details/software-engineer-full-time-australia/"},
-            { name: "Quantitative Research", type: "Graduate role", location: "Sydney", link: "https://www.citadelsecurities.com/careers/details/quantitative-research-full-time-australia/"},      
-            { name: "Trader", type: "Graduate role", location: "Sydney", link: "https://www.citadelsecurities.com/careers/details/trader-full-time-australia/"},
-            { name: "Site Reliability Engineer", type: "Graduate role", location: "Sydney", link: "https://www.citadelsecurities.com/careers/details/site-reliability-engineer-full-time-australia/"}
+            // { name: "Software Engineer Intern", type: "Internship", location: "Sydney", link: "https://www.citadelsecurities.com/careers/details/software-engineer-intern-australia/"},
+            // { name: "Quantitative Research Intern", type: "Internship", location: "Sydney", link: "https://www.citadelsecurities.com/careers/details/quantitative-research-intern-australia/"},     
+            // { name: "Trader Intern", type: "Internship", location: "Sydney", link: "https://www.citadelsecurities.com/careers/details/trader-intern-australia/"},
+            // { name: "Site Reliability Engineer Intern", type: "Internship", location: "Sydney", link: "https://www.citadelsecurities.com/careers/details/site-reliability-engineer-intern-australia/"},
+            // { name: "Software Engineer", type: "Graduate role", location: "Sydney", link: "https://www.citadelsecurities.com/careers/details/software-engineer-full-time-australia/"},
+            // { name: "Quantitative Research", type: "Graduate role", location: "Sydney", link: "https://www.citadelsecurities.com/careers/details/quantitative-research-full-time-australia/"},      
+            // { name: "Trader", type: "Graduate role", location: "Sydney", link: "https://www.citadelsecurities.com/careers/details/trader-full-time-australia/"},
+            // { name: "Site Reliability Engineer", type: "Graduate role", location: "Sydney", link: "https://www.citadelsecurities.com/careers/details/site-reliability-engineer-full-time-australia/"}
         ]
     },
 
@@ -99,17 +99,17 @@ const allCardsInfo = {
         image: Optiver_img,
         link: "https://optiver.com/working-at-optiver/career-opportunities/",
         opportunities: [
-            { name: "Software Developer Internship 2023/2024", type: "Internship", location: "Sydney", link: "https://optiver.com/working-at-optiver/career-opportunities/6597747002/"},
-            { name: "Quantitative Trading Internship 2023/2024", type: "Internship", location: "Sydney", link: "https://optiver.com/working-at-optiver/career-opportunities/6602287002/"}, 
-            { name: "Quantitative Researcher Internship 2023/2024", type: "Internship", location: "Sydney", link: "https://optiver.com/working-at-optiver/career-opportunities/6602288002/"},       
-            { name: "FPGA Developer Internship 2023/2024", type: "Internship", location: "Sydney", link: "https://optiver.com/working-at-optiver/career-opportunities/6599787002/"},
-            { name: "Graduate Software Developer 2023 or 2024", type: "Graduate role", location: "Sydney", link: "https://optiver.com/working-at-optiver/career-opportunities/6597743002/"},        
-            { name: "Graduate Quantitative Trader 2023 or 2024", type: "Graduate role", location: "Sydney", link: "https://optiver.com/working-at-optiver/career-opportunities/6597706002/"},       
-            { name: "Graduate Quantitative Researcher 2023 or 2024", type: "Graduate role", location: "Sydney", link: "https://optiver.com/working-at-optiver/career-opportunities/6597683002/"},   
-            { name: "Graduate FPGA Developer 2023 or 2024", type: "Graduate role", location: "Sydney", link: "https://optiver.com/working-at-optiver/career-opportunities/6599786002/"},
-            { name: "Graduate Market Risk Analyst", type: "Graduate role", location: "Sydney", link: "https://optiver.com/working-at-optiver/career-opportunities/6599786002/"},
-            { name: "Junior Market Risk Analyst", type: "Graduate role", location: "Sydney", link: "https://optiver.com/working-at-optiver/career-opportunities/6599786002/"},
-            { name: "Postdoctoral Fellowship", type: "Graduate role", location: "Sydney", link: "https://optiver.com/working-at-optiver/career-opportunities/6599786002/"}
+            // { name: "Software Developer Internship 2023/2024", type: "Internship", location: "Sydney", link: "https://optiver.com/working-at-optiver/career-opportunities/6597747002/"},
+            // { name: "Quantitative Trading Internship 2023/2024", type: "Internship", location: "Sydney", link: "https://optiver.com/working-at-optiver/career-opportunities/6602287002/"}, 
+            // { name: "Quantitative Researcher Internship 2023/2024", type: "Internship", location: "Sydney", link: "https://optiver.com/working-at-optiver/career-opportunities/6602288002/"},       
+            // { name: "FPGA Developer Internship 2023/2024", type: "Internship", location: "Sydney", link: "https://optiver.com/working-at-optiver/career-opportunities/6599787002/"},
+            // { name: "Graduate Software Developer 2023 or 2024", type: "Graduate role", location: "Sydney", link: "https://optiver.com/working-at-optiver/career-opportunities/6597743002/"},        
+            // { name: "Graduate Quantitative Trader 2023 or 2024", type: "Graduate role", location: "Sydney", link: "https://optiver.com/working-at-optiver/career-opportunities/6597706002/"},       
+            // { name: "Graduate Quantitative Researcher 2023 or 2024", type: "Graduate role", location: "Sydney", link: "https://optiver.com/working-at-optiver/career-opportunities/6597683002/"},   
+            // { name: "Graduate FPGA Developer 2023 or 2024", type: "Graduate role", location: "Sydney", link: "https://optiver.com/working-at-optiver/career-opportunities/6599786002/"},
+            // { name: "Graduate Market Risk Analyst", type: "Graduate role", location: "Sydney", link: "https://optiver.com/working-at-optiver/career-opportunities/6599786002/"},
+            // { name: "Junior Market Risk Analyst", type: "Graduate role", location: "Sydney", link: "https://optiver.com/working-at-optiver/career-opportunities/6599786002/"},
+            // { name: "Postdoctoral Fellowship", type: "Graduate role", location: "Sydney", link: "https://optiver.com/working-at-optiver/career-opportunities/6599786002/"}
         ]
     },
 
@@ -117,7 +117,7 @@ const allCardsInfo = {
         image: Coles_img,
         link: "https://colescareers.com.au/au/en/search-results",
         opportunities: [
-            { name: "Coles Store Support Centre (SSC) Technology Graduate Program 2024", type: "Graduate role", location: "Australia", link: "https://colescareers.com.au/au/en/grad-program-store-support-centre"}
+            // { name: "Coles Store Support Centre (SSC) Technology Graduate Program 2024", type: "Graduate role", location: "Australia", link: "https://colescareers.com.au/au/en/grad-program-store-support-centre"}
         ]
     },
 
@@ -125,7 +125,7 @@ const allCardsInfo = {
         image: Bukapalak_img,
         link: "https://careers.bukalapak.com/",
         opportunities: [
-            { name: "Graduate Software Engineer", type: "Graduate role", location: "Melbourne", link: "https://www.linkedin.com/jobs/view/3426244755/?capColoOverride=true"}
+            // { name: "Graduate Software Engineer", type: "Graduate role", location: "Melbourne", link: "https://www.linkedin.com/jobs/view/3426244755/?capColoOverride=true"}
         ]
     },
 
@@ -133,8 +133,8 @@ const allCardsInfo = {
         image: McGrathNicol_img,
         link: "https://www.mcgrathnicol.com/careers/",
         opportunities: [
-            { name: "Summer Vacation Program, Cyber (2023/24)", type: "Internship", location: "Melbourne", link: "https://www.mcgrathnicol.com/careers-job-description/?jid=bc745c9f-b730-46b4-be84-e825470a53a11"},
-            { name: "Summer Vacation Program, Data Analytics (2023/24)", type: "Internship", location: "Melbourne", link: "https://www.mcgrathnicol.com/careers-job-description/?jid=bc745c9f-b730-46b4-be84-e825470a53a1"}
+            // { name: "Summer Vacation Program, Cyber (2023/24)", type: "Internship", location: "Melbourne", link: "https://www.mcgrathnicol.com/careers-job-description/?jid=bc745c9f-b730-46b4-be84-e825470a53a11"},
+            // { name: "Summer Vacation Program, Data Analytics (2023/24)", type: "Internship", location: "Melbourne", link: "https://www.mcgrathnicol.com/careers-job-description/?jid=bc745c9f-b730-46b4-be84-e825470a53a1"}
         ]
     },
 
@@ -142,11 +142,11 @@ const allCardsInfo = {
         image: TikTok_img,
         link: "https://careers.tiktok.com/",
         opportunities: [
-            { name: "Backend Software Engineer (TikTok Live) - 2023 Start", type: "Graduate Role", location: "Sydney", link: "https://careers.tiktok.com/position/7190548197362010424/detail"},     
-            { name: "Mobile Software Engineer (TikTok Live) - 2023 Start", type: "Graduate Role", location: "Sydney", link: "https://careers.tiktok.com/position/7190548125073131813/detail"},      
-            { name: "Security Engineer - Application/Product Security - 2023 Start", type: "Full-time", location: "N/A", link: "https://careers.tiktok.com/position/7222893206827911479/detail"},   
-            { name: "Product Manager (TikTok LIVE) - 2023 Start", type: "Graduate Role", location: "N/A", link: "https://careers.tiktok.com/position/7161396351031707918/detail"},
-            { name: "Product Operations Manager (TikTok LIVE) - 2023 Start", type: "Graduate Role", location: "N/A", link: "https://careers.tiktok.com/position/7161395370257598751/detail"}
+            // { name: "Backend Software Engineer (TikTok Live) - 2023 Start", type: "Graduate Role", location: "Sydney", link: "https://careers.tiktok.com/position/7190548197362010424/detail"},     
+            // { name: "Mobile Software Engineer (TikTok Live) - 2023 Start", type: "Graduate Role", location: "Sydney", link: "https://careers.tiktok.com/position/7190548125073131813/detail"},      
+            // { name: "Security Engineer - Application/Product Security - 2023 Start", type: "Full-time", location: "N/A", link: "https://careers.tiktok.com/position/7222893206827911479/detail"},   
+            // { name: "Product Manager (TikTok LIVE) - 2023 Start", type: "Graduate Role", location: "N/A", link: "https://careers.tiktok.com/position/7161396351031707918/detail"},
+            // { name: "Product Operations Manager (TikTok LIVE) - 2023 Start", type: "Graduate Role", location: "N/A", link: "https://careers.tiktok.com/position/7161395370257598751/detail"}
         ]
     },
 
@@ -154,7 +154,7 @@ const allCardsInfo = {
         image: Airwallex_img,
         link: "https://www.airwallex.com/careers",
         opportunities: [
-            { name: "Software Engineer Intern (2023)", type: "Internship", location: "Hybrid", link: "https://jobs.lever.co/airwallex/a478b98c-8502-4207-ab42-369b807f48f2"}
+            // { name: "Software Engineer Intern (2023)", type: "Internship", location: "Hybrid", link: "https://jobs.lever.co/airwallex/a478b98c-8502-4207-ab42-369b807f48f2"}
         ]
     },
 
