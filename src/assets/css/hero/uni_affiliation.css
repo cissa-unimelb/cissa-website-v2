@@ -1,5 +1,13 @@
+.affiliation {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 100px 0;
+}
+
 .logo {
-    max-width: 70%;
-    height: auto;
-    display: inline-block;
+    display: block;
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
 }
