@@ -1,0 +1,30 @@
+.centered{
+    margin: 15px auto;
+}
+
+.bg-dark-blue{
+    background-color: #020a23;
+}
+
+.round-border{
+    border-radius: 10px;
+}
+
+.w-80{
+    width: 80%;
+}
+
+h3{
+    color: white;
+}
+
+@media screen and (max-width: 350px) {
+    h3{
+        font-size: 1.75em;
+    }
+
+    .responsive-padding{
+        padding: 1rem;
+    }
+
+}

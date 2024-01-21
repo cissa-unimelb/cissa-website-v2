@@ -1,0 +1,56 @@
+.restrict-width {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+.about {
+    display: grid;
+    gap: 40px;
+    max-width: 750px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.about > * {
+    text-align: center;
+}
+
+.about p {
+    line-height: 1.7em;
+}
+
+.committee-cover {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
+    border-radius: 10px;
+    object-fit: cover;
+    filter: contrast(1.05) brightness(.9) saturate(1.2);
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .section-title {
+        font-size: 2em !important;
+    }
+
+    .about {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .about .heading {
+        font-size: 1.5em;
+    }
+    
+    .image-wrapper {
+        padding: 0;
+    }
+
+    .committee-cover {
+        border-radius: 0;
+    }
+}

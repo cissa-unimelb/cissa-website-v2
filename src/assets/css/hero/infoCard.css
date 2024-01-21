@@ -1,0 +1,30 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 100px 0;
+}
+
+.main-icon {
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    font-size: 100px;
+    color: #2333c1;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards {
+    width: 350px;
+    max-width: 100%;
+    border: 5px solid #0a192f;
+    border-radius: 40px;
+}
+
