@@ -1,17 +1,8 @@
 import '../assets/css/committeeArchive/committeeArchive.css';
-import { committeeData } from './committeeData'
+import { committeeData, executives } from './committeeData'
+import CommitteeList from './comitteeList';
 
 
-const executives = [
-  'President',
-  'Vice-President',
-  'Secretary',
-  'Treasurer',
-  'Events Director',
-  'Events Officer',
-  'Education Director',
-  'Education Officer',
-]
 
 const CommitteeArchive = () => {
   return (
@@ -22,11 +13,13 @@ const CommitteeArchive = () => {
           </header>
       </div>
 
-      <div className="">
-        {Object.entries(committeeData).map(([year, roles]) => (
-          <div className="card w-75">
 
-            <div className="card-body">
+      <br />
+      <div>
+        {Object.entries(committeeData).map(([year, roles]) => (
+          <div className="card centered text-white bg-dark-blue w-80">
+
+            <div className="card-body round-border responsive-padding">
               <div className='container'>
                 <div className='row'>
                   <h3 className='card-title'> {year} </h3>
@@ -35,51 +28,19 @@ const CommitteeArchive = () => {
 
                 <div className='row'>
                   <div className='col'>
-                    <h3>Executives</h3> 
+                    <h3>Executives</h3>
+                    <br/>
+
+                    <CommitteeList roles={roles} isExecutive={true}/>
+
                   </div>
 
                   <div className='col'>
                     <h3>General Committee</h3>
-                  </div>
-                </div>
+                    <br />
 
-                <div className='row'>
-                  <div className='col'>
-                    
-                    <ul>
-                      {roles
-                        .filter((roleData) => {
-                          const [role] = Object.entries(roleData)[0]
-                          return executives.includes(role)
-                        })
-                        .map((roleData, idx) => {
-                          const [role, name] = Object.entries(roleData)[0]
-                          return (
-                            <li key={idx}>
-                              <strong>{role}:</strong> {name}
-                            </li>
-                          )
-                        })}
-                    </ul>
-                  </div>
+                    <CommitteeList roles={roles} isExecutive={false}/>
 
-                  <div className='col'>
-                    
-                    <ul>
-                      {roles
-                        .filter((roleData) => {
-                          const [role] = Object.entries(roleData)[0]
-                          return !executives.includes(role)
-                        })
-                        .map((roleData, idx) => {
-                          const [role, name] = Object.entries(roleData)[0]
-                          return (
-                            <li key={idx}>
-                              <strong>{role}:</strong> {name}
-                            </li>
-                          )
-                        })}
-                    </ul>
                   </div>
                 </div>
               </div>

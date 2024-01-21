@@ -27,7 +27,7 @@ const LightBox = (props) => {
           onClick={() => props.setDisplay(false)}
         />
 
-        <div className='lightbox'>
+        <div className='lightbox lightbox-width'>
           <img src={all_image[props.img_ind]} />
           <div className='lb-nav'>
             <button
