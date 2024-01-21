@@ -1,10 +1,9 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-
 import HeroPanel from './heroPanel'
 import Initiative from './initiative'
 import WhatWeDo from './infoCards'
 import UniAffiliation from './uniAffiliation'
+import JoinUs from './joinUs'
 
 const HeroPage = (props) => {
     return (
@@ -13,6 +12,7 @@ const HeroPage = (props) => {
             <Initiative />
             <WhatWeDo />
             <UniAffiliation />
+            <JoinUs />
         </div>
     )
 }

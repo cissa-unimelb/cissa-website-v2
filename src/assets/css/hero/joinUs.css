@@ -1,0 +1,31 @@
+.join-us {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  margin: 100px 0;
+}
+
+.action-button {
+  width: max-content;
+  max-width: 100%;
+  height: 100%;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: white !important;
+  text-decoration: none !important;
+  background: #020a23;
+  background: linear-gradient(315deg, #020a23 0%, #007bff 100%);
+  box-shadow: 0 20px 80px #007bff88;
+  border: 0;
+  border-radius: 1000px;
+  padding: 20px 40px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  .action-button {
+    font-size: 1.2em;
+  }
+}
