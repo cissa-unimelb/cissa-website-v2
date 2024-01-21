@@ -18,3 +18,12 @@
     font-family: 'poppins';
 }
 
+.sponsor-tier-title {
+    color: white;
+    background-color: #020A23;
+    border-radius: 50px;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1%;
+}
