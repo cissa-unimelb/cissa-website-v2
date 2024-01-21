@@ -1,5 +1,5 @@
 import "../assets/css/sponsors/sponsorsPage.css";
-import {allSponsors} from "../sponsors/sponsorsList"
+import { allSponsors } from "./sponsorsList";
 
 const SponsorList = (props) => {
     return(

@@ -5,12 +5,12 @@ function NavLink ({ text, link, isBold, isDropDown, dropDownElements}) {
     return(
       <div className='navbar navbar-expand-lg navbar-dark bg-transparent'>
         <div id="navbarNavDarkDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
+          <ul className="navbar-nav">
+            <li className="nav-item dropdown">
               <div data-bs-toggle="dropdown" aria-expanded="false">
                 <a className={`${isBold && 'nav__link--bold'} nav__link`}> Event ⏷</a>
               </div>
-              <ul class="dropdown-menu">
+              <ul className="dropdown-menu">
                 {
                   dropDownElements.map((item) => {
                     return (<li><a className="dropdown-item" href={item.link}>{item.text}</a></li>)
