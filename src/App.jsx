@@ -1,6 +1,6 @@
 import {BrowserRouter, HashRouter, Route, Routes} from "react-router-dom"; 
 
-import './assets/css/header_footer/header_footer.css'
+import './assets/css/headerFooter/headerFooter.css'
 import './assets/css/main.css'
 
 
