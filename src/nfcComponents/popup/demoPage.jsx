@@ -7,7 +7,7 @@ export default function PopupDemoPage (props) {
 		<div className="demo">
 			<div>
 				<PopupButton 
-					text="This is the coolest speech bubble to ever to exist on this planet." 
+					text="Please click on this bubble." 
 					speechBubble={{
 						anchor: [200, 300],
 					}}
