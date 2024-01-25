@@ -18,6 +18,7 @@ import SharedLayout from './sharedLayout/sharedLayout'
 import CommitteeArchive from './committeeArchive/CommitteeArchive'
 import './assets/css/main.css'
 
+import SpeechBubbleDemoPage from './nfcComponents/speechBubble/demoPage.jsx'
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Routes>
           <Route path="/" element={<SharedLayout />}>
             <Route index element={<HeroPage />}></Route>
+            <Route path="speech-bubble" element={<SpeechBubbleDemoPage />} />
             <Route path="about" element={<AboutPage />} />
             <Route path="committee-archive" element={<CommitteeArchive />} />
             <Route path="sponsors" element={<SponsorsPage />} />
