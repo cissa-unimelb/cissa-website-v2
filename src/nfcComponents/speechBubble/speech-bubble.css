@@ -1,0 +1,127 @@
+.speech-bubble {
+  --bg-color: #21D8D8;
+  --border-color: #FFF;
+  --text-color: #000;
+  --padding: 15px;
+}
+
+.speech-bubble {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+
+  /* Set padding so the overall width and height include pseudo elements */
+  padding-top: var(--pixel-size);
+  padding-bottom: calc(var(--pixel-size) * 3);
+  padding-left: calc(var(--pixel-size) * 2);
+  padding-right: calc(var(--pixel-size) * 2);
+
+  /* Debug */
+  /* border: 1px solid red; */
+  /* box-sizing: border-box; */
+}
+
+.speech-bubble__inner {
+  position: relative;
+  background-color: var(--bg-color);
+  z-index: 2;
+}
+
+.speech-bubble__inner::before {
+  content: '';
+  position: absolute;
+  background: var(--border-color);
+  width: calc(100% + var(--pixel-size) * 2);
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.speech-bubble__inner::after {
+  content: '';
+  position: absolute;
+  background: var(--border-color);
+  width: 100%;
+  height: calc(100% + var(--pixel-size) * 2);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.speech-bubble__content {
+  position: relative;
+  margin: auto;
+  z-index: 2;
+}
+
+.speech-bubble__content::before {
+  content: '';
+  position: absolute;
+  background: var(--bg-color);
+  width: calc(100% + var(--pixel-size) * 2);
+  height: calc(100% - var(--pixel-size) * 2);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.speech-bubble__content::after {
+  content: '';
+  position: absolute;
+  background: var(--border-color);
+  width: calc(100% + var(--pixel-size) * 4);
+  height: calc(100% - var(--pixel-size) * 2);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.speech-bubble__content__wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: var(--padding);
+  z-index: 2;
+}
+
+.speech-bubble__tail {
+  position: absolute;
+  width: calc(var(--pixel-size) * 3);
+  height: calc(var(--pixel-size) * 2);
+  background: var(--bg-color);
+  bottom: calc(-2 * var(--pixel-size));
+  left: 0;
+  z-index: 3;
+
+  /* Debug */
+  /* border: 1px solid red; */
+  /* box-sizing: border-box; */
+
+  border-right: var(--pixel-size) solid var(--border-color);
+}
+
+.speech-bubble__tail::before {
+  content: '';
+  position: absolute;
+  width: var(--pixel-size);
+  height: var(--pixel-size);
+  background: var(--border-color);
+  left: 0;
+  bottom: 0;
+}
+
+.speech-bubble__tail::after {
+  content: '';
+  position: absolute;
+  width: var(--pixel-size);
+  height: var(--pixel-size);
+  background: var(--border-color);
+  left: var(--pixel-size);
+  bottom: calc(-1 * var(--pixel-size));
+}
