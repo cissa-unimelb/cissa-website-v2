@@ -3,7 +3,7 @@ import {BrowserRouter, HashRouter, Route, Routes} from "react-router-dom";
 import './assets/css/header_footer/header_footer.css'
 import './assets/css/main.css'
 
-
+import DemoPage from './demo/demoPage.jsx' // Temporary
 import Gallery from './gallery/gallery'
 import AboutPage from './about/aboutPage.jsx'
 import UpEventPage from './upEvent/upEventPage'
@@ -26,6 +26,8 @@ function App() {
         <Routes>
           <Route path="/" element={<SharedLayout />}>
             <Route index element={<HeroPage />}></Route>
+            {/* /demo is temporary */}
+            <Route path="demo" element={<DemoPage />} />
             <Route path="about" element={<AboutPage />} />
             <Route path="committee-archive" element={<CommitteeArchive />} />
             <Route path="sponsors" element={<SponsorsPage />} />
