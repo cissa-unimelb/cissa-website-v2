@@ -9,9 +9,10 @@ export default function SpeechBubble ({
   align = 'left', 
   bound = true,
   width,
-  maxWidth,
+  maxWidth = 300,
   height,
   maxHeight,
+  onClick,
   children 
 }) {
   const SBRef = useRef(null)
@@ -99,6 +100,7 @@ export default function SpeechBubble ({
         height,
         maxHeight,
       }}
+      onClick={onClick}
     >
       <div className="speech-bubble__inner">
         <div className="speech-bubble__content">

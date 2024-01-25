@@ -3,9 +3,7 @@
   --border-color: #FFF;
   --text-color: #000;
   --padding: 15px;
-}
 
-.speech-bubble {
   position: absolute;
   width: max-content;
   height: max-content;
@@ -15,6 +13,7 @@
   padding-bottom: calc(var(--pixel-size) * 3);
   padding-left: calc(var(--pixel-size) * 2);
   padding-right: calc(var(--pixel-size) * 2);
+  cursor: pointer;
 
   /* Debug */
   /* border: 1px solid red; */
