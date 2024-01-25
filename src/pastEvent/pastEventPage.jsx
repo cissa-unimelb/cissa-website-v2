@@ -13,9 +13,9 @@ const SectionSemester = (props) => {
 
 const PastEventPage = (props) => {
     const infoList = [
-        {title: "Semester 2, 2023", src: "https://airtable.com/embed/shrubex6K8n6h7Sht?backgroundColor=pink"},
-        {title: "Semester 1, 2023", src: "https://airtable.com/embed/shrMSywHU76Bc7DFK?backgroundColor=pink"},
-        {title: "Semester 2, 2022", src: "https://airtable.com/embed/shrw0QTsy8K1FoxmF?backgroundColor=pink"}
+        {title: "Semester 1, 2024", src: "https://airtable.com/embed/appq8cXX0yFGnGtpE/shrubex6K8n6h7Sht?backgroundColor=pink"},
+        {title: "Semester 2, 2023", src: "https://airtable.com/embed/appq8cXX0yFGnGtpE/shrDALjwb7heQKBva?backgroundColor=pink"},
+        {title: "Semester 1, 2023", src: "https://airtable.com/embed/shrMSywHU76Bc7DFK?backgroundColor=pink"}
     ]
 
     return(

@@ -1,4 +1,15 @@
-export const committeeData = {
+const executives = [
+  'President',
+  'Vice-President',
+  'Secretary',
+  'Treasurer',
+  'Events Director',
+  'Events Officer',
+  'Education Director',
+  'Education Officer',
+]
+
+const committeeData = {
   '2023/2024': [
     {
       'President': 'Cinque Howells',
@@ -519,3 +530,5 @@ export const committeeData = {
     },
   ],
 }
+
+export {executives, committeeData}

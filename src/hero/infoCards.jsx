@@ -6,8 +6,8 @@ const InfoCards = (props) => {
       <span class='main-icon'>
         <i class={props.icon} />
       </span>
-      <h4 class='mx-2'>{props.title}</h4>
-      <p class='px-4'>{props.description}</p>
+      <h4 className='mx-2'>{props.title}</h4>
+      <p className='px-4'>{props.description}</p>
       <br />
     </section>
   )
