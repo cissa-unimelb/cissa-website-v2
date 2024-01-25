@@ -84,7 +84,7 @@ export default function SpeechBubble ({
     // Invert tail horizontally if it is over half way
     setInvertTail(tailOffset > SBRect.width / 2 - PIXEL_SIZE * 3)
   }, [anchor])
-  console.log(maxWidth)
+
   return (
     <div 
       ref={SBRef}
