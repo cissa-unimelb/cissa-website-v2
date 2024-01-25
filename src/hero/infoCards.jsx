@@ -2,9 +2,9 @@ import '../assets/css/hero/infoCard.css'
 
 const InfoCards = (props) => {
   return (
-    <section className='col-md-3 my-3 cards mx-3'>
-      <span className='main-icon'>
-        <i className={props.icon} />
+    <section class='cards'>
+      <span class='main-icon'>
+        <i class={props.icon} />
       </span>
       <h4 className='mx-2'>{props.title}</h4>
       <p className='px-4'>{props.description}</p>
@@ -21,9 +21,9 @@ const WhatWeDo = (props) => {
   ]
   
   return (
-    <div className='section px-2 py-4 text-center'>
-      <h3 className='mt-5 section-title'>What We Do</h3>
-      <div className='row d-flex justify-content-center py-5 mx-2'>
+    <div class='section px-4 text-center info'>
+      <h3 class='section-title'>What We Do</h3>
+      <div class='card-container'>
         {cardDetails.map((detail) => <InfoCards {...detail} />)}
       </div>
     </div>
