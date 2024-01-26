@@ -18,6 +18,7 @@ import SharedLayout from './sharedLayout/sharedLayout'
 import CommitteeArchive from './committeeArchive/CommitteeArchive'
 import './assets/css/main.css'
 
+import Stars from './nfcComponents/Stars.jsx'
 
 
 function App() {
@@ -37,6 +38,8 @@ function App() {
             <Route path="past-events" element={<PastEventPage />} />
             <Route path="first-year-guide" element={<GuidePage />} />
             <Route path="*" element={<Error />} />
+
+            <Route path="stars-test" element={<Stars />} />
           </Route>
         </Routes>
       </BrowserRouter>
