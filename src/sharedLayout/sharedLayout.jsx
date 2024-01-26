@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom'
-import Header from '../header_footer/Header'
-import Footer from '../header_footer/Footer'
+import Header from '../headerFooter/Header'
+import Footer from '../headerFooter/Footer'
 
 const SharedLayout = () => {
   return (

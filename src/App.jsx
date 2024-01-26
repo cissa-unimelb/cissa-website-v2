@@ -1,6 +1,6 @@
 import {BrowserRouter, HashRouter, Route, Routes} from "react-router-dom"; 
 
-import './assets/css/header_footer/header_footer.css'
+import './assets/css/headerFooter/headerFooter.css'
 import './assets/css/main.css'
 
 
@@ -12,6 +12,7 @@ import HeroPage from './hero/heroPage'
 import ContactPage from './contact/contactPage'
 import SponsorsPage from "./sponsors/sponsorsPage.jsx"
 import CareersPage from "./careers/careersPage.jsx"
+import GuidePage from "./guide/guidePage.jsx"
 
 import SharedLayout from './sharedLayout/sharedLayout'
 import CommitteeArchive from './committeeArchive/CommitteeArchive'
@@ -34,6 +35,7 @@ function App() {
             <Route path="contact" element={<ContactPage />} />
             <Route path="upcoming-events" element={<UpEventPage />} />
             <Route path="past-events" element={<PastEventPage />} />
+            <Route path="first-year-guide" element={<GuidePage />} />
             <Route path="*" element={<Error />} />
           </Route>
         </Routes>
