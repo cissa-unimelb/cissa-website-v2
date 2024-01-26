@@ -14,6 +14,8 @@ import SponsorsPage from "./sponsors/sponsorsPage.jsx"
 import CareersPage from "./careers/careersPage.jsx"
 import GuidePage from "./guide/guidePage.jsx"
 
+import AppsTest from "./nfcComponents/scrollButton/scollButtonTestApp.jsx";
+
 import SharedLayout from './sharedLayout/sharedLayout'
 import CommitteeArchive from './committeeArchive/CommitteeArchive'
 import './assets/css/main.css'
@@ -27,6 +29,7 @@ function App() {
         <Routes>
           <Route path="/" element={<SharedLayout />}>
             <Route index element={<HeroPage />}></Route>
+            <Route path="nfcButton" element={<AppsTest />} />
             <Route path="about" element={<AboutPage />} />
             <Route path="committee-archive" element={<CommitteeArchive />} />
             <Route path="sponsors" element={<SponsorsPage />} />
