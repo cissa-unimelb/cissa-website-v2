@@ -20,6 +20,9 @@ import SharedLayout from './sharedLayout/sharedLayout'
 import CommitteeArchive from './committeeArchive/CommitteeArchive'
 import './assets/css/main.css'
 
+
+import SpeechBubbleDemoPage from './nfcComponents/speechBubble/demoPage.jsx'
+import PopupDemoPage from './nfcComponents/popup/demoPage.jsx'
 import Stars from './nfcComponents/Stars.jsx'
 
 
@@ -30,6 +33,8 @@ function App() {
         <Routes>
           <Route path="/" element={<SharedLayout />}>
             <Route index element={<HeroPage />}></Route>
+            <Route path="speech-bubble" element={<SpeechBubbleDemoPage />} />
+            <Route path="popup" element={<PopupDemoPage />} />
             <Route path="nfcButton" element={<AppsTest />} />
             <Route path="about" element={<AboutPage />} />
             <Route path="committee-archive" element={<CommitteeArchive />} />
