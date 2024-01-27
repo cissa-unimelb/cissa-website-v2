@@ -1,0 +1,15 @@
+.stars-container {
+    width: 100%;
+    height: 700px;  /* change this later according to sky height */
+    object-fit: contain; /* Ensure the image inside the container follows the same rules */
+    position: relative;
+}
+
+.stars {
+    width: 100%; /* Set the width of the container */
+    height: 100%; /* Set the height of the container */
+    overflow: hidden; /* Hide any overflowing content */
+  
+    /* Ensure the image scales without stretching */
+    object-fit: contain;
+}
