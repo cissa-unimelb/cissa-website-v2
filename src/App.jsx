@@ -14,7 +14,7 @@ import SponsorsPage from "./sponsors/sponsorsPage.jsx"
 import CareersPage from "./careers/careersPage.jsx"
 import GuidePage from "./guide/guidePage.jsx"
 
-import AppsTest from "./nfcComponents/scrollButton/scollButtonTestApp.jsx";
+import AppsTest from "./nfcComponents/scrollButton/scrollButtonTestApp.jsx";
 
 import SharedLayout from './sharedLayout/sharedLayout'
 import CommitteeArchive from './committeeArchive/CommitteeArchive'

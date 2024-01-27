@@ -1,12 +1,11 @@
 .appFrame {
     position: relative;
-    top: 0;
-    left: 0;
 
     flex-shrink: 0;
     flex-grow: 0;
 
     width: 100%;
+    min-height: 100vh;
     height: 100%;
 }
 
@@ -17,12 +16,14 @@
     transform: none;
     transition: transform 1s;
 
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
 
     overflow: auto;
 }
 
 .appTestContainer {
+    width: 100%;
     overflow: hidden;
 }
