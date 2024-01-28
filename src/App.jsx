@@ -21,6 +21,10 @@ import CommitteeArchive from './committeeArchive/CommitteeArchive'
 import './assets/css/main.css'
 
 
+import SpeechBubbleDemoPage from './nfcComponents/speechBubble/demoPage.jsx'
+import PopupDemoPage from './nfcComponents/popup/demoPage.jsx'
+import Stars from './nfcComponents/Stars.jsx'
+
 
 function App() {
   return (
@@ -29,6 +33,8 @@ function App() {
         <Routes>
           <Route path="/" element={<SharedLayout />}>
             <Route index element={<HeroPage />}></Route>
+            <Route path="speech-bubble" element={<SpeechBubbleDemoPage />} />
+            <Route path="popup" element={<PopupDemoPage />} />
             <Route path="nfcButton" element={<AppsTest />} />
             <Route path="about" element={<AboutPage />} />
             <Route path="committee-archive" element={<CommitteeArchive />} />
@@ -40,6 +46,8 @@ function App() {
             <Route path="past-events" element={<PastEventPage />} />
             <Route path="first-year-guide" element={<GuidePage />} />
             <Route path="*" element={<Error />} />
+
+            <Route path="stars-test" element={<Stars />} />
           </Route>
         </Routes>
       </BrowserRouter>
