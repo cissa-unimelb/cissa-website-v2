@@ -4,7 +4,46 @@ import { useState, useRef } from "react";
 import ScrollButton from "./scrollButton";
 import PageList from "./pageList";
 
+// Helper functions
 
+// Scrolling calculation
+// Calculate the scrolling position to the next/ previous page
+// Used this instead of shifting by windowWidth 
+// to avoid dangling in between pages
+
+const EPSILON = 1;
+
+const scrollCalculation = (windowWidth, curScrlPosition, shift, minPost, maxPost) => {
+    let nextScrlPosition = curScrlPosition + shift;
+
+    let nextPage = Math.floor(nextScrlPosition/ windowWidth);
+
+    let resultPost;
+    // Check if scroll left or right
+    if (shift > 0){
+        // If right, then round down
+        resultPost = nextPage * windowWidth;
+    } else {
+        // If left, then round up, if there is sufficient offset
+        let offset = nextScrlPosition - nextPage * windowWidth;
+        if (offset > EPSILON){
+            resultPost = (nextPage + 1) * windowWidth;
+        } else {
+            resultPost = nextPage * windowWidth;
+        }
+        
+    }
+
+    // Keep the position in range
+    resultPost = Math.min(resultPost, maxPost);
+    resultPost = Math.max(resultPost, minPost);
+
+    return resultPost;
+}
+
+// Main part
+
+//-------------------------------
 // ToDo: Reduce speed of sliding
 
 const AppFrame = (props) => {
@@ -32,20 +71,24 @@ const AppFrame = (props) => {
 const AppsTest = (props) => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-    console.log(windowWidth);
-
     let scrl = useRef(null);
 
     const slide = (shift) => {
-        console.log(scrl.current.scrollLeft);
+        // Note: scrollTo is asynchronous due to the animation
+        // so might need a lock/ promise to ensure scrollLeft is up-to-date
 
-        scrl.current.scrollBy({
-            left: shift,
+        // It runs fine, so let see if issues occur
+
+        let nextPost = scrollCalculation(windowWidth, scrl.current.scrollLeft, 
+            shift, 0, windowWidth * (PageList.length - 1));
+
+        scrl.current.scrollTo({
+            left: nextPost,
             behavior: 'smooth'
-        })
+        });
+
+        console.log(scrl.current.scrollLeft);
     }
-
-
 
     return (
         <div>
