@@ -1,4 +1,4 @@
-import "./scrollButton.css";
+import "../../assets/css/components/scrollButton.css";
 
 const ScrollButton = (props) => {
     let floatDirection = "left";

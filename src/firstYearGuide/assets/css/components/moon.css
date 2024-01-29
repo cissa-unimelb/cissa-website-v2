@@ -1,0 +1,43 @@
+:root {
+  /* Define default values for your variables */
+  --bloom-blur: 1px;
+  --bloom-before-blur: 4px; /* Typically double the main blur */
+  --bloom-offset: -10px; /* Offset for the ::before pseudo-element */
+  --inner-glow-color: #fff; /* Inner glow color */
+  --inner-glow-size: 15px; /* Inner glow size */
+  --outer-glow-color: #f0f0f0; /* Outer glow color */
+  --outer-glow-size: 20px; /* Outer glow size */
+  --further-glow-color: #c0c0c0; /* Further outer glow color */
+  --further-glow-size: 10px; /* Further outer glow size */
+}
+
+.moon-container {
+  position: relative;
+  display: inline-block;
+  background-color: #0a0f32; /* Dark blue background */
+  border-radius: 50%; /* Makes the container round */
+}
+
+.bloom-effect {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  filter: blur(var(--bloom-blur)); /* Use the variable */
+  box-shadow: 0 0 var(--inner-glow-size) var(--inner-glow-color), /* Inner white glow */
+               0 0 var(--outer-glow-size) var(--outer-glow-color), /* Outer white glow */
+               0 0 var(--further-glow-size) var(--further-glow-color); /* Further outer glow */
+}
+
+.bloom-effect::before {
+  content: '';
+  position: absolute;
+  top: var(--bloom-offset);
+  left: var(--bloom-offset);
+  right: var(--bloom-offset);
+  bottom: var(--bloom-offset);
+  background: inherit;
+  border-radius: 50%;
+  filter: blur(var(--bloom-before-blur));
+  z-index: -1;
+}

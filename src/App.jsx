@@ -12,18 +12,16 @@ import HeroPage from './hero/heroPage'
 import ContactPage from './contact/contactPage'
 import SponsorsPage from "./sponsors/sponsorsPage.jsx"
 import CareersPage from "./careers/careersPage.jsx"
-import GuidePage from "./guide/guidePage.jsx"
-
-import AppsTest from "./nfcComponents/scrollButton/scrollButtonTestApp.jsx";
 
 import SharedLayout from './sharedLayout/sharedLayout'
 import CommitteeArchive from './committeeArchive/CommitteeArchive'
 import './assets/css/main.css'
 
+import AppsTest from "./firstYearGuide/TestApp.jsx";
 
-import SpeechBubbleDemoPage from './nfcComponents/speechBubble/demoPage.jsx'
-import PopupDemoPage from './nfcComponents/popup/demoPage.jsx'
-import Stars from './nfcComponents/Stars.jsx'
+// import SpeechBubbleDemoPage from './firstYearGuide/components/speechBubbleDemoPage.jsx'
+// import PopupDemoPage from './firstYearGuide/components/popupDemoPage.jsx'
+// import Stars from './firstYearGuide/components/Stars.jsx'
 
 
 function App() {
@@ -33,9 +31,9 @@ function App() {
         <Routes>
           <Route path="/" element={<SharedLayout />}>
             <Route index element={<HeroPage />}></Route>
-            <Route path="speech-bubble" element={<SpeechBubbleDemoPage />} />
+            {/* <Route path="speech-bubble" element={<SpeechBubbleDemoPage />} />
             <Route path="popup" element={<PopupDemoPage />} />
-            <Route path="nfcButton" element={<AppsTest />} />
+            <Route path="stars-test" element={<Stars />} /> */}
             <Route path="about" element={<AboutPage />} />
             <Route path="committee-archive" element={<CommitteeArchive />} />
             <Route path="sponsors" element={<SponsorsPage />} />
@@ -44,10 +42,8 @@ function App() {
             <Route path="contact" element={<ContactPage />} />
             <Route path="upcoming-events" element={<UpEventPage />} />
             <Route path="past-events" element={<PastEventPage />} />
-            <Route path="first-year-guide" element={<GuidePage />} />
+            <Route path="first-year-guide" element={<AppsTest />} />
             <Route path="*" element={<Error />} />
-
-            <Route path="stars-test" element={<Stars />} />
           </Route>
         </Routes>
       </BrowserRouter>

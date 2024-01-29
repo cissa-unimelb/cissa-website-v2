@@ -1,7 +1,7 @@
-import "./scrollButtonTestApp.css";
+import "./assets/css/TestApp.css";
 import { useState, useRef } from "react";
 
-import ScrollButton from "./scrollButton";
+import ScrollButton from "./components/scrollButton/scrollButton";
 import PageList from "./pageList";
 
 // Helper functions
@@ -64,6 +64,7 @@ const AppFrame = (props) => {
                 <ScrollButton direction="Right" onClickFunc={() => {props.slidingFunc(props.frameWidth)}}/>
             </div>
 
+        
         </div>
     )
 }

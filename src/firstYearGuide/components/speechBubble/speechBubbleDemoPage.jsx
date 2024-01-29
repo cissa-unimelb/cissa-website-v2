@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import SpeechBubble from "./speechBubble";
-import "./demo-page.css";
+import "../../assets/css/components/demo-page.css";
 
 export default function SpeechBubbleDemoPage (props) {
 	const [anchorPos, setAnchorPos] = useState({

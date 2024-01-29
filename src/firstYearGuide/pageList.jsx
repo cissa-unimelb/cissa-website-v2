@@ -1,3 +1,4 @@
+
 const SampleComponent = (props) => {
     return (
         <div style={{
@@ -17,6 +18,8 @@ const SampleComponent = (props) => {
         </div>
     )
 }
+
+
 
 const PageList = [
     <SampleComponent color="red"/>,

@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import './popup.css'
+import '../../assets/css/components/popup.css'
 
 export default function Popup ({ children, width=500, height=600, show, toggle }) {
   const popupRef = useRef(null)

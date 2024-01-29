@@ -1,7 +1,7 @@
 
 import React from 'react';
-import starsDesktop_img from "../assets/images/nfc_stars.png";
-import "../assets/css/stars.css";
+import starsDesktop_img from "../../assets/images/components/nfc_stars.png";
+import "../../assets/css/components/stars.css";
 
 const Stars = () => {
     return (

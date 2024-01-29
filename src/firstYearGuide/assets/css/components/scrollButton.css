@@ -12,9 +12,9 @@
 }
 
 .scrollButtonLeft{
-    background-image: url('./assets/mobile-Arrow-left.svg');
+    background-image: url('../../images/components/mobile-Arrow-left.svg');
 }
 
 .scrollButtonRight{
-    background-image: url('./assets/mobile-Arrow-right.svg');
+    background-image: url('../../images/components/mobile-Arrow-right.svg');
 }
