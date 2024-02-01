@@ -4,6 +4,8 @@ import { useState, useRef } from "react";
 import ScrollButton from "./components/scrollButton/scrollButton";
 import PageList from "./pageList";
 
+//import Stars from "./components/stars/stars.jsx";
+
 // Helper functions
 
 // Scrolling calculation
@@ -48,23 +50,13 @@ const scrollCalculation = (windowWidth, curScrlPosition, shift, minPost, maxPost
 
 const AppFrame = (props) => {
     return (
-        <div 
-            className="appFrame" 
-            style={{
-                width: `${props.frameWidth}px`
-            }}
-        >
-
-            <div>
-                {props.content}
+        <div className="appFrame" style={{ width: `${props.frameWidth}px` }}>
+            <div>{props.content}</div>
+            <div className="road-container"/>
+            <div className="frameNavigation">
+                <ScrollButton direction="Left" onClickFunc={() => {props.slidingFunc(-props.frameWidth)}} />
+                <ScrollButton direction="Right" onClickFunc={() => {props.slidingFunc(props.frameWidth)}} />
             </div>
-
-            <div>
-                <ScrollButton direction="Left" onClickFunc={() => {props.slidingFunc(-props.frameWidth)}}/>
-                <ScrollButton direction="Right" onClickFunc={() => {props.slidingFunc(props.frameWidth)}}/>
-            </div>
-
-        
         </div>
     )
 }

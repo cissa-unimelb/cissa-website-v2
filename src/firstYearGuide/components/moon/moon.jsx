@@ -1,6 +1,5 @@
-import React from 'react';
 import '../../assets/css/components/moon.css';
-import moonImageL from "./moon_larger.png"
+import moonImageL from "../../assets/images/components/moon_larger.png"
 
 const Moon = () => {
   return (

@@ -9,6 +9,8 @@
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: cover;
+
+    z-index: 3;
 }
 
 .scrollButtonLeft{
