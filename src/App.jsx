@@ -1,4 +1,4 @@
-import {BrowserRouter, HashRouter, Route, Routes} from "react-router-dom"; 
+import {BrowserRouter, HashRouter, Outlet, Route, Routes} from "react-router-dom"; 
 
 import './assets/css/headerFooter/headerFooter.css'
 import './assets/css/main.css'
@@ -23,7 +23,7 @@ import './assets/css/main.css'
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<SharedLayout />}>
             <Route index element={<HeroPage />}></Route>
@@ -39,7 +39,7 @@ function App() {
             <Route path="*" element={<Error />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   )
 }

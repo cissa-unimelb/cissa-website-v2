@@ -3,6 +3,7 @@ import CommitteeList from "./committeeCards";
 import CommitteeCoverImage from '../assets/images/committee-2024.jpg';
 
 export default function AboutPage (props) {
+	console.log("About Page");
 	return(
 		<div>
 			<header>
