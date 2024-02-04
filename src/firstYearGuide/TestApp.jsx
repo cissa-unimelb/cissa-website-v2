@@ -4,7 +4,7 @@ import { useState, useRef } from "react";
 import ScrollButton from "./components/scrollButton/scrollButton";
 import PageList from "./pageList";
 
-//import Stars from "./components/stars/stars.jsx";
+import Stars from "./components/stars/stars";
 
 // Helper functions
 
@@ -92,7 +92,9 @@ const AppsTest = (props) => {
 			</div>
 
             <div className="appTestContainer">
+                
                 <div ref={scrl} className="appTest">
+                    <div className="stars-container"/>
                     {PageList.map(elem => <AppFrame content={elem} frameWidth={windowWidth} slidingFunc={slide} />)}
                 </div>
             </div>

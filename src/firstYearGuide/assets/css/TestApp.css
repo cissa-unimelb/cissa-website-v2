@@ -5,12 +5,13 @@
     flex-grow: 0;
 
     width: 100%;
-    min-height: 50vh;
+    min-height: 80vh;
     height: auto;
 
     overflow: hidden;
 
     z-index: 1;
+    background-color: transparent;
 }
 
 .frameNavigation {
@@ -26,6 +27,7 @@
     justify-content: space-between;
 
     z-index: 3;
+    background-color: transparent;
 }
 
 .road-container {
@@ -46,7 +48,25 @@
     overflow: hidden;
 }
 
+.stars-container {
+    width: 600vw;
+    height: 120px;  /* change this later according to sky height */
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+
+    background-image: url("../images/components/mobile-stars@2x.png");
+    background-size: contain;
+    background-repeat: repeat-x;
+
+    overflow: visible;
+}
+
+
 .appTest {
+    position: relative;
     display: flex;
     flex-direction: row;
 
@@ -54,19 +74,32 @@
     transition: transform 1s;
 
     width: 100%;
-    min-height: 50vh;
+    min-height: 80vh;
     height: auto;
 
+    /* background-image: url("../images/components/mobile-stars.png");
+    background-size: cover;
+    background-repeat: no-repeat; */
+
     overflow: auto;
+    
+
+    background-color: #171E28;
+    /* background-color: transparent; */
+
+    z-index: 0;
 }
 
 .appTestContainer {
     width: 100%;
     overflow: visible;
-    /*background-color: #171E28;*/
-    /*background-image: url("../images/components/nfc-stars.png");*/
-    /*background-size: cover;*/
+    
+    
     z-index: 0;
+    background-color: transparent;
+    
+
+    background-attachment: fixed;
 
 }
 
