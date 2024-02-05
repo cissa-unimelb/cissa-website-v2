@@ -24,7 +24,7 @@ function Header ({ mobileBreakpoint }) {
     <nav>
       <div className={`container ${!isMobile && 'flex'} container-fluid`}>
         <div className='nav__content'>
-          <a href="/">
+          <a href="/cissa-website-v2/">
             <img className='nav__logo' width='50' height='50' src='only_circle_white.svg' alt='Logo' />
           </a>
           <Hamburger clickHandler={handleToggle} isOpen={isOpen} isMobile={isMobile} />
