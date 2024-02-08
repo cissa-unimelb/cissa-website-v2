@@ -1,17 +1,17 @@
-import ActivitiesFYG from "./activities/activitiesFYG";
+import SubjectsFYG from "./subjects/subjectsFYG";
 import CareersFYG from "./careers/careersFYG";
 import InterviewTipsFYG from "./interviewTips/interviewTipsFYG";
 import SocialFYG from "./social/socialFYG";
-import SubjectsFYG from "./subjects/subjectsFYG";
 import WelcomeChecklistFYG from "./welcomeChecklist/welcomeChecklistFYG";
+import ActivitiesFYG from "./activities/activitiesFYG";
 
 const PageList = [
-    <WelcomeChecklistFYG/>,
-    <ActivitiesFYG/>,
+    <SubjectsFYG/>,
     <CareersFYG/>,
     <InterviewTipsFYG/>,
     <SocialFYG/>,
-    <SubjectsFYG/>
+    <WelcomeChecklistFYG/>,
+    <ActivitiesFYG/>
 ]
 
 export default PageList;

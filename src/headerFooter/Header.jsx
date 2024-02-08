@@ -5,6 +5,12 @@ import '../../public/only_circle_white.svg'
 import PropTypes from 'prop-types'
 
 function Header ({ mobileBreakpoint }) {
+
+  //if on FYG page do not render
+  if (window.location.href.includes('first-year-guide')) {
+    return null
+  }
+
   const q = window.matchMedia(`(max-width: ${mobileBreakpoint}px)`)
   const [isOpen, toggleOpen] = useState(false)
   const [isMobile, setMobile] = useState(q.matches)

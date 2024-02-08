@@ -4,8 +4,6 @@ import { useState, useRef } from "react";
 import ScrollButton from "./components/scrollButton/scrollButton";
 import PageList from "./pageList";
 
-import Stars from "./components/stars/stars";
-
 // Helper functions
 
 // Scrolling calculation
@@ -48,18 +46,32 @@ const scrollCalculation = (windowWidth, curScrlPosition, shift, minPost, maxPost
 //-------------------------------
 // ToDo: Reduce speed of sliding
 
+/*
+    This is the frame that each section will sit in.
+    It holds the road and scroller buttons.
+    It returns the road and scroller buttons.
+*/
 const AppFrame = (props) => {
     return (
         <div className="appFrame" style={{ width: `${props.frameWidth}px` }}>
             <div>{props.content}</div>
-            <div className="road-container"/>
-            <div className="frameNavigation">
-                <ScrollButton direction="Left" onClickFunc={() => {props.slidingFunc(-props.frameWidth)}} />
-                <ScrollButton direction="Right" onClickFunc={() => {props.slidingFunc(props.frameWidth)}} />
+            <div className="headingText">CISSA FIRST YEAR GUIDE</div>
+            <div className="navRoadContainer">
+                <div className="road-container"/>
+                <div className="frameNavigation">
+                    <ScrollButton direction="Left" onClickFunc={() => {props.slidingFunc(-props.frameWidth)}} />
+                    <ScrollButton direction="Right" onClickFunc={() => {props.slidingFunc(props.frameWidth)}} />
+                </div>
             </div>
         </div>
     )
 }
+
+/* 
+    This is the FYG page.
+    It holds the appFrames.
+    It returns the frames, header and stars.
+*/
 
 const AppsTest = (props) => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -85,12 +97,6 @@ const AppsTest = (props) => {
 
     return (
         <div>
-            <div>
-				<header>
-					<h1 className="section-title text-center"> First Year Guide </h1>
-				</header>
-			</div>
-
             <div className="appTestContainer">
                 
                 <div ref={scrl} className="appTest">

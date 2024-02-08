@@ -1,8 +1,8 @@
-import roadImage from '../../assets/images/components/mobile-road.png';
-import '../../assets/css/components/road.css';
+// import roadImage from '../../assets/images/components/mobile-road.png';
+// import '../../assets/css/components/road.css';
 
-const Road = () => (
-  <img src={roadImage} alt="Road" className="road-image" />
-);
+// const Road = () => (
+//   <img src={roadImage} alt="Road" className="road-image" />
+// );
 
-export default Road;
+// export default Road;

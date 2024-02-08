@@ -1,16 +1,16 @@
+/* This is the standard container for each section */
 .welcome-container {
     position: relative;
     top: 0;
     left: 0;
 
     width: 100%;
-    height: 50vh
+    height: auto
 }
 
+/* Specify the coordinates of the coordinates here*/
 .moon-container {
     position: relative;
     top: 10px;
     left: 10px;
 }
-/* get specific coords in a way that is sustainable for other types
-need to loook at figma */

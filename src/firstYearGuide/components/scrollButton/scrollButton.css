@@ -1,9 +1,9 @@
 .scrollButton {
     margin-left: 10%;
     margin-right: 10%;
-
-    height: 70px;
-    width: 70px;
+    
+    height: 100%;
+    width: 100%;
 
     border: none;
     background-color: transparent;

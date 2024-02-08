@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Good Times';
+    src: url('../fonts/Good Times.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  
+  
+
 .appFrame {
     position: relative;
 
@@ -5,63 +15,86 @@
     flex-grow: 0;
 
     width: 100%;
-    min-height: 80vh;
-    height: auto;
+    height: 100vh;
 
     overflow: hidden;
 
     z-index: 1;
-    background-color: transparent;
+}
+    
+.headingText {
+    position: absolute;
+    top: 3vh;
+
+    width: 100vw;
+    height: 5vh;
+
+    flex-shrink: 0;
+
+    color: #21D8D8;
+    text-align: center;
+    font-family: 'Good Times';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
-.frameNavigation {
+.navRoadContainer {
     position: absolute;
     bottom: 0;
     left: 0;
 
     width: 100%;
-    height: 65px;
+    height: 9.3vh;
+}
+
+.frameNavigation {
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     z-index: 3;
-    background-color: transparent;
 }
 
 .road-container {
     position: absolute;
     bottom: 0;
     left: 0;
-    
+
     width: 100%;
-    height: 80px;
+    height: 100%;
 
     background-image: url("../images/components/mobile-road.png");
     background-repeat: repeat-x;
-    background-size: auto;
+    background-size: auto 100%;
 
-    z-index: 2; /*inherit?*/
-
-    
     overflow: hidden;
+
+    z-index: 2;
 }
 
 .stars-container {
     width: 600vw;
-    height: 120px;  /* change this later according to sky height */
+    height: 17vh;
     position: absolute;
-    top: 0;
+    top: 5px;
     left: 0;
-
-    z-index: -1;
 
     background-image: url("../images/components/mobile-stars@2x.png");
     background-size: contain;
     background-repeat: repeat-x;
 
     overflow: visible;
+
+    z-index: -1;
 }
 
 
@@ -74,18 +107,12 @@
     transition: transform 1s;
 
     width: 100%;
-    min-height: 80vh;
+    min-height: 100vh;
     height: auto;
 
-    /* background-image: url("../images/components/mobile-stars.png");
-    background-size: cover;
-    background-repeat: no-repeat; */
+    background-color: #171E28;
 
     overflow: auto;
-    
-
-    background-color: #171E28;
-    /* background-color: transparent; */
 
     z-index: 0;
 }
@@ -93,13 +120,9 @@
 .appTestContainer {
     width: 100%;
     overflow: visible;
-    
-    
-    z-index: 0;
-    background-color: transparent;
-    
 
     background-attachment: fixed;
 
+    z-index: 0;
 }
 
