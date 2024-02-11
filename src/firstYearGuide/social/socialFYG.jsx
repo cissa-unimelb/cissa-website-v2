@@ -44,7 +44,7 @@ const socialFYG = (props) => {
                 speechBubble={{
                     anchor: [baseAnchor.x + baseAnchor.width * 0.5, baseAnchor.y + baseAnchor.height * 0.15],
                     maxWidth: 200,
-                    bound: false
+                    //bound: false
                 }}
             >
                 <h3>Where is the quick brown fox?</h3>
