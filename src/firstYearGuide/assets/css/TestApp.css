@@ -4,8 +4,6 @@
     font-weight: normal;
     font-style: normal;
   }
-
-  
   
 
 .appFrame {
@@ -23,7 +21,7 @@
 }
     
 .headingText {
-    position: absolute;
+    position: fixed;
     top: 3vh;
 
     width: 100vw;
@@ -38,6 +36,8 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
+    z-index: 2;
 }
 
 .navRoadContainer {
@@ -81,9 +81,9 @@
     z-index: 2;
 }
 
-.stars-container {
+.starsContainer {
     width: 600vw;
-    height: 17vh;
+    height: 20vh;
     position: absolute;
     top: 5px;
     left: 0;
@@ -94,7 +94,7 @@
 
     overflow: visible;
 
-    z-index: -1;
+    z-index: 1;
 }
 
 
@@ -118,11 +118,6 @@
 }
 
 .appTestContainer {
-    width: 100%;
-    overflow: visible;
-
-    background-attachment: fixed;
-
     z-index: 0;
 }
 

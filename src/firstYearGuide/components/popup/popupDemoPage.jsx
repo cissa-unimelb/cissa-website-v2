@@ -10,6 +10,7 @@ export default function PopupDemoPage (props) {
 					text="Please click on this bubble." 
 					speechBubble={{
 						anchor: [200, 300],
+						
 					}}
 				>
 					<h3>Where is the quick brown fox?</h3>

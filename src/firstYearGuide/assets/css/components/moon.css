@@ -11,15 +11,9 @@
   --further-glow-size: 10px; /* Further outer glow size */
 }
 
-.moon-container {
-  position: relative;
-  display: inline-block;
-  background-color: #0a0f32; /* Dark blue background */
-  border-radius: 50%; /* Makes the container round */
-}
 
 .bloom-effect {
-  display: block;
+  /* display: block; */
   width: 100%;
   height: auto;
   border-radius: 50%;

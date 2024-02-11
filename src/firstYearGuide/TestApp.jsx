@@ -55,7 +55,6 @@ const AppFrame = (props) => {
     return (
         <div className="appFrame" style={{ width: `${props.frameWidth}px` }}>
             <div>{props.content}</div>
-            <div className="headingText">CISSA FIRST YEAR GUIDE</div>
             <div className="navRoadContainer">
                 <div className="road-container"/>
                 <div className="frameNavigation">
@@ -98,9 +97,10 @@ const AppsTest = (props) => {
     return (
         <div>
             <div className="appTestContainer">
-                
+            <div className="headingText">CISSA FIRST YEAR GUIDE</div>
                 <div ref={scrl} className="appTest">
-                    <div className="stars-container"/>
+                
+                    <div className="starsContainer"/>
                     {PageList.map(elem => <AppFrame content={elem} frameWidth={windowWidth} slidingFunc={slide} />)}
                 </div>
             </div>

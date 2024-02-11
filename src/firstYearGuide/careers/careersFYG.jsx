@@ -2,9 +2,9 @@ import '../assets/css/careersFYG.css'
 
 const careersFYG = (props) => {
     return (
-        <div className='careers-container'>
+        <div className='careersContainer'>
         </div>
     )
 }
 
-export default careersFYG;git remot
+export default careersFYG;

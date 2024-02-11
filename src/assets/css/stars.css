@@ -1,4 +1,4 @@
-.stars-container {
+.starsContainer {
     width: 100%;
     height: 700px;  /* change this later according to sky height */
     object-fit: contain; /* Ensure the image inside the container follows the same rules */

@@ -6,7 +6,7 @@ import "../../assets/css/components/stars.css";
 const Stars = () => {
     return (
         <div>
-            <div className="stars-container">
+            <div className="starsContainer">
                 <img src={StarsImage} alt="Stars" className="stars"/>
             </div>
         </div>

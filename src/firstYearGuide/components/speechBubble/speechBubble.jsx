@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import '../../assets/css/components/speech-bubble.css'
+import '../../assets/css/components/speechBubble.css'
 
 const PIXEL_SIZE = 10
 const WINDOW_GAP = 20
@@ -11,7 +11,7 @@ export default function SpeechBubble ({
   width,
   maxWidth = 300,
   height,
-  maxHeight,
+  maxHeight,                    
   onClick,
   children 
 }) {
