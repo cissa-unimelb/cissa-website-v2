@@ -2,8 +2,10 @@ import '../assets/css/socialFYG.css'
 import mobile_Alan_Gilbert from "../assets/images/mobile-Alan-Gilbert.png"
 import mobile_Alan_Gilbert2x from "../assets/images/mobile-Alan-Gilbert@2x.png"
 
+
 import { useEffect, useRef, useState} from 'react';
 import PopupButton from '../components/popup/popupButton.jsx';
+
 
 
 const socialFYG = (props) => {
@@ -23,7 +25,12 @@ const socialFYG = (props) => {
 
 
     return (
-        <div className='socialContainer'>
+
+        <div>
+            {/* Text container */}
+            <div className='socialHeading'>SOCIAL</div>
+
+
             <img 
                 src={mobile_Alan_Gilbert}
                 ref={div} 
