@@ -5,15 +5,20 @@ import mobile_Alan_Gilbert2x from "../assets/images/mobile-Alan-Gilbert@2x.png"
 import { useEffect, useRef, useState} from 'react';
 import PopupButton from '../components/popup/popupButton.jsx';
 
+
 const socialFYG = (props) => {
     const div = useRef(null);
     const [baseAnchor, setAnchor] = useState({x: 0, y: 0, width: 0, height: 0});
 
-    useEffect(() => {
+    const setBaseAnchor = () => {
         const rect = div.current.getBoundingClientRect();
         let { x, y, width, height } = rect;
         x = x % (window.innerWidth);
         setAnchor({ x, y, width, height });
+    }
+
+    useEffect(() => {
+        setBaseAnchor();
     }, []);
 
 
@@ -29,7 +34,9 @@ const socialFYG = (props) => {
                     objectFit: 'overflow',
                     position: "absolute",
                     bottom: 0,
-                }} 
+                }}
+                
+                onLoad={setBaseAnchor}
             />
 
             <PopupButton 
