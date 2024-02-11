@@ -12,39 +12,41 @@ const socialFYG = (props) => {
     const div = useRef(null);
     const [baseAnchor, setAnchor] = useState({x: 0, y: 0, width: 0, height: 0});
 
-    const setBaseAnchor = () => {
-        const rect = div.current.getBoundingClientRect();
-        let { x, y, width, height } = rect;
-        x = x % (window.innerWidth);
-        setAnchor({ x, y, width, height });
+    const callback = () => {
+        const rect = div.current.getBoundingClientRect()
+        let { x, y, width, height } = rect
+        x = (x + window.globalScroll) % window.innerWidth
+        y = y % window.innerHeight
+        setAnchor({ x, y, width, height })
+        // console.log(x, y, width, height)
+        // console.log(window.globalScroll)
+        // console.log(x)
+        // console.log(rect)
     }
-
-    useEffect(() => {
-        setBaseAnchor();
-    }, []);
 
 
     return (
-
-        <div>
-            {/* Text container */}
+        <div className='socialContainer'>
             <div className='socialHeading'>SOCIAL</div>
 
+            <div className='imgWrapper'>
+                <img 
+                    src={mobile_Alan_Gilbert}
+                    ref={div} 
+                    alt="Alan Gilbert"
+                    style={{
+                        marginBottom: "9vh",
+                        width: '100vw',
+                        maxWidth: '500px',
+                        objectFit: 'overflow',
+                    }}
+                    
+                    onLoad={callback}
+                />
+            </div>
+            
 
-            <img 
-                src={mobile_Alan_Gilbert}
-                ref={div} 
-                alt="Alan Gilbert"
-                style={{
-                    marginBottom: "10%",
-                    width: '100vw',
-                    objectFit: 'overflow',
-                    position: "absolute",
-                    bottom: 0,
-                }}
-                
-                onLoad={setBaseAnchor}
-            />
+            
 
             <PopupButton 
                 text="Making friends" 
