@@ -1,3 +1,4 @@
+
 .socialContainer {
     position: relative;
     top: 0;
@@ -15,3 +16,32 @@
 .popup {
     z-index: 101;
 }
+
+@font-face {
+    font-family: 'Good Times';
+    src: url('../fonts/Good Times.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+.socialHeading {
+    position: absolute;
+    top: 10vh;
+
+    height: 5vh;
+    width: 100vw;
+
+    flex-shrink: 0;
+
+    color: #21D8D8;
+    text-align: center;
+    font-family: 'Good Times';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    z-index: 2;
+}
+
