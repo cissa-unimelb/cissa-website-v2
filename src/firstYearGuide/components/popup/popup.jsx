@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import '../../assets/css/components/popup.css'
 
-export default function Popup ({ children, width=500, height=600, show, toggle }) {
+export default function Popup ({ children, width=500, maxHeight=500, show, toggle }) {
   const popupRef = useRef(null)
 
   function clickCallback (event) {
@@ -25,8 +25,8 @@ export default function Popup ({ children, width=500, height=600, show, toggle }
       className="popup" 
       style={{
         width,
-        height,
         visibility: show ? 'visible' : 'hidden',
+        '--max-height':  maxHeight + 'px'
       }}
     >
       <div className="popup__inner">

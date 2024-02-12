@@ -1,21 +1,22 @@
 .popup {
-  --pixel-size: 5px;
+  --pixel-size: 6px;
   --bg-color: #21D8D8;
   --border-color: #FFF;
   --text-color: #000;
-  --padding: 30px 40px;
-  --gap: 30px;
+  --padding: 10px 15px;
+  --gap: 10px;
+  --max-height: 300px;
+  --window-gap: 20px;
+  --bullet-size: 5px;
   
   position: fixed;
-  /* width: 500px; */
-  /* height: 600px; */
   max-width: 100%;
   max-height: 100%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  padding: 20px;
-  z-index: 10;
+  padding: var(--window-gap);
+  z-index: 101;
 }
 
 .popup__inner {
@@ -53,10 +54,52 @@
   flex-direction: column;
   gap: var(--gap);
   width: 100%;
-  height: 100%;
+  height: max-content;
+  max-height: min(var(--max-height), calc(100svh - 2 * var(--window-gap)));
   border: var(--pixel-size) solid var(--border-color);
   background: var(--bg-color);
   color: var(--text-color);
   padding: var(--padding);
   overflow: scroll;
+}
+
+.popup__content * {
+  margin: 0
+}
+
+.popup__content h1,
+.popup__content h2,
+.popup__content h3,
+.popup__content h4,
+.popup__content h5,
+.popup__content h6 {
+  font-family: 'Good Times';
+  font-size: 1.2rem;
+  line-height: 1.5em;
+}
+
+.popup__content a {
+  color: black !important;
+  text-decoration: underline;
+}
+
+.popup__content ul {
+  margin-left: -8px;
+}
+
+li {
+  list-style-type: none;
+  position: relative;    /* It's needed for setting position to absolute in the next rule. */
+}
+
+li::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: var(--bullet-size);
+  height: var(--bullet-size);
+  background: black;
+  border-radius: 100%;
+  top: calc((1.5em - var(--bullet-size)) / 2);
+  left: calc(-1 * (var(--bullet-size) + 10px));
 }
