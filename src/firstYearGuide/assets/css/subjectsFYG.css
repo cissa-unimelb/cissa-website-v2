@@ -1,0 +1,48 @@
+.subject-fyg {
+  --building-width: 160px;
+  --bench-width: 60px;
+  --bench-offset: calc(50vw - var(--building-width) / 2 - var(--bench-width) - 10px);
+  --lamp-width: 60px;
+  --lamp-offset: calc(var(--bench-offset) - var(--lamp-width) * 0.65);
+  --moon-size: 50px;
+  --moon-offset: calc(50vw - var(--building-width) / 2 - var(--moon-size) - 20px);
+
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  z-index: 50;
+  pointer-events: none;
+}
+
+.subject-fyg__heading {
+  top: calc(1em + 40px);
+  z-index: 101;
+}
+
+.subject-fyg__building {
+  position: absolute;
+  width: var(--building-width);
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.subject-fyg__lamp-post {
+  position: absolute;
+  width: 60px;
+  left: var(--lamp-offset);
+}
+
+.subject-fyg__bench {
+  position: absolute;
+  width: 60px;
+  left: var(--bench-offset);
+}
+
+.subject-fyg__moon-container {
+  position: absolute;
+  width: var(--moon-size);
+  height: var(--moon-size);
+  top: 80px;
+  left: var(--moon-offset);
+}
