@@ -33,9 +33,11 @@ const subjectsFYG = (props) => {
 
 	return (
 		<div>
-			<div className="headingText subject-fyg__heading">SUBJECTS</div>
+			{/* <div className="headingText subject-fyg__heading">SUBJECTS</div> */}
 
 			<div className="subject-fyg">
+				<div className="headingText subject-fyg__heading">SUBJECTS</div>
+				
 				{/* Boom */}
 				<div className="subject-fyg__moon-container">
 					<Moon />
