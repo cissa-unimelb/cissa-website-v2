@@ -1,6 +1,8 @@
 import '../assets/css/activitiesFYG.css';
 import mobile_ANZ from "../assets/images/mobile-ANZ.png";
 import mobile_ANZ2x from "../assets/images/mobile-ANZ@2x.png";
+import LampPost from '../assets/images/components/mobile-lamp-post@2x.png'
+import Tree from '../assets/images/components/mobile-tree@2x.png'
 
 import { useEffect, useRef, useState} from 'react';
 import PopupButton from '../components/popup/popupButton.jsx';
@@ -33,7 +35,7 @@ const activitiesFYG = (props) => {
                     ref={div} 
                     alt="ANZ"
                     style={{
-                        marginBottom: "9vh",
+                        marginBottom: "9vh",    // offset to appear above road
                         width: '100vw',
                         maxWidth: '150px',      // scaled to fit ANZ
                         objectFit: 'overflow',
@@ -41,6 +43,19 @@ const activitiesFYG = (props) => {
                     
                     onLoad={callback}
                 />
+
+                {/* Lamp Post */}
+                <img className="activities-fyg__lamp-post" src={LampPost} style={{
+					// bottom: roadOffset + 'px'
+                    marginBottom: "9vh"
+				}}/>
+
+				{/* Tree */}
+				<img className="activities-fyg__tree" src={Tree} style={{
+					// bottom: roadOffset + 'px'
+                    marginBottom: "9vh"
+				}}/>
+                
             </div>
 
             {/* Speech bubbles and pop ups */}

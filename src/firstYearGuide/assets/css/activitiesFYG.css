@@ -1,9 +1,15 @@
 .activitiesContainer {
+    --building-width: 160px;
+    --tree-width: 60px;
+    --tree-offset: calc(50vw + var(--building-width) / 2 - 20px);
+    --lamp-width: 60px;
+    --lamp-offset: calc(50vw - var(--building-width) / 2 - var(--lamp-width) + 10px);
+
     position: relative;
     top: 0;
     left: 0;
 
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -13,6 +19,18 @@
     justify-content: center;
     width: 100%;
     height: 100%;
+}
+
+.activities-fyg__lamp-post {
+    position: absolute;
+    width: 60px;
+    left: var(--lamp-offset);
+}
+  
+.activities-fyg__tree {
+    position: absolute;
+    width: 60px;
+    left: var(--tree-offset);
 }
 
 .activitiesHeading {
