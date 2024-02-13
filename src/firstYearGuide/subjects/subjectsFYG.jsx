@@ -12,9 +12,6 @@ const subjectsFYG = (props) => {
 	const [anchor, setAnchor] = useState({})
 
 	useEffect(() => {
-		const appFrame = document.querySelector('.appTest')
-		const frameHeight = appFrame.getBoundingClientRect().height
-
 		// Calculate road offset
 		const road = document.querySelector('.navRoadContainer')
 		const roadRect = road.getBoundingClientRect()
@@ -24,7 +21,7 @@ const subjectsFYG = (props) => {
 			const buildingRect = buildingRef.current.getBoundingClientRect()
 			let { x, y, width, height } = buildingRect
 			x = (x + window.globalScroll) % window.innerWidth
-			y = y % frameHeight
+			y = y % window.innerHeight
 			setAnchor({ x, y, width, height })
 		}
 
