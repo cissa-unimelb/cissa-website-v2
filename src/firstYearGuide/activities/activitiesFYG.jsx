@@ -42,6 +42,35 @@ const activitiesFYG = (props) => {
                     onLoad={callback}
                 />
             </div>
+
+            {/* Speech bubbles and pop ups */}
+
+			<PopupButton text="FOOD OPTIONS" speechBubble={{
+                anchor: [
+					baseAnchor.x + baseAnchor.width * 0.5,
+					baseAnchor.y + baseAnchor.height * 0.2
+				],
+            }}>
+			
+			</PopupButton>
+
+            <PopupButton text="ENTERTAINMENT" speechBubble={{
+                anchor: [
+					baseAnchor.x + baseAnchor.width * 0.15,
+					baseAnchor.y + baseAnchor.height * 0.45
+				],
+            }}>
+			
+			</PopupButton>
+
+            <PopupButton text="PLACES TO VISIT" speechBubble={{
+                anchor: [
+					baseAnchor.x + baseAnchor.width * 0.65,
+					baseAnchor.y + baseAnchor.height * 0.65
+				],
+            }}>
+			
+			</PopupButton>
         </div>
     )
 }
