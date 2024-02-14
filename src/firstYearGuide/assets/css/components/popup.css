@@ -1,23 +1,50 @@
+@font-face {
+  font-family: 'Good Times';
+  src: url('../fonts/Good Times.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins.ttf') format('truetype');
+}
+
+
 .popup {
-  --pixel-size: 5px;
+  --pixel-size: 15px;
   --bg-color: #21D8D8;
   --border-color: #FFF;
   --text-color: #000;
-  --padding: 30px 40px;
-  --gap: 30px;
+  --padding: 10px 20px;
+  --gap: 16px;
   
   position: fixed;
-  /* width: 500px; */
+  width: 500px;
   /* height: 600px; */
   max-width: 100%;
   max-height: 100%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  padding: 20px;
+  padding: 25px;
   z-index: 10;
 }
 
+.popup__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  width: 100%;
+  /* height: 100%; */
+  /* border: var(--pixel-size) solid var(--border-color); */
+  /* border-bottom: var(--pixel-size) solid var(--border-color);
+  border-top: var(--pixel-size) solid var(--border-color);
+  border-right: var(--pixel-size) solid var(--border-color);
+  border-left: var(--pixel-size) solid var(--border-color); */
+  background: var(--bg-color);
+  color: var(--text-color);
+  padding: var(--padding);
+  overflow: scroll;
+}
 .popup__inner {
   position: relative;
   height: 100%;
@@ -28,10 +55,10 @@
   content: '';
   position: absolute;
   width: calc(100% + var(--pixel-size) * 2);
-  height: 100%;
-  top: 0;
+  height: 104%;
+  top: -2%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) ;
   background: var(--border-color);
   z-index: -1;
 }
@@ -39,24 +66,27 @@
 .popup__inner::after {
   content: '';
   position: absolute;
-  width: 100%;
+  width: 104%;
   height: calc(100% + var(--pixel-size) * 2);
   top: 50%;
-  left: 0;
+  left: -2%;
   transform: translateY(-50%);
   background: var(--border-color);
   z-index: -1;
 }
 
-.popup__content {
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap);
-  width: 100%;
-  height: 100%;
-  border: var(--pixel-size) solid var(--border-color);
-  background: var(--bg-color);
-  color: var(--text-color);
-  padding: var(--padding);
-  overflow: scroll;
+
+.popup__content h3 {
+  font-family: 'Good Times';
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+.popup__content p {
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
 }

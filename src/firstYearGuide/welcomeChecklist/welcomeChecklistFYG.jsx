@@ -1,34 +1,104 @@
 import '../assets/css/welcomeChecklistFYG.css'
-import Moon from '../components/moon/moon';
+import BuildingImage from '../assets/images/mobile-jane-st@2x.png';
 import PopupButton from '../components/popup/popupButton';
+import { useEffect, useRef, useState } from 'react'
+
 
 // This is the welcome checklist section which sits inside an app frame
 const welcomeChecklistFYG = (props) => {
+	const div = useRef(null)
+	const [baseAnchor, setAnchor] = useState([])
+
+	const callback = () => {
+		const rect = div.current.getBoundingClientRect()
+		let { x, y, width, height } = rect
+		x = (x + window.globalScroll) % window.innerWidth
+		y = y % window.innerHeight
+		setAnchor({ x, y, width, height })
+		console.log(x, y, width, height)
+		console.log(window.globalScroll)
+		// console.log(rect)
+	}
+
+	useEffect(() => {
+		// callback();
+		// window.addEventListener('load', callback)
+		// return () => window.removeEventListener('load', callback)
+	}, [])
+
     return (
         // store everything to return in appropriate container
-        <div className="welcome-container">
-            {/* add necessary components/ images/ content */}
-            <div>
-                Hello
-            </div>
-            {/* when adding common component wrap in container then specify position */}
-            <div className='moon-container'>
-                <Moon />
-            </div>
-            
-            <div>
-				<PopupButton 
-					text="Please click on this bubble." 
-					speechBubble={{
-						anchor: [200, 300],
-                        width: 174,
-                        height: 60
-					}}
-				>
-					<h3>Where is the quick brown fox?</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</PopupButton>
+        <div className='welcomeChecklistFYGContainer'>
+			<div className="janeStreetBuilding">
+				<img ref={div} src={BuildingImage} className='building' onLoad={callback}></img>
 			</div>
+
+			<PopupButton
+			text="ALL STUDENTS" 
+			speechBubble={{
+				anchor: [baseAnchor.x + baseAnchor.width*0.5, baseAnchor.y + baseAnchor.height*0.15],
+				bound: false
+			}}
+			
+			
+
+			>
+				<h3>ALL STUDENTS</h3>
+				<p> 1. Accept Offer<br/>
+					2. Order your student card<br/>
+					3. Check your fees<br/>
+					4. Compulsory module: Academic Integrity<br/>
+					5. Plan your courses and create a timetable<br/>
+					6. Join CISSA (and other student clubs and societies if you want)
+				</p>
+
+			</PopupButton>
+
+			<PopupButton
+			text="INTERNATIONAL STUDENTS" 
+			speechBubble={{
+				anchor: [baseAnchor.x + baseAnchor.width*0.2, baseAnchor.y + baseAnchor.height*0.45],
+				bound: false
+			}}
+			>
+				<h3>International Students</h3>
+				<p>
+					<ul>
+						<li><a href="https://students.unimelb.edu.au/student-support/international-student-support/visas/applying-for-a-student-visa?in_c=sinfo-NSC%7Csource=students%7Cmedium=button">Organise your travel documents</a></li>
+						<li><a href="https://students.unimelb.edu.au/student-support/international-student-support/visas/applying-for-a-student-visa?in_c=sinfo-NSC%7Csource=students%7Cmedium=button">Finalise your Visa process</a></li>
+						<li><a href="https://students.unimelb.edu.au/new-students/new-student-checklist/international-student-checklist/book-your-flights?in_c=sinfo-NSC%7Csource=students%7Cmedium=button">Book your flights</a></li>
+						<li><a href="https://study.unimelb.edu.au/accommodation?in_c=sinfo-NSC%7Csource=students%7Cmedium=button">Find accommodation</a></li>
+						<li><a href="https://students.unimelb.edu.au/new-students/new-student-checklist/international-student-checklist/international-student-welcome?in_c=sinfo-NSC%7Csource=students%7Cmedium=button">Watch international student webinars</a></li>
+						<li><a href="https://students.unimelb.edu.au/new-students/new-student-checklist/international-student-checklist/international-student-welcome?in_c=sinfo-NSC%7Csource=students%7Cmedium=button">Learn about Melbourne, local culture and what to expect.</a></li>
+						<li><a href="https://students.unimelb.edu.au/new-students/new-student-checklist/international-student-checklist/setting-up-a-bank-account?in_c=sinfo-NSC%7Csource=students%7Cmedium=button">Open an Australian bank account before you depart.</a></li>
+						<li><a href="https://students.unimelb.edu.au/new-students/new-student-checklist/international-student-checklist/what-to-bring-to-australia?in_c=sinfo-NSC%7Csource=students%7Cmedium=button">Pack your bags</a></li>
+						<li><a href="https://students.unimelb.edu.au/new-students/new-student-checklist/international-student-checklist/get-set-up-in-melbourne?in_c=sinfo-NSC%7Csource=students%7Cmedium=button">Get set up in Melbourne</a></li>
+					</ul>
+				</p>
+			</PopupButton>
+
+			<PopupButton
+			text="UMSU SUPPORT" 
+			speechBubble={{
+				anchor: [baseAnchor.x + baseAnchor.width*0.7, baseAnchor.y + baseAnchor.height*0.9],
+				bound: false,
+				align: 'right'
+			}}
+			>
+				<h3>Student Support</h3>
+				<p>
+					<ul>
+						<li><a href="https://students.unimelb.edu.au/student-support/advice-and-help/stop-1">Stop 1 - general hub</a></li>
+						<li><a href="https://psychologicalsciences.unimelb.edu.au/psychology-clinic/home">Counselling and Psychological Services (CAPS)</a></li>
+						<li><a href="https://services.unimelb.edu.au/health/make-an-appointmentealth-service">University Health Service</a></li>
+						<li><a href="https://students.unimelb.edu.au/student-support/scholarships-and-financial-support/financial-aid">Financial Aid</a></li>
+						<li><a href="https://study.unimelb.edu.au/accommodation">Accommodation</a></li>
+						<li><a href="https://students.unimelb.edu.au/student-support/health-and-wellbeing/faith-and-spirituality">Faith and Spiritual Care</a></li>
+						<li><a href="https://umsu.unimelb.edu.au/support/help-advice/">UMSU Support</a></li>
+						<li><a href="https://umsu.unimelb.edu.au/support/legal/">UMSU Legal Services</a></li>
+					</ul>
+				</p>
+			</PopupButton>
         </div>
     )
 }

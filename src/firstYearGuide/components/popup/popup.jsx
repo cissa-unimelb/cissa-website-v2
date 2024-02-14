@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import '../../assets/css/components/popup.css'
 
-export default function Popup ({ children, width=500, height=600, show, toggle }) {
+export default function Popup ({ children, width, height, show, toggle }) {
   const popupRef = useRef(null)
 
   function clickCallback (event) {

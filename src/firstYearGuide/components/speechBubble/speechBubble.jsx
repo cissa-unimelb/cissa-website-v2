@@ -13,7 +13,7 @@ export default function SpeechBubble ({
   height,
   maxHeight,                    
   onClick,
-  children 
+  children
 }) {
   const SBRef = useRef(null)
   const SBTailRef = useRef(null)
@@ -23,7 +23,7 @@ export default function SpeechBubble ({
   const [visible, setVisible] = useState(false)
 
   // Set how much the speech bubble should offset from the anchor point based on left/right alignment option
-  const offsetPercentage = align === 'left' ? 0.3 : 0.7
+  const offsetPercentage = align === 'left' ? 0.2 : 0.9
 
   useEffect(() => {
     let [x, y] = anchor
