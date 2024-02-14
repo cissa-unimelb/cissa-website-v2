@@ -1,6 +1,6 @@
 import '../assets/css/careersFYG.css'
-import mobile_Alan_Gilbert from "../assets/images/mobile-Alan-Gilbert.png"
-import mobile_Alan_Gilbert2x from "../assets/images/mobile-Alan-Gilbert@2x.png"
+import mobile_Student_Pavillion from "../assets/images/mobile-Student-Pavillion.png"
+import mobile_Student_Pavillion2x from "../assets/images/mobile-Student-Pavillion@2x.png"
 
 
 import { useEffect, useRef, useState} from 'react';
@@ -31,13 +31,13 @@ const careersFYG = (props) => {
 
             <div className='imgWrapper'>
                 <img 
-                    src={mobile_Alan_Gilbert}
+                    src={mobile_Student_Pavillion}
                     ref={buildingImg} 
                     alt="Alan Gilbert"
                     style={{
                         marginBottom: "9vh",
                         width: '100vw',
-                        maxWidth: '500px',
+                        maxWidth: '700px',
                         objectFit: 'overflow',
                     }}
                     
@@ -51,9 +51,9 @@ const careersFYG = (props) => {
             :
             <div> 
                 <PopupButton 
-                    text="Making friends" 
+                    text="Internship guide" 
                     speechBubble={{
-                        anchor: [baseAnchor.x + baseAnchor.width * 0.5, baseAnchor.y + baseAnchor.height * 0.15],
+                        anchor: [baseAnchor.x + baseAnchor.width * 0.4, baseAnchor.y + baseAnchor.height * 0.1],
                         maxWidth: 200,
                         //bound: false
                     }}
@@ -63,9 +63,9 @@ const careersFYG = (props) => {
                 </PopupButton>
 
                 <PopupButton 
-                    text="Group mates" 
+                    text="Extra curricular" 
                     speechBubble={{
-                        anchor: [baseAnchor.x + baseAnchor.width * 0.6, baseAnchor.y + baseAnchor.height * 0.5],
+                        anchor: [baseAnchor.x + baseAnchor.width * 0.7, baseAnchor.y + baseAnchor.height * 0.3],
                         maxWidth: 200,
                         //bound: false
                     }}
@@ -75,10 +75,22 @@ const careersFYG = (props) => {
                 </PopupButton>
 
                 <PopupButton 
-                    text="Event list" 
+                    text="Resume tips" 
                     speechBubble={{
-                        anchor: [baseAnchor.x + baseAnchor.width * 0.1, baseAnchor.y + baseAnchor.height * 0.8],
-                        maxWidth: 200,
+                        anchor: [baseAnchor.x + baseAnchor.width * 0.1, baseAnchor.y + baseAnchor.height * 0.5],
+                        maxWidth: 300,
+                        //bound: false
+                    }}
+                >
+                    <h3>Where is the quick brown fox?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </PopupButton>
+
+                <PopupButton 
+                    text="How to start" 
+                    speechBubble={{
+                        anchor: [baseAnchor.x + baseAnchor.width * 0.6, baseAnchor.y + baseAnchor.height * 0.8],
+                        maxWidth: 300,
                         //bound: false
                     }}
                 >
