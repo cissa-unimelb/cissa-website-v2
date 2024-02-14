@@ -2,6 +2,7 @@ import '../assets/css/careersFYG.css'
 import mobile_Student_Pavillion from "../assets/images/mobile-Student-Pavillion.png"
 import mobile_Student_Pavillion2x from "../assets/images/mobile-Student-Pavillion@2x.png"
 
+import bench from '../assets/images/components/mobile-bench@2x.png'
 
 import { useEffect, useRef, useState} from 'react';
 import PopupButton from '../components/popup/popupButton.jsx';
@@ -36,6 +37,7 @@ const careersFYG = (props) => {
         <div className='careersContainer'>
             <div className='careersHeading'>CAREERS</div>
 
+            {/* Building */}
             {/* Because of flex, the image size is determined by height + width */}
             {/* Might need to find some other way around. A bit scuff. */}
             <div className='imgWrapper'>
@@ -55,8 +57,20 @@ const careersFYG = (props) => {
                         onLoad={callback}
                     />
             </div>
-            
 
+            {/* Trees and bench */}
+            <img 
+                src={bench} 
+                alt="Bench"
+                style={{
+                    position: "absolute",
+                    left: 0,
+                    bottom: '7vh',
+                    zIndex: 4
+                }}
+            />
+            
+            {/* Speech bubble */}
             {baseAnchor.width == 0? 
             <></>
             :
