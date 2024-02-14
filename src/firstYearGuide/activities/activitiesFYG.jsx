@@ -36,9 +36,7 @@ const activitiesFYG = (props) => {
                     alt="ANZ"
                     style={{
                         marginBottom: "9vh",    // offset to appear above road
-                        width: '100vw',
-                        maxWidth: '150px',      // scaled to fit ANZ
-                        objectFit: 'overflow',
+                        height: '75vh',         // determines building size based on screen size
                     }}
                     
                     onLoad={callback}

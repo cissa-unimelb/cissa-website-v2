@@ -1,5 +1,5 @@
 .activitiesContainer {
-    --building-width: 160px;
+    --building-width: 150px;
     --tree-width: 60px;
     --tree-offset: calc(50vw + var(--building-width) / 2 - 20px);
     --lamp-width: 60px;
@@ -14,9 +14,7 @@
 }
 
 .imgWrapper {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    display: absolute;
     width: 100%;
     height: 100%;
 }
