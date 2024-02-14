@@ -13,7 +13,7 @@ const socialFYG = (props) => {
                 src={mobile_Alan_Gilbert} 
                 alt="Alan Gilbert"
                 style={{
-                    marginBottom: "10%",
+                    marginBottom: "16%",
                     width: '100vw',
                     objectFit: 'overflow',
                     position: "absolute",
