@@ -1,12 +1,12 @@
 import { useEffect, useRef } from 'react'
 import '../../assets/css/components/popup.css'
 
-export default function Popup ({ children, width=500, height=600, show, toggle }) {
-  const popupRef = useRef(null)
+export default function Popup ({ children, width=500, maxHeight=400, show, toggle }) {
+  const innerRef = useRef(null)
 
   function clickCallback (event) {
     // Hide when clicked outside of popup
-    if (show && !popupRef.current.contains(event.target)) {
+    if (show && !innerRef.current.contains(event.target)) {
       toggle(false)
     }
   }
@@ -20,16 +20,15 @@ export default function Popup ({ children, width=500, height=600, show, toggle }
   }, [show])
 
   return (
-    <div 
-      ref={popupRef}
+    <div
       className="popup" 
       style={{
         width,
-        height,
         visibility: show ? 'visible' : 'hidden',
+        '--max-height':  maxHeight + 'px'
       }}
     >
-      <div className="popup__inner">
+      <div ref={innerRef} className="popup__inner">
         <div className="popup__content">
           {children}
         </div>

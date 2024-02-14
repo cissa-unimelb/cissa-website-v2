@@ -1,13 +1,12 @@
 @font-face {
   font-family: 'Good Times';
-  src: url('../fonts/Good Times.ttf') format('truetype');
+  src: url('../../fonts/Good Times.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url('../fonts/Poppins.ttf') format('truetype');
+  src: url('../../fonts/Poppins.ttf') format('truetype');
 }
-
 
 .popup {
   --pixel-size: 15px;
@@ -76,6 +75,7 @@
 }
 
 
+
 .popup__content h3 {
   font-family: 'Good Times';
   font-size: 20px;
@@ -90,3 +90,40 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* .popup__content h1,
+.popup__content h2,
+.popup__content h3,
+.popup__content h4,
+.popup__content h5,
+.popup__content h6 {
+  font-family: 'Good Times';
+  font-size: 1.2rem;
+  line-height: 1.5em;
+}
+
+.popup__content a {
+  color: black !important;
+  text-decoration: underline;
+}
+
+.popup__content ul {
+  margin-left: -8px;
+}
+
+li {
+  list-style-type: none;
+  position: relative;    /* It's needed for setting position to absolute in the next rule. */
+/*}
+
+li::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: var(--bullet-size);
+  height: var(--bullet-size);
+  background: black;
+  border-radius: 100%;
+  top: calc((1.5em - var(--bullet-size)) / 2);
+  left: calc(-1 * (var(--bullet-size) + 10px));
+} */

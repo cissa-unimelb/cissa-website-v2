@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import '../../assets/css/components/speechBubble.css'
 
-const PIXEL_SIZE = 10
+const PIXEL_SIZE = 6
 const WINDOW_GAP = 20
 
 export default function SpeechBubble ({ 
@@ -13,7 +13,7 @@ export default function SpeechBubble ({
   height,
   maxHeight,                    
   onClick,
-  children 
+  children
 }) {
   const SBRef = useRef(null)
   const SBTailRef = useRef(null)
@@ -22,14 +22,18 @@ export default function SpeechBubble ({
   const [invertTail, setInvertTail] = useState(false)
   const [visible, setVisible] = useState(false)
 
+  // Uncomment to use percentage offset
   // Set how much the speech bubble should offset from the anchor point based on left/right alignment option
-  const offsetPercentage = align === 'left' ? 0.3 : 0.7
+  // const offsetPercentage = align === 'left' ? 0.2 : 0.8
 
   useEffect(() => {
     let [x, y] = anchor
     const SBRect = SBRef.current.getBoundingClientRect()
     const SBTailRect = SBTailRef.current.getBoundingClientRect()
-    const bubbleOffset = offsetPercentage * SBRect.width
+
+    // Uncomment to use percentage offset
+    // const bubbleOffset = offsetPercentage * SBRect.width
+    const bubbleOffset = align === 'left' ? 50 : SBRect.width - 50 // constant offset
 
     // Offset from anchor origin
     x -= bubbleOffset
