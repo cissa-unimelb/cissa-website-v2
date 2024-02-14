@@ -9,11 +9,12 @@
   --bg-color: #21D8D8;
   --border-color: #FFF;
   --text-color: #000;
-  --padding: 15px;
+  --padding: 10px 20px;
 
   position: absolute;
   width: max-content;
   height: max-content;
+  z-index: 100;
 
   /* Set padding so the overall width and height include pseudo elements */
   padding-top: var(--pixel-size);
@@ -61,6 +62,10 @@
   position: relative;
   margin: auto;
   z-index: 2;
+}
+
+.speech-bubble__content p {
+  font-size: 0.7rem;
 }
 
 .speech-bubble__content::before {

@@ -3,8 +3,11 @@
     src: url('../fonts/Good Times.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-  }
-  
+}
+
+body {
+    min-height: 100svh !important;
+}
 
 .appFrame {
     position: relative;
@@ -13,7 +16,7 @@
     flex-grow: 0;
 
     width: 100%;
-    height: 100vh;
+    height: 100svh;
 
     overflow: hidden;
 
@@ -107,7 +110,7 @@
     transition: transform 1s;
 
     width: 100%;
-    min-height: 100vh;
+    min-height: 100svh;
     height: auto;
 
     background-color: #171E28;
