@@ -29,6 +29,8 @@ const welcomeChecklistFYG = (props) => {
     return (
         // store everything to return in appropriate container
         <div className='welcomeChecklistFYGContainer'>
+			<div className='welcomeChecklistHeading'>WELCOME CHECKLIST</div>
+
 			<div className="janeStreetBuilding">
 				<img ref={div} src={BuildingImage} className='building' onLoad={callback}></img>
 			</div>
