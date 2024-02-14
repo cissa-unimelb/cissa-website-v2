@@ -1,5 +1,5 @@
 import "./assets/css/TestApp.css";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect} from "react";
 
 import ScrollButton from "./components/scrollButton/scrollButton";
 import PageList from "./pageList";
@@ -74,6 +74,9 @@ const AppFrame = (props) => {
 
 const AppsTest = (props) => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    // useEffect(() => {
+    //     window.globalScroll = scrl.current.scrollLeft;
+    // })
     let scrl = useRef(null);
 
     useEffect(() => {
@@ -104,7 +107,7 @@ const AppsTest = (props) => {
                 <div ref={scrl} className="appTest">
                 
                     <div className="starsContainer"/>
-                    {PageList.map(elem => <AppFrame content={elem} frameWidth={windowWidth} slidingFunc={slide} />)}
+                    {PageList.map(elem => <AppFrame content={elem} frameWidth={windowWidth} slidingFunc={slide}/>)}
                 </div>
             </div>
         </div>

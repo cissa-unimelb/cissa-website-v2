@@ -13,7 +13,7 @@ export default function SpeechBubble ({
   height,
   maxHeight,                    
   onClick,
-  children 
+  children
 }) {
   const SBRef = useRef(null)
   const SBTailRef = useRef(null)

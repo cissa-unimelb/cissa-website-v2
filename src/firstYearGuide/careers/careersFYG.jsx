@@ -47,8 +47,9 @@ const careersFYG = (props) => {
                             height: '50vh',
                             maxHeight: '500px',
                             maxWidth: '700px',
-                            marginBottom: "9vh",
+                            marginBottom: "7vh",
                             objectFit: 'overflow',
+                            zIndex: 3
                         }}
                         
                         onLoad={callback}

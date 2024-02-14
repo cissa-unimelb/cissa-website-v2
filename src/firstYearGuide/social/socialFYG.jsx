@@ -37,10 +37,11 @@ const socialFYG = (props) => {
                     ref={buildingImg} 
                     alt="Alan Gilbert"
                     style={{
-                        marginBottom: "9vh",
+                        marginBottom: "8vh",
                         width: '100vw',
                         maxWidth: '500px',
                         objectFit: 'overflow',
+                        zIndex: 3
                     }}
                     
                     onLoad={callback}
@@ -55,8 +56,9 @@ const socialFYG = (props) => {
                 <PopupButton 
                     text="Making friends" 
                     speechBubble={{
-                        anchor: [baseAnchor.x + baseAnchor.width * 0.5, baseAnchor.y + baseAnchor.height * 0.15],
+                        anchor: [baseAnchor.x + baseAnchor.width * 0.65, baseAnchor.y + baseAnchor.height * 0.17],
                         maxWidth: 200,
+                        align: 'right',
                         bound: false
                     }}
                 >
