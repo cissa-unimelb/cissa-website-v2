@@ -25,7 +25,7 @@ const interviewTipsFYGt = (props) => {
     return (
         <div>
             {/* Text container */}
-            <div className='subtitle'>Interview Tips</div>
+            <div className='interviewHeading'>Interview Tips</div>
 
             <img 
                 ref = {buildingImg}
@@ -56,14 +56,14 @@ const interviewTipsFYGt = (props) => {
             </PopupButton> */}
             
             <PopupButton 
-                text="Interview Tips" 
+                text="Interview Tips 1" 
                 speechBubble={{
                     anchor: [baseAnchor.x + baseAnchor.width * 0.2, baseAnchor.y + baseAnchor.height * 0.2],
                     maxWidth: 200,
                     //bound: false
                 }}
                 >
-                <h3>INTERVIEW TIPS</h3>
+                <h3>INTERVIEW TIPS 1</h3>
                 <ul>
                     <li>Elaborate on your answers but don’t rattle on</li>
                     <li>Display enthusiasm towards your work and don’t give the impression that you need a job for the money.</li>

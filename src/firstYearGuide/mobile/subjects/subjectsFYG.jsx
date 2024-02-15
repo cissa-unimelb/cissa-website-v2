@@ -70,14 +70,15 @@ const subjectsFYG = (props) => {
 					}}>
 						<h3>HOW TO COURSE PLAN</h3>
 						<ul>
-							<li>Use a <a href="#">course planner</a></li>
+							<li>Use a <a target='_blank' href="https://course-planner.unimelb.edu.au">course planner</a></li>
 							<li>Potential Pathways</li>
 							<li>Difficult Level</li>
-							<li>Search subject review on <a href="#">Reddit</a></li>
-							<li>Look up reviews on  <a href="#">StudentVIP</a></li>
+							<li>Search subject review on <a target='_blank' href="https://www.reddit.com/r/unimelb/">Reddit</a></li>
+							<li>Look up reviews on  <a target='_blank' href="https://studentvip.com.au/unimelb/subjects">StudentVIP</a></li>
 							<li>Network with students in upper years, get subject recommendations or study tips.</li>
 							<li>You don't know what you don't know!</li>
 						</ul>
+						
 					</PopupButton>
 
 					<PopupButton text="RESOURCES" speechBubble={{

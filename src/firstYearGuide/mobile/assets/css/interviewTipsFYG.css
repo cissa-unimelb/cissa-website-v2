@@ -1,11 +1,3 @@
-@font-face {
-    font-family: 'Good Times';
-    src: url('../fonts/Good Times.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-
 .interviewHeading {
     position: absolute;
     top: 10vh;
@@ -18,7 +10,7 @@
     color: #21D8D8;
     text-align: center;
     font-family: 'Good Times';
-    font-size: 30px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;

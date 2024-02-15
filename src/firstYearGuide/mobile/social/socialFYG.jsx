@@ -49,8 +49,6 @@ const socialFYG = (props) => {
                     
                     onLoad={callback}
                 />
-
-                {/* Trees */}
                 <img 
                     src={treeNight} 
                     alt="TreeNight"

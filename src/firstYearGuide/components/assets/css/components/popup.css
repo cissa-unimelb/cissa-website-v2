@@ -92,6 +92,20 @@
   font-style: normal;
 }
 
+.popup__content ul {
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.popup__content ol {
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* .popup__content h1,
 .popup__content h2,
 .popup__content h3,
