@@ -43,6 +43,19 @@ header h1 {
   font-weight: 800;
 }
 
+@media screen and (max-width: 768px) {
+  header {
+    padding-top: 5em;
+    padding-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+}
+
 .section-title {
   position: relative;
 }

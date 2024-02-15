@@ -1,0 +1,22 @@
+.scrollButton {
+    margin-left: 10%;
+    margin-right: 10%;
+
+    height: 100%;
+    width: 70px;
+
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: 3;
+}
+
+.scrollButtonLeft{
+    background-image: url('../../images/components/mobile-Arrow-left.svg');
+}
+
+.scrollButtonRight{
+    background-image: url('../../images/components/mobile-Arrow-right.svg');
+}

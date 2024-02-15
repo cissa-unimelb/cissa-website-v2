@@ -1,0 +1,9 @@
+.demo {
+  display: flex;
+  height: 100vh;
+  background: #171E28;
+}
+
+.toggle {
+  margin: auto;
+}
