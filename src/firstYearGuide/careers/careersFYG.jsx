@@ -16,7 +16,7 @@ const careersFYG = (props) => {
     const callback = () => {
         const rect = buildingImg.current.getBoundingClientRect()
         let { x, y, width, height } = rect
-        x = (x + window.globalScroll) % window.innerWidth
+        x = (Math.ceil(x + window.globalScroll)) % window.innerWidth
         y = y % window.innerHeight
 
         // For landscape object with overflow section (image not fit in frame)
