@@ -1,5 +1,6 @@
 import buildingCluster from "./assets/images/building_Cluster.png";
 import "./assets/css/desktopView.css";
+import Road from "../components/road/road";
 
 const DesktopView = (props) => {
     return(
@@ -9,12 +10,15 @@ const DesktopView = (props) => {
                     src={buildingCluster}
                     style={{
                         width: "100vw",
-                        maxWidth: '900px',
+                        maxWidth: '950px',
+                        zIndex: 3
                     }}
                 />
             </div>
             
-
+            <div className="desktopView__roadContainer">
+                <Road />
+            </div>
 
         </div>
     )
