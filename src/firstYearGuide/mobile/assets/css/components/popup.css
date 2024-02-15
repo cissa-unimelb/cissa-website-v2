@@ -44,6 +44,7 @@
   padding: var(--padding);
   overflow: scroll;
 }
+
 .popup__inner {
   position: relative;
   height: 100%;

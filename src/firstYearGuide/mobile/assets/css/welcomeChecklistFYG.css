@@ -44,20 +44,14 @@
 .building {
     position: absolute;
     width: 110vw;
-    max-width: 110vw;
+    max-width: 600px;
     height: auto;
     bottom: 8vh;
 }
 
 
 
-.speech-bubble {
-    z-index: 100
-}
 
-.popup {
-    z-index: 101 !important;
-}
 
 
 .popup__content ul {
@@ -67,8 +61,9 @@
   }
   
   .popup__content li {
-    /* Additional styling for list items if needed */
-    text-decoration: underline; /* This adds underline to list items */
+    /* Additional styling for list items if needed. 
+    This adds underline to list items */
+    /* text-decoration: underline;  */
   }
   
   .popup__content li a {
