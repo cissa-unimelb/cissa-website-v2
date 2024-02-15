@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import '../../assets/css/components/speechBubble.css'
+import '../assets/css/components/speechBubble.css'
 
 const PIXEL_SIZE = 6
 const WINDOW_GAP = 20

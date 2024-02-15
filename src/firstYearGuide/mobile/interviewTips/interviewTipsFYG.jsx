@@ -3,7 +3,7 @@ import '../assets/css/subtitle.css'
 import mobile_arts_west_night from "../assets/images/mobile-arts-west-night.png"
 import mobile_arts_west_night2x from "../assets/images/mobile-arts-west-night@2x.png"
 import { useRef, useEffect, useState } from 'react';
-import PopupButton from '../components/popup/popupButton';
+import PopupButton from '../../components/popup/popupButton';
 
 const interviewTipsFYGt = (props) => {
     const buildingImg = useRef(null)

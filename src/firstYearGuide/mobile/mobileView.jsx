@@ -1,7 +1,8 @@
 import "./assets/css/mobileView.css";
 import { useState, useRef, useEffect} from "react";
 
-import ScrollButton from "./components/scrollButton/scrollButton";
+import ScrollButton from "../components/scrollButton/scrollButton";
+import Road from "../components/road/road";
 import PageList from "./pageList";
 
 // Helper functions
@@ -56,7 +57,7 @@ const AppFrame = (props) => {
         <div className="appFrame" style={{ width: `${props.frameWidth}px` }}>
             <div>{props.content}</div>
             <div className="navRoadContainer">
-                <div className="road-container"/>
+                <Road />
                 <div className="frameNavigation">
                     <ScrollButton direction="Left" onClickFunc={() => {props.slidingFunc(-props.frameWidth)}} />
                     <ScrollButton direction="Right" onClickFunc={() => {props.slidingFunc(props.frameWidth)}} />

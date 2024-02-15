@@ -2,11 +2,11 @@ import '../assets/css/socialFYG.css'
 import mobile_Alan_Gilbert from "../assets/images/mobile-Alan-Gilbert.png"
 import mobile_Alan_Gilbert2x from "../assets/images/mobile-Alan-Gilbert@2x.png"
 
-import treeNight from "../assets/images/components/mobile-tree-night@2x.png"
+import treeNight from "../../components/assets/images/components/mobile-tree-night@2x.png"
 
 
 import { useEffect, useRef, useState} from 'react';
-import PopupButton from '../components/popup/popupButton.jsx';
+import PopupButton from '../../components/popup/popupButton.jsx';
 
 
 

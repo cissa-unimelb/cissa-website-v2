@@ -1,11 +1,11 @@
 import '../assets/css/activitiesFYG.css';
 import mobile_ANZ from "../assets/images/mobile-ANZ.png";
 import mobile_ANZ2x from "../assets/images/mobile-ANZ@2x.png";
-import LampPost from '../assets/images/components/mobile-lamp-post@2x.png'
-import Tree from '../assets/images/components/mobile-tree@2x.png'
+import LampPost from '../../components/assets/images/components/mobile-lamp-post@2x.png'
+import Tree from '../../components/assets/images/components/mobile-tree@2x.png'
 
 import { useEffect, useRef, useState} from 'react';
-import PopupButton from '../components/popup/popupButton.jsx';
+import PopupButton from '../../components/popup/popupButton.jsx';
 
 const activitiesFYG = (props) => {
     const div = useRef(null);
