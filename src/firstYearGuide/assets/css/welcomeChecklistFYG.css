@@ -44,20 +44,14 @@
 .building {
     position: absolute;
     width: 110vw;
-    max-width: 110vw;
+    max-width: 600px;
     height: auto;
     bottom: 8vh;
 }
 
 
 
-.speech-bubble {
-    z-index: 100
-}
 
-.popup {
-    z-index: 101 !important;
-}
 
 
 .popup__content ul {

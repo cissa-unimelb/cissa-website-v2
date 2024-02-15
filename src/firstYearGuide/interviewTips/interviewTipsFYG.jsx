@@ -6,22 +6,21 @@ import { useRef, useEffect, useState } from 'react';
 import PopupButton from '../components/popup/popupButton';
 
 const interviewTipsFYGt = (props) => {
-    const div = useRef(null)
-    const [baseAnchor, setAnchor] = useState([])
+    const buildingImg = useRef(null)
+    const [baseAnchor, setAnchor] = useState({x:0, y:0, width: 0, height: 0})
 
-    useEffect(() => {
-        setTimeout(() => {
-            const rect = div.current.getBoundingClientRect()
-            const { x, y, width, height } = rect
-            setAnchor({ x, y, width, height })
-            console.log(rect)
-        }, 100)
-        // const rect = div.current.getBoundingClientRect()
-        // const { x, y, width, height } = rect
-        // setAnchor({ x, y, width, height })
+    const callback = () => {
+        const rect = buildingImg.current.getBoundingClientRect()
+        let { x, y, width, height } = rect
+        x = (Math.ceil(x + window.globalScroll)) % window.innerWidth
+        y = y % window.innerHeight
+        setAnchor({ x, y, width, height })
+
+        console.log(x, y, width, height)
+        console.log(window.globalScroll)
+        // console.log(x)
         // console.log(rect)
-    }, [])
-
+    }
 
     return (
         <div>
@@ -29,16 +28,19 @@ const interviewTipsFYGt = (props) => {
             <div className='subtitle'>Interview Tips</div>
 
             <img 
-                ref = {div}
+                ref = {buildingImg}
                 src={mobile_arts_west_night2x} 
                 alt="Arts West"
                 style={{
-                    marginBottom: "16%",
-                    width: '100vw   ',
+                    marginBottom: "9vh",
+                    width: '100vw',
+                    maxWidth: '700px',
                     objectFit: 'overflow',
                     position: "absolute",
                     bottom: 0,
-                }} 
+                }}
+
+                onLoad={callback} 
             />
 
             {/* <PopupButton
