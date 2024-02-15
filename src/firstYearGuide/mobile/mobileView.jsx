@@ -1,4 +1,4 @@
-import "./assets/css/TestApp.css";
+import "./assets/css/mobileView.css";
 import { useState, useRef, useEffect} from "react";
 
 import ScrollButton from "./components/scrollButton/scrollButton";
@@ -72,7 +72,7 @@ const AppFrame = (props) => {
     It returns the frames, header and stars.
 */
 
-const AppsTest = (props) => {
+const MobileView = (props) => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     // useEffect(() => {
     //     window.globalScroll = scrl.current.scrollLeft;
@@ -115,4 +115,4 @@ const AppsTest = (props) => {
 }
 
 
-export default AppsTest;
+export default MobileView;
