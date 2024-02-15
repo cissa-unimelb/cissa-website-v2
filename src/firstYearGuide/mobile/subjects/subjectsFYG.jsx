@@ -1,10 +1,11 @@
 import '../assets/css/subjectsFYG.css'
 import MelbConenctBuilding from '../assets/images/mobile-Melb-Connect@2x.png'
-import LampPost from '../assets/images/components/mobile-lamp-post@2x.png'
-import Bench from '../assets/images/components/mobile-bench@2x.png'
+import LampPost from '../../components/assets/images/components/mobile-lamp-post@2x.png'
+import Bench from '../../components/assets/images/components/mobile-bench@2x.png'
 import { useState, useRef, useEffect } from 'react'
-import PopupButton from '../components/popup/popupButton'
-import Moon from '../components/moon/moon'
+
+import PopupButton from '../../components/popup/popupButton'
+import Moon from '../../components/moon/moon'
 
 const subjectsFYG = (props) => {
 	const [roadOffset, setRoadOffset] = useState('')

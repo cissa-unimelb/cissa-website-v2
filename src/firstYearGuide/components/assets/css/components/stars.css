@@ -1,0 +1,15 @@
+.starsContainer {
+    /* width: 600vw;
+    height: 20vh; */
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+    background-image: url("../../images/components/mobile-stars@2x.png");
+    background-size: contain;
+    background-repeat: repeat-x;
+
+    overflow: visible;
+
+    z-index: 1;
+}

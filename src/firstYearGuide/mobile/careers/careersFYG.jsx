@@ -2,10 +2,10 @@ import '../assets/css/careersFYG.css'
 import mobile_Student_Pavillion from "../assets/images/mobile-Student-Pavillion.png"
 import mobile_Student_Pavillion2x from "../assets/images/mobile-Student-Pavillion@2x.png"
 
-import bench from '../assets/images/components/mobile-bench@2x.png'
+import bench from '../../components/assets/images/components/mobile-bench@2x.png'
 
 import { useEffect, useRef, useState} from 'react';
-import PopupButton from '../components/popup/popupButton.jsx';
+import PopupButton from '../../components/popup/popupButton.jsx';
 
 
 

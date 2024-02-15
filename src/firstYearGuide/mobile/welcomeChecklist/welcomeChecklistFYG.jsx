@@ -1,6 +1,7 @@
 import '../assets/css/welcomeChecklistFYG.css'
 import BuildingImage from '../assets/images/mobile-jane-st@2x.png';
-import PopupButton from '../components/popup/popupButton';
+
+import PopupButton from '../../components/popup/popupButton';
 import { useEffect, useRef, useState } from 'react'
 
 
