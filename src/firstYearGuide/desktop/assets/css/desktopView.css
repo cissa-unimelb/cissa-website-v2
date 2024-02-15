@@ -22,14 +22,10 @@
     height: 14vh;
 }
 
-.desktopView__starContainer{
-    width: 100vw;
-    height: 20vh;
+.desktopView__moonContainer{
     position: absolute;
-    top: 5px;
-    left: 0;
-
-    overflow: visible;
-
-    z-index: 1;
+    top: 80px;
+    left: 50px;
+    width: 60px;
+    height: 60px;
 }

@@ -3,6 +3,7 @@ import { useState, useRef, useEffect} from "react";
 
 import ScrollButton from "../components/scrollButton/scrollButton";
 import Road from "../components/road/road";
+import Stars from "../components/stars/stars";
 import PageList from "./pageList";
 
 // Helper functions
@@ -108,6 +109,7 @@ const MobileView = (props) => {
                 <div ref={scrl} className="appTest">
                 
                     <div className="starsContainer"/>
+                    <Stars width="600vw" height="20svh"/>
                     {PageList.map(elem => <AppFrame content={elem} frameWidth={windowWidth} slidingFunc={slide}/>)}
                 </div>
             </div>

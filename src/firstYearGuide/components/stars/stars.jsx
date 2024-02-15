@@ -1,15 +1,17 @@
 
 import React from 'react';
-import StarsImage from "../../assets/images/components/mobile-stars@2x.png";
-import "../../assets/css/components/stars.css";
+import StarsImage from "../assets/images/components/mobile-stars@2x.png";
+import "../assets/css/components/stars.css";
 
-const Stars = () => {
+const Stars = (props) => {
     return (
-        <div>
-            <div className="starsContainer">
-                <img src={StarsImage} alt="Stars" className="stars"/>
-            </div>
-        </div>
+        <div 
+            className='starsContainer'
+            style={{
+                height: props.height,
+                width: props.width
+            }}
+        ></div>
     );
 };
 

@@ -1,8 +1,15 @@
-.stars {
-    width: 100%; /* Set the width of the container */
-    height: 100%; /* Set the height of the container */
-    overflow: hidden; /* Hide any overflowing content */
-  
-    /* Ensure the image scales without stretching */
-    object-fit: contain;
+.starsContainer {
+    /* width: 600vw;
+    height: 20vh; */
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+    background-image: url("../../images/components/mobile-stars@2x.png");
+    background-size: contain;
+    background-repeat: repeat-x;
+
+    overflow: visible;
+
+    z-index: 1;
 }
