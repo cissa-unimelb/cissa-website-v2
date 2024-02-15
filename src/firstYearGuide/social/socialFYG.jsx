@@ -2,6 +2,8 @@ import '../assets/css/socialFYG.css'
 import mobile_Alan_Gilbert from "../assets/images/mobile-Alan-Gilbert.png"
 import mobile_Alan_Gilbert2x from "../assets/images/mobile-Alan-Gilbert@2x.png"
 
+import treeNight from "../assets/images/components/mobile-tree-night@2x.png"
+
 
 import { useEffect, useRef, useState} from 'react';
 import PopupButton from '../components/popup/popupButton.jsx';
@@ -15,13 +17,14 @@ const socialFYG = (props) => {
     const callback = () => {
         const rect = buildingImg.current.getBoundingClientRect()
         let { x, y, width, height } = rect
-        x = (x + window.globalScroll) % window.innerWidth
+        x = (Math.ceil(x + window.globalScroll)) % window.innerWidth
         y = y % window.innerHeight
         setAnchor({ x, y, width, height })
-        console.log(x, y, width, height)
-        console.log(window.globalScroll)
-        console.log(window.innerHeight)
-        console.log(window.innerWidth)
+
+        // console.log(x, y, width, height)
+        // console.log(window.globalScroll)
+        // console.log(window.innerHeight)
+        // console.log(window.innerWidth)
         // console.log(x)
         // console.log(rect)
     }
@@ -46,6 +49,19 @@ const socialFYG = (props) => {
                     
                     onLoad={callback}
                 />
+
+                {/* Trees */}
+                <img 
+                    src={treeNight} 
+                    alt="TreeNight"
+                    style={{
+                        position: "absolute",
+                        left: baseAnchor.x + 0.8 * baseAnchor.width,
+                        width: '9svh',
+                        bottom: '7svh',
+                        zIndex: 4
+                    }}
+                />
             </div>
             
 
@@ -59,7 +75,7 @@ const socialFYG = (props) => {
                         anchor: [baseAnchor.x + baseAnchor.width * 0.65, baseAnchor.y + baseAnchor.height * 0.17],
                         maxWidth: 200,
                         align: 'right',
-                        bound: false
+                        // bound: false
                     }}
                 >
                     <h3>MAKING FRIENDS</h3>

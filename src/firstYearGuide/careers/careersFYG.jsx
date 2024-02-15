@@ -56,19 +56,20 @@ const careersFYG = (props) => {
                         
                         onLoad={callback}
                     />
-            </div>
 
-            {/* Trees and bench */}
-            <img 
-                src={bench} 
-                alt="Bench"
-                style={{
-                    position: "absolute",
-                    left: 0,
-                    bottom: '7vh',
-                    zIndex: 4
-                }}
-            />
+                    {/* Trees and bench */}
+                    <img 
+                        src={bench} 
+                        alt="Bench"
+                        style={{
+                            position: "absolute",
+                            left: baseAnchor.x,
+                            width: '8svh',
+                            bottom: '7vh',
+                            zIndex: 4
+                        }}
+                    />
+            </div>
             
             {/* Speech bubble */}
             {baseAnchor.width == 0? 
