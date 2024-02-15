@@ -25,12 +25,3 @@
 
     z-index: 2;
 }
-
-
-.speech-bubble {
-    z-index: 100
-}
-
-.popup {
-    z-index: 101 !important;
-}

@@ -94,12 +94,12 @@ const interviewTipsFYGt = (props) => {
                 }}>
                 <h3>INTERVIEW TIPS 2</h3>
                     <ul>
-                    <li>Prepare 2-3 questions</li>
-                    <li>Don’t ask about graduate opportunities or full-time offers. It is still too soon, secure the internship first then worry about grad roles.</li>
-                    <li>Don’t sound needy or demanding</li>
-                    <li>Don’t complain, e.g. you ask about current projects at the company and they don’t list any that interest you, in that case don’t say something like “I don’t like any of these. Do you have other stuff happening?”</li>
-                    <li>Don’t overcomplicate questions</li>
-                    <li>Think about what you want to get out of the internship. Interviewers like to know your goals.</li>
+                        <li>Prepare 2-3 questions</li>
+                        <li>Don’t ask about graduate opportunities or full-time offers. It is still too soon, secure the internship first then worry about grad roles.</li>
+                        <li>Don’t sound needy or demanding</li>
+                        <li>Don’t complain, e.g. you ask about current projects at the company and they don’t list any that interest you, in that case don’t say something like “I don’t like any of these. Do you have other stuff happening?”</li>
+                        <li>Don’t overcomplicate questions</li>
+                        <li>Think about what you want to get out of the internship. Interviewers like to know your goals.</li>
                     </ul>
             </PopupButton>
 

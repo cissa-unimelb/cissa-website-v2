@@ -124,3 +124,11 @@ body {
     z-index: 0;
 }
 
+
+.speech-bubble {
+    z-index: 100
+}
+
+.popup {
+    z-index: 101 !important;
+}
