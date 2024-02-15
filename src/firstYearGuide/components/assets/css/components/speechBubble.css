@@ -1,8 +1,7 @@
 @font-face {
   font-family: 'Good Times';
   src: url('../fonts/Good Times.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
+  
 }
 
 .speech-bubble {
@@ -25,6 +24,9 @@
 
   font-family: 'Good Times';
   font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+
 
   /* Debug */
   /* border: 1px solid red; */

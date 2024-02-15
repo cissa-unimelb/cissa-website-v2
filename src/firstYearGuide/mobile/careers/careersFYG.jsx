@@ -165,7 +165,7 @@ const careersFYG = (props) => {
                         <li>Join Startmate</li>
                         <li>Follow club listings for career messages</li>
                         <li>Make your own application tracker. 
-                            Here is a <a href="https://docs.google.com/spreadsheets/d/1g7ITVWLaG09YQWudSCBN9cvK7pVzo89BumZHMttrKtg/edit#gid=0">template</a>.</li>
+                            Here is a <a target= '_blank' href="https://docs.google.com/spreadsheets/d/1g7ITVWLaG09YQWudSCBN9cvK7pVzo89BumZHMttrKtg/edit#gid=0">template</a>.</li>
                         <li>Learn about things beyond the subject</li>
                         <li>Participate in education workshops and hackathons</li>
                         <li>Talk to Academic Advisors/Mentors/Stop 1</li>
