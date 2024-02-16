@@ -54,7 +54,7 @@ const careersFYG = (props) => {
                         alt="Alan Gilbert"
                         style={{
                             position: "absolute",
-                            height: '50vh',
+                            height: '50svh',
                             maxHeight: '500px',
                             maxWidth: '700px',
                             zIndex: 3,
@@ -72,7 +72,7 @@ const careersFYG = (props) => {
                             position: "absolute",
                             left: baseAnchor.x,
                             width: '8svh',
-                            bottom: '7vh',
+                            bottom: '7svh',
                             zIndex: 4
                         }}
                     />

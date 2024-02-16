@@ -52,7 +52,7 @@ const socialFYG = (props) => {
                         zIndex: 3,
                         bottom: roadOffset + 'px',
                         position: "absolute",
-                        height: '50vh',
+                        height: '50svh',
                         maxHeight: '500px',
                         maxWidth: '700px',
                         bottom: roadOffset + 'px'

@@ -25,10 +25,10 @@ body {
     
 .headingText {
     position: fixed;
-    top: 3vh;
+    top: 3svh;
 
     width: 100vw;
-    height: 5vh;
+    height: 5svh;
 
     flex-shrink: 0;
  
@@ -49,7 +49,7 @@ body {
     left: 0;
 
     width: 100%;
-    height: 9.3vh;
+    height: 9.3svh;
 }
 
 .frameNavigation {
@@ -71,7 +71,7 @@ body {
 
 .starsContainer {
     width: 600vw;
-    height: 20vh;
+    height: 20svh;
     position: absolute;
     top: 5px;
     left: 0;

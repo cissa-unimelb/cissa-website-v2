@@ -32,7 +32,7 @@ const interviewTipsFYGt = (props) => {
                 src={mobile_arts_west_night2x} 
                 alt="Arts West"
                 style={{
-                    marginBottom: "9vh",
+                    marginBottom: "9svh",
                     width: '100vw',
                     maxWidth: '700px',
                     objectFit: 'overflow',

@@ -35,8 +35,8 @@ const activitiesFYG = (props) => {
                     ref={div} 
                     alt="ANZ"
                     style={{
-                        marginBottom: "9vh",    // offset to appear above road
-                        height: '75vh',         // determines building size based on screen size
+                        marginBottom: "9svh",    // offset to appear above road
+                        height: '75svh',         // determines building size based on screen size
                     }}
                     
                     onLoad={callback}
@@ -45,13 +45,13 @@ const activitiesFYG = (props) => {
                 {/* Lamp Post */}
                 <img className="activities-fyg__lamp-post" src={LampPost} style={{
 					// bottom: roadOffset + 'px'
-                    marginBottom: "9vh"
+                    marginBottom: "9svh"
 				}}/>
 
 				{/* Tree */}
 				<img className="activities-fyg__tree" src={Tree} style={{
 					// bottom: roadOffset + 'px'
-                    marginBottom: "9vh"
+                    marginBottom: "9svh"
 				}}/>
                 
             </div>
