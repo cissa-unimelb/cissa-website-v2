@@ -1,0 +1,64 @@
+.subject-fyg {
+  --building-height: 75svh;
+  /* Calculate width based on aspect ratio */
+  --building-width: calc(75svh * 357 / 1260);
+  --bench-width: 8svh;
+  --bench-offset: calc(50vw - var(--building-width) / 2 - var(--bench-width) - 10px);
+  --lamp-width: 8svh;
+  --lamp-offset: calc(var(--bench-offset) - var(--lamp-width) * 0.65);
+  --moon-size: 50px;
+  --moon-offset: calc(50vw - var(--building-width) / 2 - var(--moon-size) - 20px);
+
+  position: relative;
+  width: 100vw;
+  height: 100svh;
+  z-index: 50;
+  pointer-events: none;
+}
+
+.subject-fyg__heading {
+  position: absolute;
+  top: 10svh;
+
+  height: 5svh;
+  width: 100vw;
+
+  flex-shrink: 0;
+
+  color: #21D8D8;
+  text-align: center;
+  font-family: 'Good Times';
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  z-index: 2;
+}
+
+.subject-fyg__building {
+  position: absolute;
+  height: var(--building-height);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.subject-fyg__lamp-post {
+  position: absolute;
+  width: var(--lamp-width);
+  left: var(--lamp-offset);
+}
+
+.subject-fyg__bench {
+  position: absolute;
+  width: var(--bench-width);
+  left: var(--bench-offset);
+}
+
+.subject-fyg__moon-container {
+  position: absolute;
+  width: var(--moon-size);
+  height: var(--moon-size);
+  top: 80px;
+  left: var(--moon-offset);
+}

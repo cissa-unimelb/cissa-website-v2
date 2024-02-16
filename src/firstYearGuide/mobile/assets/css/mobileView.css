@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'Good Times';
+    src: url('../fonts/Good Times.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    min-height: 100svh !important;
+}
+
+.appFrame {
+    position: relative;
+
+    flex-shrink: 0;
+    flex-grow: 0;
+
+    width: 100%;
+    height: 100svh;
+
+    overflow: hidden;
+
+    z-index: 1;
+}
+    
+.headingText {
+    position: fixed;
+    top: 3svh;
+
+    width: 100vw;
+    height: 5svh;
+
+    flex-shrink: 0;
+ 
+    color: #21D8D8;
+    text-align: center;
+    font-family: 'Good Times';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    z-index: 2;
+}
+
+.navRoadContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 9.3svh;
+}
+
+.frameNavigation {
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    z-index: 3;
+}
+
+
+
+.starsContainer {
+    width: 600vw;
+    height: 20svh;
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+    background-image: url("../../../components/assets/images/components/mobile-stars@2x.png");
+    background-size: contain;
+    background-repeat: repeat-x;
+
+    overflow: visible;
+
+    z-index: 1;
+}
+
+
+.appTest {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    transform: none;
+    transition: transform 1s;
+
+    width: 100%;
+    min-height: 100svh;
+    height: auto;
+
+    background-color: #171E28;
+
+    overflow: auto;
+
+    z-index: 0;
+}
+
+.appTestContainer {
+    z-index: 0;
+}
+
+
+.speech-bubble {
+    z-index: 100
+}
+
+.popup {
+    z-index: 101 !important;
+}

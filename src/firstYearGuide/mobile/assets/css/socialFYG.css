@@ -1,0 +1,48 @@
+
+.socialContainer {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100svh
+}
+
+
+.imgWrapper {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100vw;
+    height: 100svh;
+}
+
+@font-face {
+    font-family: 'Good Times';
+    src: url('../fonts/Good Times.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.socialHeading {
+    position: absolute;
+    top: 10svh;
+
+    height: 5svh;
+    width: 100vw;
+
+    flex-shrink: 0;
+
+    color: #21D8D8;
+    text-align: center;
+    font-family: 'Good Times';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    z-index: 2;
+}
+

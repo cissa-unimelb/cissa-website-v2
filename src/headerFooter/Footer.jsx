@@ -5,6 +5,11 @@ import { FaXTwitter } from 'react-icons/fa6'
 import Icon from './Icon'
 
 export default function Footer () {
+  //if on FYG page do not render
+  if (window.location.href.includes('first-year-guide')) {
+    return null
+  }
+
   return (
     <footer>
       <div className='footer__content'>
