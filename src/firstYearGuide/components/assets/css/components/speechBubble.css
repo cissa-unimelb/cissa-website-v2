@@ -13,7 +13,7 @@
   position: absolute;
   width: max-content;
   height: max-content;
-  z-index: 100;
+  z-index: 100 !important;
 
   /* Set padding so the overall width and height include pseudo elements */
   padding-top: var(--pixel-size);
