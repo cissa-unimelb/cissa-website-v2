@@ -117,3 +117,7 @@ body {
 .popup {
     z-index: 101 !important;
 }
+
+.popup__inner{
+    z-index: 102 !important;
+}

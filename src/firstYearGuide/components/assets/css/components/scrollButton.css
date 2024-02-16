@@ -3,11 +3,13 @@
     margin-right: 10%;
 
     height: 100%;
-    width: 70px;
+    width: 100%;
+    max-width: 70px;
 
     border: none;
     background-color: transparent;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 
     z-index: 3;
