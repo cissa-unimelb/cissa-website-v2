@@ -22,7 +22,10 @@ const subjectsFYG = (props) => {
 			const buildingRect = buildingRef.current.getBoundingClientRect()
 			let { x, y, width, height } = buildingRect
 			x = (x + window.globalScroll) % window.innerWidth
-			y = y % window.innerHeight
+			// y = y % window.innerHeight
+			const appFrame = document.querySelector('.appFrame')
+			const appFrameRect = appFrame.getBoundingClientRect()
+			y = y % appFrameRect.height
 			setAnchor({ x, y, width, height })
 		}
 
