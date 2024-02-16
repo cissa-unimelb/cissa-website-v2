@@ -54,9 +54,11 @@ const scrollCalculation = (windowWidth, curScrlPosition, shift, minPost, maxPost
     It returns the road and scroller buttons.
 */
 const AppFrame = (props) => {
+    var appFrameRef = useRef(null);
+
     return (
-        <div className="appFrame" style={{ width: `${props.frameWidth}px` }}>
-            <div>{props.content}</div>
+        <div ref={appFrameRef} className="appFrame" style={{ width: `${props.frameWidth}px` }}>
+            <div><props.content appFrameRef={appFrameRef}/></div>
             <div className="navRoadContainer">
                 <Road />
                 <div className="frameNavigation">

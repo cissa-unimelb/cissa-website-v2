@@ -62,7 +62,6 @@ const socialFYG = (props) => {
                         height: '50svh',
                         maxHeight: '500px',
                         maxWidth: '700px',
-                        bottom: roadOffset + 'px'
                     }}
                     
                     onLoad={callback}
@@ -91,6 +90,7 @@ const socialFYG = (props) => {
                         anchor: [baseAnchor.x + baseAnchor.width * 0.65, baseAnchor.y + baseAnchor.height * 0.17],
                         maxWidth: 200,
                         align: 'right',
+                        appFrameRef: props.appFrameRef
                         // bound: false
                     }}
                 >
@@ -116,6 +116,7 @@ const socialFYG = (props) => {
                     speechBubble={{
                         anchor: [baseAnchor.x + baseAnchor.width * 0.6, baseAnchor.y + baseAnchor.height * 0.5],
                         maxWidth: 200,
+                        appFrameRef: props.appFrameRef
                         //bound: false
                     }}
                 >
@@ -135,6 +136,7 @@ const socialFYG = (props) => {
                     speechBubble={{
                         anchor: [baseAnchor.x + baseAnchor.width * 0.1, baseAnchor.y + baseAnchor.height * 0.8],
                         maxWidth: 200,
+                        appFrameRef: props.appFrameRef
                         //bound: false
                     }}
                 >
