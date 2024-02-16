@@ -20,6 +20,13 @@ const socialFYG = (props) => {
 		const road = document.querySelector('.navRoadContainer')
 		const roadRect = road.getBoundingClientRect()
 		setRoadOffset(roadRect.height - 15)
+
+        const id = setInterval(() => {
+			if (buildingImg.current.y) {
+				callback()
+				clearInterval(id)
+			}
+		}, 50)
     }, [])
 
     const callback = () => {
