@@ -32,20 +32,18 @@
 
 .janeStreetBuilding {
     position: relative;
-    width: 110vw;
-    max-width: 110vw;
+    width: 100vw;
+    max-width: 100vw;
     height: 100vh;
     z-index: 3;
-
-    overflow: visible;
 }
 
 .building {
     position: absolute;
-    width: 110vw;
+    width: 100vw;
     max-width: 600px;
     height: auto;
-    bottom: 8vh;
+
 }
 
 

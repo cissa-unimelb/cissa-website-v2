@@ -10,8 +10,15 @@ import PopupButton from '../../components/popup/popupButton.jsx';
 
 
 const careersFYG = (props) => {
+    const [roadOffset, setRoadOffset] = useState('')
     const buildingImg = useRef(null);
     const [baseAnchor, setAnchor] = useState({x: 0, y: 0, width: 0, height: 0});
+
+    useEffect(() => {
+        const road = document.querySelector('.navRoadContainer')
+		const roadRect = road.getBoundingClientRect()
+		setRoadOffset(roadRect.height - 20)
+    }, [])
 
     const callback = () => {
         const rect = buildingImg.current.getBoundingClientRect()
@@ -41,17 +48,17 @@ const careersFYG = (props) => {
             {/* Because of flex, the image size is determined by height + width */}
             {/* Might need to find some other way around. A bit scuff. */}
             <div className='imgWrapper'>
-                    <img 
+                    <img
                         src={mobile_Student_Pavillion}
                         ref={buildingImg} 
                         alt="Alan Gilbert"
                         style={{
+                            position: "absolute",
                             height: '50vh',
                             maxHeight: '500px',
                             maxWidth: '700px',
-                            marginBottom: "7vh",
-                            objectFit: 'overflow',
-                            zIndex: 3
+                            zIndex: 3,
+                            bottom: roadOffset + 'px'
                         }}
                         
                         onLoad={callback}

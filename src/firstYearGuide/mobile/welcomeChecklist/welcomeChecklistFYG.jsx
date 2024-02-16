@@ -7,8 +7,16 @@ import { useEffect, useRef, useState } from 'react'
 
 // This is the welcome checklist section which sits inside an app frame
 const welcomeChecklistFYG = (props) => {
+	const [roadOffset, setRoadOffset] = useState('')
 	const div = useRef(null)
 	const [baseAnchor, setAnchor] = useState([])
+
+	useEffect(() => {
+		// Calculate road offset
+		const road = document.querySelector('.navRoadContainer')
+		const roadRect = road.getBoundingClientRect()
+		setRoadOffset(roadRect.height - 15)
+    }, [])
 
 	const callback = () => {
 		const rect = div.current.getBoundingClientRect()
@@ -33,7 +41,11 @@ const welcomeChecklistFYG = (props) => {
 			<div className='welcomeChecklistHeading'>WELCOME CHECKLIST</div>
 
 			<div className="janeStreetBuilding">
-				<img ref={div} src={BuildingImage} className='building' onLoad={callback}></img>
+				<img ref={div} src={BuildingImage} className='building' onLoad={callback}
+					style={{
+						bottom: roadOffset + 'px'
+					}}
+				/>
 			</div>
 
 			<PopupButton
@@ -42,9 +54,8 @@ const welcomeChecklistFYG = (props) => {
 				anchor: [baseAnchor.x + baseAnchor.width*0.5, baseAnchor.y + baseAnchor.height*0.15],
 				bound: false
 			}}
-			
-			
 
+			
 			>
 				<h3>ALL STUDENTS</h3>
 				<ol>

@@ -11,8 +11,16 @@ import PopupButton from '../../components/popup/popupButton.jsx';
 
 
 const socialFYG = (props) => {
+    const [roadOffset, setRoadOffset] = useState('')
     const buildingImg = useRef(null);
     const [baseAnchor, setAnchor] = useState({x: 0, y: 0, width: 0, height: 0});
+
+	useEffect(() => {
+		// Calculate road offset
+		const road = document.querySelector('.navRoadContainer')
+		const roadRect = road.getBoundingClientRect()
+		setRoadOffset(roadRect.height - 15)
+    }, [])
 
     const callback = () => {
         const rect = buildingImg.current.getBoundingClientRect()
@@ -40,11 +48,14 @@ const socialFYG = (props) => {
                     ref={buildingImg} 
                     alt="Alan Gilbert"
                     style={{
-                        marginBottom: "8vh",
                         width: '100vw',
-                        maxWidth: '500px',
-                        objectFit: 'overflow',
-                        zIndex: 3
+                        zIndex: 3,
+                        bottom: roadOffset + 'px',
+                        position: "absolute",
+                        height: '50vh',
+                        maxHeight: '500px',
+                        maxWidth: '700px',
+                        bottom: roadOffset + 'px'
                     }}
                     
                     onLoad={callback}
