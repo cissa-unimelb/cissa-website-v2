@@ -19,22 +19,24 @@ const subjectsFYG = (props) => {
 		setRoadOffset(roadRect.height - 15)
 
 		const callback = () => {
-			(() => {
-				const buildingRect = buildingRef.current.getBoundingClientRect()
-				let { x, y, width, height } = buildingRect
-				x = (x + window.globalScroll) % window.innerWidth
-				// y = y % window.innerHeight
-				const appFrame = document.querySelector('.appFrame')
-				const appFrameRect = appFrame.getBoundingClientRect()
-				y = y % appFrameRect.height
-				// alert(appFrameRect.height)
-				setAnchor({ x, y, width, height })
-			})()
+			const buildingRect = buildingRef.current.getBoundingClientRect()
+			let { x, y, width, height } = buildingRect
+			x = (x + window.globalScroll) % window.innerWidth
+			y = y % window.innerHeight
+			setAnchor({ x, y, width, height })
 		}
 
 		// Calculate the base anchor position for speech bubbles
 		const building = buildingRef.current
 		building.addEventListener('load', callback)
+
+		const id = setInterval(() => {
+			if (building.y) {
+				callback()
+				clearInterval(id)
+			}
+		}, 50)
+
 		return () => building.removeEventListener('load', callback)
 	}, [])
 
