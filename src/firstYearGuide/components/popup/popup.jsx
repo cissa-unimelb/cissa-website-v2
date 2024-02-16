@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import '../assets/css/components/popup.css'
 
 export default function Popup ({ children, width=500, maxHeight=400, show, toggle }) {
+  const popupRef = useRef(null)
   const innerRef = useRef(null)
 
   function clickCallback (event) {
@@ -12,6 +13,10 @@ export default function Popup ({ children, width=500, maxHeight=400, show, toggl
   }
 
   useEffect(() => {
+    // Bring the current app frame to the front
+    const frame = popupRef.current.closest(".appFrame")
+    frame.style.zIndex = show ? 1000 : 10
+
     // Use setTimeout to wait for the next React update cycle
     setTimeout(() => {
       window.addEventListener('click', clickCallback)
@@ -21,6 +26,7 @@ export default function Popup ({ children, width=500, maxHeight=400, show, toggl
 
   return (
     <div
+      ref={popupRef}
       className="popup" 
       style={{
         width,
