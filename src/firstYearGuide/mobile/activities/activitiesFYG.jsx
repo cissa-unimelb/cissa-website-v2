@@ -20,9 +20,15 @@ const activitiesFYG = (props) => {
     }
 
     useEffect(() => {
-		callback()
-		window.addEventListener('load', callback)
-		return () => window.removeEventListener('load', callback)
+        const id = setInterval(() => {
+			if (div.current.y) {
+				callback()
+				clearInterval(id)
+			}
+		}, 50)
+
+		div.current.addEventListener('load', callback)
+		return () => div.current.removeEventListener('load', callback)
 	}, [])
 
     return (

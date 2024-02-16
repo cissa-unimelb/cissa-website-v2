@@ -22,6 +22,15 @@ const interviewTipsFYGt = (props) => {
         // console.log(rect)
     }
 
+    useEffect(() => {
+        const id = setInterval(() => {
+			if (buildingImg.current.y) {
+				callback()
+				clearInterval(id)
+			}
+		}, 50)
+    }, [])
+
     return (
         <div>
             {/* Text container */}
