@@ -29,6 +29,14 @@ const subjectsFYG = (props) => {
 		// Calculate the base anchor position for speech bubbles
 		const building = buildingRef.current
 		building.addEventListener('load', callback)
+
+		const id = setInterval(() => {
+			if (building.y) {
+				callback()
+				clearInterval(id)
+			}
+		}, 50)
+
 		return () => building.removeEventListener('load', callback)
 	}, [])
 
