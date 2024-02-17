@@ -58,3 +58,8 @@
 
     z-index: 11;
 }
+
+/* Overwrite speech bubble padding for desktop */
+.speech-bubble{
+    --padding: 5px 5px;
+}

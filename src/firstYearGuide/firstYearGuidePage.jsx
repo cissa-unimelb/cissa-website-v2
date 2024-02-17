@@ -3,7 +3,7 @@ import MobileView from "./mobile/mobileView"
 
 const FirstYearGuidePage = (props) => {
     /* Check view port to display desktop or mobile view */
-    if (window.innerWidth > 750){
+    if (window.innerWidth >= 800){
         return <DesktopView />
     } else {
         return <MobileView />
