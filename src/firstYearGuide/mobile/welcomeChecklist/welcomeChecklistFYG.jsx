@@ -15,8 +15,15 @@ const welcomeChecklistFYG = (props) => {
 		// Calculate road offset
 		const road = document.querySelector('.navRoadContainer')
 		const roadRect = road.getBoundingClientRect()
-		setRoadOffset(roadRect.height - 15)
-    }, [])
+		setRoadOffset(roadRect.height - 10)
+
+		const id = setInterval(() => {
+			if (div.current.y) {
+				callback()
+				clearInterval(id)
+			}
+		}, 50)
+  }, [])
 
 	const callback = () => {
 		const rect = div.current.getBoundingClientRect()

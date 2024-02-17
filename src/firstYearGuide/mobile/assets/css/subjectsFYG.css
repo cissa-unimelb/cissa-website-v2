@@ -4,7 +4,7 @@
   --building-width: calc(75svh * 357 / 1260);
   --bench-width: 8svh;
   --bench-offset: calc(50vw - var(--building-width) / 2 - var(--bench-width) - 10px);
-  --lamp-width: 8svh;
+  --lamp-width: 7svh;
   --lamp-offset: calc(var(--bench-offset) - var(--lamp-width) * 0.65);
   --moon-size: 50px;
   --moon-offset: calc(50vw - var(--building-width) / 2 - var(--moon-size) - 20px);

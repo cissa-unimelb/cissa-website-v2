@@ -2,7 +2,7 @@ import '../assets/css/activitiesFYG.css';
 import mobile_ANZ from "../assets/images/mobile-ANZ.png";
 import mobile_ANZ2x from "../assets/images/mobile-ANZ@2x.png";
 import LampPost from '../../components/assets/images/components/mobile-lamp-post@2x.png'
-import Tree from '../../components/assets/images/components/mobile-tree@2x.png'
+import Tree from '../../components/assets/images/components/mobile-tree-night@2x.png'
 
 import { useEffect, useRef, useState} from 'react';
 import PopupButton from '../../components/popup/popupButton.jsx';
@@ -20,9 +20,15 @@ const activitiesFYG = (props) => {
     }
 
     useEffect(() => {
-		callback()
-		window.addEventListener('load', callback)
-		return () => window.removeEventListener('load', callback)
+        const id = setInterval(() => {
+			if (div.current.y) {
+				callback()
+				clearInterval(id)
+			}
+		}, 50)
+
+		div.current.addEventListener('load', callback)
+		return () => div.current.removeEventListener('load', callback)
 	}, [])
 
     return (
@@ -157,8 +163,8 @@ const activitiesFYG = (props) => {
             <ul>
                 <li>
                     <a href="https://maps.app.goo.gl/R6xYev3wqRargS3a9" target="_blank">
-                        National Gallery of Victoria
-                    </a> (NGV)
+                        National Gallery of Victoria (NGV)
+                    </a>
                 </li>
                 <li>
                     <a href="https://maps.app.goo.gl/3YfYbYPuMSCtU9fY9" target="_blank">

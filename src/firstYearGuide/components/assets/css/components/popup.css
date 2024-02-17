@@ -20,12 +20,12 @@
   width: 500px;
   /* height: 600px; */
   max-width: 100%;
-  max-height: 100%;
+  /* max-height: 100%; */
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   padding: 25px;
-  z-index: 10;
+  z-index: 101 !important;
 }
 
 .popup__content {
@@ -33,6 +33,7 @@
   flex-direction: column;
   gap: var(--gap);
   width: 100%;
+  max-height: 400px;
   /* height: 100%; */
   /* border: var(--pixel-size) solid var(--border-color); */
   /* border-bottom: var(--pixel-size) solid var(--border-color);

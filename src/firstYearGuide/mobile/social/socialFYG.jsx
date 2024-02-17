@@ -20,6 +20,13 @@ const socialFYG = (props) => {
 		const road = document.querySelector('.navRoadContainer')
 		const roadRect = road.getBoundingClientRect()
 		setRoadOffset(roadRect.height - 15)
+
+        const id = setInterval(() => {
+			if (buildingImg.current.y) {
+				callback()
+				clearInterval(id)
+			}
+		}, 50)
     }, [])
 
     const callback = () => {
@@ -55,7 +62,6 @@ const socialFYG = (props) => {
                         height: '50svh',
                         maxHeight: '500px',
                         maxWidth: '700px',
-                        bottom: roadOffset + 'px'
                     }}
                     
                     onLoad={callback}
@@ -84,7 +90,6 @@ const socialFYG = (props) => {
                         anchor: [baseAnchor.x + baseAnchor.width * 0.65, baseAnchor.y + baseAnchor.height * 0.17],
                         maxWidth: 200,
                         align: 'right',
-                        // bound: false
                     }}
                 >
                     <h3>MAKING FRIENDS</h3>
@@ -109,7 +114,6 @@ const socialFYG = (props) => {
                     speechBubble={{
                         anchor: [baseAnchor.x + baseAnchor.width * 0.6, baseAnchor.y + baseAnchor.height * 0.5],
                         maxWidth: 200,
-                        //bound: false
                     }}
                 >
                     <h3>GROUP MATES</h3>
@@ -128,7 +132,6 @@ const socialFYG = (props) => {
                     speechBubble={{
                         anchor: [baseAnchor.x + baseAnchor.width * 0.1, baseAnchor.y + baseAnchor.height * 0.8],
                         maxWidth: 200,
-                        //bound: false
                     }}
                 >
                     <h3>EVENTS</h3>

@@ -6,7 +6,7 @@ import Icon from './Icon'
 
 export default function Footer () {
   //if on FYG page do not render
-  if (window.location.href.includes('first-year-guide')) {
+  if (window.location.href.includes('first-year-guide') || window.location.href.includes('nfc')) {
     return null
   }
 

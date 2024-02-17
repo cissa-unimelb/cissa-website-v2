@@ -36,6 +36,13 @@ const scrollCalculation = (windowWidth, curScrlPosition, shift, minPost, maxPost
         
     }
 
+    // Create loop effect
+    if (resultPost > maxPost){
+        resultPost = 0;
+    } else if (resultPost < minPost){
+        resultPost = maxPost;
+    }
+
     // Keep the position in range
     resultPost = Math.min(resultPost, maxPost);
     resultPost = Math.max(resultPost, minPost);
@@ -56,7 +63,7 @@ const scrollCalculation = (windowWidth, curScrlPosition, shift, minPost, maxPost
 const AppFrame = (props) => {
     return (
         <div className="appFrame" style={{ width: `${props.frameWidth}px` }}>
-            <div>{props.content}</div>
+            <div><props.content /></div>
             <div className="navRoadContainer">
                 <Road />
                 <div className="frameNavigation">

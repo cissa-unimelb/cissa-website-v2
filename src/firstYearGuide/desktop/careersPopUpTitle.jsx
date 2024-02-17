@@ -1,99 +1,25 @@
-import '../assets/css/careersFYG.css'
-import mobile_Student_Pavillion from "../assets/images/mobile-Student-Pavillion.png"
-import mobile_Student_Pavillion2x from "../assets/images/mobile-Student-Pavillion@2x.png"
+import PopupButton from "../components/popup/popupButton";
 
-import bench from '../../components/assets/images/components/mobile-bench@2x.png'
-
-import { useEffect, useRef, useState} from 'react';
-import PopupButton from '../../components/popup/popupButton.jsx';
-
-
-
-const careersFYG = (props) => {
-    const [roadOffset, setRoadOffset] = useState('')
-    const buildingImg = useRef(null);
-    const [baseAnchor, setAnchor] = useState({x: 0, y: 0, width: 0, height: 0});
-
-    useEffect(() => {
-        const road = document.querySelector('.navRoadContainer')
-		const roadRect = road.getBoundingClientRect()
-		setRoadOffset(roadRect.height - 25)
-
-        const id = setInterval(() => {
-			if (buildingImg.current.y) {
-				callback()
-				clearInterval(id)
-			}
-		}, 50)
-    }, [])
-
-    const callback = () => {
-        const rect = buildingImg.current.getBoundingClientRect()
-        let { x, y, width, height } = rect
-        x = (Math.ceil(x + window.globalScroll)) % window.innerWidth
-        y = y % window.innerHeight
-
-        // For landscape object with overflow section (image not fit in frame)
-        if (width > window.innerWidth){
-            x = 0;
-            width = window.innerWidth;
-        }
-
-        setAnchor({ x, y, width, height })
-        // console.log(x, y, width, height)
-        // console.log(window.globalScroll)
-        // console.log(x)
-        // console.log(rect)
-    }
-
-
-    return (
-        <div className='careersContainer'>
-            <div className='careersHeading'>CAREERS</div>
-
-            {/* Building */}
-            {/* Because of flex, the image size is determined by height + width */}
-            {/* Might need to find some other way around. A bit scuff. */}
-            <div className='imgWrapper'>
-                    <img
-                        src={mobile_Student_Pavillion}
-                        ref={buildingImg} 
-                        alt="Alan Gilbert"
-                        style={{
-                            position: "absolute",
-                            height: '50svh',
-                            maxHeight: '500px',
-                            maxWidth: '700px',
-                            zIndex: 3,
-                            bottom: roadOffset + 'px'
-                        }}
-                        
-                        onLoad={callback}
-                    />
-
-                    {/* Trees and bench */}
-                    <img 
-                        src={bench} 
-                        alt="Bench"
-                        style={{
-                            position: "absolute",
-                            left: baseAnchor.x,
-                            width: '8svh',
-                            bottom: '7svh',
-                            zIndex: 4
-                        }}
-                    />
+const CareersPopupTitle = (props) => {
+    var baseAnchor = props.baseAnchor;
+    var windowWidth = Math.min(window.innerWidth, 1000);
+    var subtitleSize = windowWidth/65;
+    return(
+        <div>
+            <div 
+                className="desktopView__subtitle"
+                style={{
+                    top: `${baseAnchor.y + baseAnchor.height * 0.59}px`,
+                    left: `${baseAnchor.x + baseAnchor.width * 0.24}px`,
+                    fontSize: `${subtitleSize}px`,
+                }}>
+                CAREERS
             </div>
-            
-            {/* Speech bubble */}
-            {baseAnchor.width == 0? 
-            <></>
-            :
-            <div> 
-                <PopupButton 
+
+            <PopupButton 
                     text="Internship guide" 
                     speechBubble={{
-                        anchor: [baseAnchor.x + baseAnchor.width * 0.4, baseAnchor.y + baseAnchor.height * 0.1],
+                        anchor: [baseAnchor.x + baseAnchor.width * 0.1, baseAnchor.y + baseAnchor.height * 0.86],
                         maxWidth: 200,
                         //bound: false
                     }}
@@ -115,8 +41,9 @@ const careersFYG = (props) => {
                 <PopupButton 
                     text="Extra curricular" 
                     speechBubble={{
-                        anchor: [baseAnchor.x + baseAnchor.width * 0.7, baseAnchor.y + baseAnchor.height * 0.4],
-                        maxWidth: 200,
+                        anchor: [baseAnchor.x + baseAnchor.width * 0.4, baseAnchor.y + baseAnchor.height * 0.8],
+                        maxWidth: 150,
+                        align: 'right'
                         //bound: false
                     }}
                 >
@@ -144,8 +71,9 @@ const careersFYG = (props) => {
                 <PopupButton 
                     text="Resume tips" 
                     speechBubble={{
-                        anchor: [baseAnchor.x + baseAnchor.width * 0.1, baseAnchor.y + baseAnchor.height * 0.6],
+                        anchor: [baseAnchor.x + baseAnchor.width * 0.1, baseAnchor.y + baseAnchor.height * 0.7],
                         maxWidth: 300,
+                        align: 'right'
                         //bound: false
                     }}
                 >
@@ -168,7 +96,7 @@ const careersFYG = (props) => {
                 <PopupButton 
                     text="How to start" 
                     speechBubble={{
-                        anchor: [baseAnchor.x + baseAnchor.width * 0.6, baseAnchor.y + baseAnchor.height * 0.9],
+                        anchor: [baseAnchor.x + baseAnchor.width * 0.3, baseAnchor.y + baseAnchor.height * 0.95],
                         maxWidth: 300,
                         //bound: false
                     }}
@@ -185,11 +113,8 @@ const careersFYG = (props) => {
                         <li>Attend Tech talks/Panels/Industry Connect</li>
                     </ul>
                 </PopupButton>
-            </div>
-            }
-
         </div>
     )
 }
 
-export default careersFYG;
+export default CareersPopupTitle;

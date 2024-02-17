@@ -7,7 +7,7 @@ import PropTypes from 'prop-types'
 function Header ({ mobileBreakpoint }) {
 
   //if on FYG page do not render
-  if (window.location.href.includes('first-year-guide')) {
+  if (window.location.href.includes('first-year-guide') || window.location.href.includes('nfc')) {
     return null
   }
 
