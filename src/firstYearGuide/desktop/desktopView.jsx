@@ -4,6 +4,8 @@ import Road from "../components/road/road";
 import Stars from "../components/stars/stars"
 import Moon from "../components/moon/moon";
 
+import SocialPopUpTitle from "./socialPopUpTitle";
+
 import {useRef, useState} from 'react'
 
 const DesktopView = (props) => {
@@ -15,32 +17,25 @@ const DesktopView = (props) => {
 
         const rect = buildingImg.current.getBoundingClientRect()
         let { x, y, width, height } = rect
-        x = (Math.ceil(x + window.globalScroll)) % window.innerWidth
+        x = (Math.ceil(x)) % window.innerWidth
         y = y % window.innerHeight
 
-        // For landscape object with overflow section (image not fit in frame)
-        // or image spanning entire width
-        if (width > window.innerWidth || Math.abs(width - window.innerWidth) < EPSILON){
-            x = 0;
-            width = window.innerWidth;
-        }
-
         setAnchor({ x, y, width, height })
-        console.log(x, y, width, height)
+        // console.log(x, y, width, height)
+        // console.log(rect)
         // console.log(window.globalScroll)
         // console.log(x)
-        // console.log(rect)
     }
 
     return(
-        <div className="desktopView">
+        <div className="desktopView appFrame">
             <div className="desktopView__buildingWrapper">
                 <img
                     ref={buildingImg} 
                     src={buildingCluster}
                     style={{
                         width: "100vw",
-                        maxWidth: '1100px',
+                        maxWidth: '1000px',
                         zIndex: 3
                     }}
 
@@ -59,6 +54,15 @@ const DesktopView = (props) => {
             <div className="desktopView__moonContainer">
                 <Moon />
             </div>
+
+            {baseAnchor.width == 0? 
+            <></>
+            :
+            
+            // Social
+            <SocialPopUpTitle baseAnchor={baseAnchor} />
+            
+            }
 
         </div>
     )
