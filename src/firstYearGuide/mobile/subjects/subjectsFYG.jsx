@@ -80,7 +80,7 @@ const subjectsFYG = (props) => {
 						<ul>
 							<li>Use a <a target='_blank' href="https://course-planner.unimelb.edu.au">course planner</a></li>
 							<li>Potential Pathways</li>
-							<li>Difficult Level</li>
+							<li>Difficulty Level</li>
 							<li>Search subject review on <a target='_blank' href="https://www.reddit.com/r/unimelb/">Reddit</a></li>
 							<li>Look up reviews on  <a target='_blank' href="https://studentvip.com.au/unimelb/subjects">StudentVIP</a></li>
 							<li>Network with students in upper years, get subject recommendations or study tips.</li>
@@ -148,7 +148,7 @@ const subjectsFYG = (props) => {
 								</ul>
 							</li>
 							<li>Don't underestimate an assignment from the specs. START EARLY!</li>
-							<li>Don't avoid your lecturers. You paid to learn so don't be afraid of them.</li>
+							<li>Don't avoid your lecturers. You paid to learn from them so don't be afraid of them.</li>
 						</ul>
 					</PopupButton>
 
