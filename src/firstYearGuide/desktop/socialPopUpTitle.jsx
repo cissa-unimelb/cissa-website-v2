@@ -2,13 +2,17 @@ import PopupButton from "../components/popup/popupButton";
 
 const SocialPopUpTitle = (props) => {
     var baseAnchor = props.baseAnchor;
+    var windowWidth = Math.min(window.innerWidth, 1000);
+    var subtitleSize = windowWidth/65;
+
     return(
         <div>
             <div 
                 className="desktopView__subtitle"
                 style={{
                     top: `${baseAnchor.y + baseAnchor.height * 0.49}px`,
-                    left: `${baseAnchor.x + baseAnchor.width * 0.9}px`,
+                    left: `${baseAnchor.x + baseAnchor.width * 0.92}px`,
+                    fontSize: `${subtitleSize}px`,
                 }}>
                 SOCIAL
             </div>

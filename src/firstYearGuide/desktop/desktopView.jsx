@@ -5,6 +5,7 @@ import Stars from "../components/stars/stars"
 import Moon from "../components/moon/moon";
 
 import SocialPopUpTitle from "./socialPopUpTitle";
+import CareersPopupTitle from "./careersPopUpTitle";
 
 import {useRef, useState} from 'react'
 
@@ -21,7 +22,7 @@ const DesktopView = (props) => {
         y = y % window.innerHeight
 
         setAnchor({ x, y, width, height })
-        // console.log(x, y, width, height)
+        console.log(x, y, width, height)
         // console.log(rect)
         // console.log(window.globalScroll)
         // console.log(x)
@@ -58,10 +59,13 @@ const DesktopView = (props) => {
             {baseAnchor.width == 0? 
             <></>
             :
-            
-            // Social
-            <SocialPopUpTitle baseAnchor={baseAnchor} />
-            
+            <div>
+               {/* Social */}
+                <SocialPopUpTitle baseAnchor={baseAnchor} />
+
+                {/* Careers */}
+                <CareersPopupTitle baseAnchor={baseAnchor}/>
+            </div>
             }
 
         </div>
