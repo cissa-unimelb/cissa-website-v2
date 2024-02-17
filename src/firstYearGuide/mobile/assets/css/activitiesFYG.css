@@ -1,8 +1,8 @@
 .activitiesContainer {
     --building-width: 150px;
-    --tree-width: 100px;
+    --tree-width: 9svh;
     --tree-offset: calc(50vw + var(--building-width) / 2 - 10px);
-    --lamp-width: 60px;
+    --lamp-width: 7svh;
     --lamp-offset: calc(50vw - var(--building-width) / 2 - var(--lamp-width) + 10px);
 
     position: relative;

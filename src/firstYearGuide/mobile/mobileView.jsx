@@ -36,6 +36,13 @@ const scrollCalculation = (windowWidth, curScrlPosition, shift, minPost, maxPost
         
     }
 
+    // Create loop effect
+    if (resultPost > maxPost){
+        resultPost = 0;
+    } else if (resultPost < minPost){
+        resultPost = maxPost;
+    }
+
     // Keep the position in range
     resultPost = Math.min(resultPost, maxPost);
     resultPost = Math.max(resultPost, minPost);

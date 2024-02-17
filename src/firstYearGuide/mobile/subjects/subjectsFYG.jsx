@@ -148,7 +148,7 @@ const subjectsFYG = (props) => {
 								</ul>
 							</li>
 							<li>Don't underestimate an assignment from the specs. START EARLY!</li>
-							<li>Don't avoid your lecturers. You paid to learn from them so don't be afraid of them.</li>
+							<li>Don't avoid your lecturers. You paid to learn from them so don't be avoid of them.</li>
 						</ul>
 					</PopupButton>
 

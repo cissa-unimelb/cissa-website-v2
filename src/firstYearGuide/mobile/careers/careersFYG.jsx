@@ -17,7 +17,7 @@ const careersFYG = (props) => {
     useEffect(() => {
         const road = document.querySelector('.navRoadContainer')
 		const roadRect = road.getBoundingClientRect()
-		setRoadOffset(roadRect.height - 20)
+		setRoadOffset(roadRect.height - 25)
 
         const id = setInterval(() => {
 			if (buildingImg.current.y) {
