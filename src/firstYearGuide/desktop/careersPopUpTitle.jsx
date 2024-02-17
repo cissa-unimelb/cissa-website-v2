@@ -32,7 +32,6 @@ const CareersPopupTitle = (props) => {
                             <li>Apply to as many as you can, some students worry about getting multiple offers then having to reject one… Better than not getting any offers.</li>
                             <li>Write your resume early, and get it proofread by at least 2 people.</li>
                         </ul>
-                        <li>Write your resume early, and get it proofread by at least 2 people.</li>
                         <li>Do hackathons: show employers that you are technically capable</li>
                         <li>Aiming for big tech: start doing leetcode at the end of your first year</li>
                         <li>Student organisations</li>
@@ -56,7 +55,7 @@ const CareersPopupTitle = (props) => {
                             <li>Good for jobs</li>
                             <li>Forcing yourself to learn how a complete product gets built, 
                                 think about the 4 stages of any project: analysis, design, 
-                                development and evaluation, and goes on in each stage. </li>
+                                development and evaluation, and what goes on in each stage. </li>
                             <li>IT project</li>
                             <li>Many of CISSA members got their first job by winning/participating in CISSA hackathon</li>
                         </ul>
