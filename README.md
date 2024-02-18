@@ -1,11 +1,11 @@
-# CISSA WEBSITE V2 - Currently Dev
+# CISSA WEBSITE V2
 ## Overview:
-Re-structuring CISSA website
+Welcome to the official repository of the new [CISSA website](https://cissa.org.au).
 1. Framework/ Language: ReactJS, HTML, CSS
 2. Build tool: Vite
 ## Branches:
 1. Master
-2. Dev: Active
+2. Dev
 ## Command:
 1. Run dev local:
 ```bash

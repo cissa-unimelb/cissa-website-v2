@@ -5,10 +5,13 @@ import Stars from "../components/stars/stars"
 import Moon from "../components/moon/moon";
 
 import SocialPopUpTitle from "./socialPopUpTitle";
-import CareersPopUpTitle from "./careersPopUpTitle";
 import SubjectsPopUpTitle from "./subjectsPopUpTitle";
 import WelcomeChecklistPopUpTitle from "./welcomeChecklistPopUpTitle";
 import InterviewTipsPopUpTitle from "./interviewTipsPopUpTitle";
+import CareersPopupTitle from "./careersPopUpTitle";
+import ActivitiesPopUpTitle from "./activitiesPopUpTitle";
+
+// Add activities
 
 import {useRef, useState} from 'react'
 
@@ -40,7 +43,7 @@ const DesktopView = (props) => {
                     style={{
                         width: "100vw",
                         maxWidth: '1000px',
-                        zIndex: 3
+                        zIndex: 3,
                     }}
 
                     onLoad={callback}
@@ -59,25 +62,28 @@ const DesktopView = (props) => {
                 <Moon />
             </div>
 
+            <div className="desktopView_headingText">CISSA FIRST YEAR GUIDE</div>
+
             {baseAnchor.width == 0? 
             <></>
             :
             <div>
-               {/* Social */}
+                {/* Social */}
                 <SocialPopUpTitle baseAnchor={baseAnchor} />
 
                 {/* Careers */}
-                <CareersPopUpTitle baseAnchor={baseAnchor}/>
+                <CareersPopupTitle baseAnchor={baseAnchor}/>
 
                 {/* Subjects */}
                 <SubjectsPopUpTitle baseAnchor={baseAnchor}/>
-                  
                 {/* Welcome Checklist */}
                 <WelcomeChecklistPopUpTitle baseAnchor={baseAnchor}/>
 
                 {/* Interview Tips */}
                 <InterviewTipsPopUpTitle baseAnchor={baseAnchor}/>
 
+                {/* Activities */}
+                <ActivitiesPopUpTitle baseAnchor={baseAnchor}/>
             </div>
             }
 
