@@ -14,8 +14,6 @@ import InterviewTipsPopUpTitle from "./interviewTipsPopUpTitle";
 import CareersPopupTitle from "./careersPopUpTitle";
 import ActivitiesPopUpTitle from "./activitiesPopUpTitle";
 
-// Add activities
-
 import {useRef, useState} from 'react'
 
 const DesktopView = (props) => {
@@ -106,8 +104,6 @@ const DesktopView = (props) => {
             <></>
             :
             <div>
-                {/* Lamp Post */}
-
                 {/* Social */}
                 <SocialPopUpTitle baseAnchor={baseAnchor} />
 
