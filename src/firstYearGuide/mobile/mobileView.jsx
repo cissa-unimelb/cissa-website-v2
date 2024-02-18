@@ -114,7 +114,7 @@ const MobileView = (props) => {
                 <div className="headingText">CISSA FIRST YEAR GUIDE</div>
 
                 {/* First year Camp Add */}
-                <a href="https://fb.me/e/1FDTIzzlL" target="_blank">
+                <a href="https://events.humanitix.com/orientation-camp-2024" target="_blank">
                     <div className="campAd">
                         CAMP
                     </div>
