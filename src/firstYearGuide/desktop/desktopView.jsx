@@ -5,9 +5,10 @@ import Stars from "../components/stars/stars"
 import Moon from "../components/moon/moon";
 
 import SocialPopUpTitle from "./socialPopUpTitle";
-import CareersPopupTitle from "./careersPopUpTitle";
-import WelcomeChecklistTitle from "./welcomeChecklistPopUpTitle";
-import InterviewTipsPopupTitle from "./interviewTipsPopUpTitle";
+import CareersPopUpTitle from "./careersPopUpTitle";
+import SubjectsPopUpTitle from "./subjectsPopUpTitle";
+import WelcomeChecklistPopUpTitle from "./welcomeChecklistPopUpTitle";
+import InterviewTipsPopUpTitle from "./interviewTipsPopUpTitle";
 
 import {useRef, useState} from 'react'
 
@@ -66,13 +67,17 @@ const DesktopView = (props) => {
                 <SocialPopUpTitle baseAnchor={baseAnchor} />
 
                 {/* Careers */}
-                <CareersPopupTitle baseAnchor={baseAnchor}/>
+                <CareersPopUpTitle baseAnchor={baseAnchor}/>
 
+                {/* Subjects */}
+                <SubjectsPopUpTile baseAnchor={baseAnchor}/>
+                  
                 {/* Welcome Checklist */}
-                <WelcomeChecklistTitle baseAnchor={baseAnchor}/>
+                <WelcomeChecklistPopUpTitle baseAnchor={baseAnchor}/>
 
                 {/* Interview Tips */}
-                <InterviewTipsPopupTitle baseAnchor={baseAnchor}/>
+                <InterviewTipsPopUpTitle baseAnchor={baseAnchor}/>
+
             </div>
             }
 
