@@ -67,44 +67,7 @@ const AppFrame = (props) => {
     return (
         <div className="appFrame" style={{ width: `${props.frameWidth}px` }}>
             <div><props.content /></div>
-            <div className="navRoadContainer">
-                <Road />
-                <div className="frameNavigation">
-                    <ScrollButton direction="Left" onClickFunc={() => {props.slidingFunc(-props.frameWidth)}} />
-                    <a 
-                        href="https://discord.gg/g9fD7DBQrU"
-                        style={{
-                            marginLeft: "5px",
-                            marginRight: "5px",
-                        }}>
-                        <img
-                            src={discordLogo}
-                            style={{
-                                width: "10vw",
-                                maxWidth: "40px"
-                            }}
-                        />
-                    </a>
-                    
-                    <div style={{ width: "50px" }}></div>
-                    <a 
-                        href="https://www.instagram.com/cissa_unimelb/"
-                        style={{
-                            marginLeft: "5px",
-                            marginRight: "5px",
-                        }}>
-                        <img 
-                            src={instagramLogo}
-                            style={{
-                                width: "10vw",
-                                maxWidth: "40px"
-                            }}
-                        />
-                    </a>
-                    
-                    <ScrollButton direction="Right" onClickFunc={() => {props.slidingFunc(props.frameWidth)}} />
-                </div>
-            </div>
+            
         </div>
     )
 }
@@ -141,6 +104,9 @@ const MobileView = (props) => {
         });
 
         console.log(scrl.current.scrollLeft);
+        console.log(windowWidth);
+        console.log(shift);
+        console.log(nextPost);
     }
 
     return (
@@ -152,6 +118,45 @@ const MobileView = (props) => {
                     <div className="starsContainer"/>
                     <Stars width="600vw" height="20svh"/>
                     {PageList.map(elem => <AppFrame content={elem} frameWidth={windowWidth} slidingFunc={slide}/>)}
+                </div>
+
+                <div className="navRoadContainer">
+                    <Road />
+                    <div className="frameNavigation">
+                        <ScrollButton direction="Left" onClickFunc={() => {slide(-windowWidth)}} />
+                        <a 
+                            href="https://discord.gg/g9fD7DBQrU"
+                            style={{
+                                marginLeft: "5px",
+                                marginRight: "5px",
+                            }}>
+                            <img
+                                src={discordLogo}
+                                style={{
+                                    width: "10vw",
+                                    maxWidth: "40px"
+                                }}
+                            />
+                        </a>
+                        
+                        <div style={{ width: "50px" }}></div>
+                        <a 
+                            href="https://www.instagram.com/cissa_unimelb/"
+                            style={{
+                                marginLeft: "5px",
+                                marginRight: "5px",
+                            }}>
+                            <img 
+                                src={instagramLogo}
+                                style={{
+                                    width: "10vw",
+                                    maxWidth: "40px"
+                                }}
+                            />
+                        </a>
+                        
+                        <ScrollButton direction="Right" onClickFunc={() => {slide(windowWidth)}} />
+                    </div>
                 </div>
             </div>
         </div>
