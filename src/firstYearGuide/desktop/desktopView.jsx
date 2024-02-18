@@ -6,6 +6,7 @@ import Moon from "../components/moon/moon";
 
 import SocialPopUpTitle from "./socialPopUpTitle";
 import CareersPopupTitle from "./careersPopUpTitle";
+import ActivitiesPopUpTitle from "./activitiesPopUpTitle";
 
 import {useRef, useState} from 'react'
 
@@ -37,7 +38,7 @@ const DesktopView = (props) => {
                     style={{
                         width: "100vw",
                         maxWidth: '1000px',
-                        zIndex: 3
+                        zIndex: 3,
                     }}
 
                     onLoad={callback}
@@ -60,11 +61,15 @@ const DesktopView = (props) => {
             <></>
             :
             <div>
-               {/* Social */}
+                {/* Social */}
                 <SocialPopUpTitle baseAnchor={baseAnchor} />
 
                 {/* Careers */}
                 <CareersPopupTitle baseAnchor={baseAnchor}/>
+
+                {/* Activities */}
+                <ActivitiesPopUpTitle baseAnchor={baseAnchor}/>
+                
             </div>
             }
 

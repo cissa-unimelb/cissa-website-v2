@@ -1,74 +1,26 @@
-import '../assets/css/activitiesFYG.css';
-import mobile_ANZ from "../assets/images/mobile-ANZ.png";
-import mobile_ANZ2x from "../assets/images/mobile-ANZ@2x.png";
-import LampPost from '../../components/assets/images/components/mobile-lamp-post@2x.png'
-import Tree from '../../components/assets/images/components/mobile-tree-night@2x.png'
+import PopupButton from "../components/popup/popupButton";
 
-import { useEffect, useRef, useState} from 'react';
-import PopupButton from '../../components/popup/popupButton.jsx';
-
-const activitiesFYG = (props) => {
-    const div = useRef(null);
-    const [baseAnchor, setAnchor] = useState({x: 0, y: 0, width: 0, height: 0});
-
-    const callback = () => {
-        const rect = div.current.getBoundingClientRect()
-        let { x, y, width, height } = rect
-        x = (x + window.globalScroll) % window.innerWidth
-        y = y % window.innerHeight
-        setAnchor({ x, y, width, height })
-    }
-
-    useEffect(() => {
-        const id = setInterval(() => {
-			if (div.current.y) {
-				callback()
-				clearInterval(id)
-			}
-		}, 50)
-
-		div.current.addEventListener('load', callback)
-		return () => div.current.removeEventListener('load', callback)
-	}, [])
-
-    return (
-        <div className='activitiesContainer'>
-            <div className='activitiesHeading'>ACTIVITIES</div>
-
-            <div className='imgWrapper'>
-                <img 
-                    src={mobile_ANZ}
-                    ref={div} 
-                    alt="ANZ"
-                    style={{
-                        marginBottom: "9svh",    // offset to appear above road
-                        height: '75svh',         // determines building size based on screen size
-                    }}
-                    
-                    onLoad={callback}
-                />
-
-                {/* Lamp Post */}
-                <img className="activities-fyg__lamp-post" src={LampPost} style={{
-					// bottom: roadOffset + 'px'
-                    marginBottom: "9svh"
-				}}/>
-
-				{/* Tree */}
-				<img className="activities-fyg__tree" src={Tree} style={{
-					// bottom: roadOffset + 'px'
-                    marginBottom: "9svh"
-				}}/>
-                
+const ActivitiesPopUpTitle = (props) => {
+    var baseAnchor = props.baseAnchor;
+    var windowWidth = Math.min(window.innerWidth, 1000);
+    var subtitleSize = windowWidth/65;
+    return(
+        <div>
+            <div 
+                className="desktopView__subtitle"
+                style={{
+                    top: `${baseAnchor.y - baseAnchor.height * 0.05}px`,
+                    left: `${baseAnchor.x + baseAnchor.width * 0.78}px`,
+                    fontSize: `${subtitleSize}px`,
+                }}>
+                ACTIVITIES
             </div>
 
-            {/* Speech bubbles and pop ups */}
-
-			<PopupButton text="FOOD OPTIONS" speechBubble={{
-                anchor: [
-					baseAnchor.x + baseAnchor.width * 0.5,
-					baseAnchor.y + baseAnchor.height * 0.2
-				],
+            <PopupButton 
+                text="FOOD OPTIONS" 
+                speechBubble={{
+                    anchor: [baseAnchor.x + baseAnchor.width * 0.88, baseAnchor.y + baseAnchor.height * 0.18],
+                    maxWidth: 200,
                 }}>
                 <h3>FOOD OPTIONS</h3>
                 <p>Click on the links below to open in Google Maps</p>
@@ -96,12 +48,13 @@ const activitiesFYG = (props) => {
                     </li>
                 </ul>
 			</PopupButton>
-
-            <PopupButton text="ENTERTAINMENT" speechBubble={{
-                anchor: [
-					baseAnchor.x + baseAnchor.width * 0.15,
-					baseAnchor.y + baseAnchor.height * 0.45
-				],
+            
+            <PopupButton 
+                text="ENTERTAINMENT" 
+                speechBubble={{
+                    anchor: [baseAnchor.x + baseAnchor.width * 0.8, baseAnchor.y + baseAnchor.height * 0.33],
+                    maxWidth: 200,
+                    align: "right"
                 }}>
                 <h3>ENTERTAINMENT</h3>
                 <p>Click on the links below to open in Google Maps</p>
@@ -150,12 +103,12 @@ const activitiesFYG = (props) => {
                     </li>
                 </ul>
 			</PopupButton>
-
-            <PopupButton text="PLACES TO VISIT" speechBubble={{
-                anchor: [
-					baseAnchor.x + baseAnchor.width * 0.65,
-					baseAnchor.y + baseAnchor.height * 0.65
-				],
+                
+            <PopupButton 
+                text="PLACES TO VISIT" 
+                speechBubble={{
+                    anchor: [baseAnchor.x + baseAnchor.width * 0.88, baseAnchor.y + baseAnchor.height * 0.45],
+                    maxWidth: 200
                 }}>
                 
                 <h3>PLACES TO VISIT</h3>
@@ -198,8 +151,9 @@ const activitiesFYG = (props) => {
                     </li>
                 </ul>
 			</PopupButton>
+                
         </div>
     )
 }
 
-export default activitiesFYG;
+export default ActivitiesPopUpTitle;
