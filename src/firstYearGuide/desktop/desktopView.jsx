@@ -12,6 +12,8 @@ import InterviewTipsPopUpTitle from "./interviewTipsPopUpTitle";
 import CareersPopupTitle from "./careersPopUpTitle";
 import ActivitiesPopUpTitle from "./activitiesPopUpTitle";
 
+// Add activities
+
 import {useRef, useState} from 'react'
 
 const DesktopView = (props) => {
