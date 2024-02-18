@@ -157,6 +157,8 @@ const MobileView = (props) => {
                         <ScrollButton direction="Right" onClickFunc={() => {slide(windowWidth)}} />
                     </div>
                 </div>
+
+                
             </div>
         </div>
     )
