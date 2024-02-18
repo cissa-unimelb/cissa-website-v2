@@ -6,6 +6,8 @@ import Moon from "../components/moon/moon";
 
 import SocialPopUpTitle from "./socialPopUpTitle";
 import CareersPopupTitle from "./careersPopUpTitle";
+import Subjects from "./subjectsPopUpTitle";
+
 
 import {useRef, useState} from 'react'
 
@@ -65,6 +67,9 @@ const DesktopView = (props) => {
 
                 {/* Careers */}
                 <CareersPopupTitle baseAnchor={baseAnchor}/>
+
+                {/* Subjects */}
+                <Subjects baseAnchor={baseAnchor}/>
             </div>
             }
 
