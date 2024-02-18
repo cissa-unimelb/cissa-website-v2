@@ -73,7 +73,7 @@ const subjectsFYG = (props) => {
 					<PopupButton text={<span>COURSE <br/> PLANNING</span>} speechBubble={{
 						anchor: [
 							anchor.x + anchor.width * 0.75,
-							anchor.y + anchor.height * 0.25
+							anchor.y + anchor.height * 0.2
 						],
 					}}>
 						<h3>HOW TO COURSE PLAN</h3>
