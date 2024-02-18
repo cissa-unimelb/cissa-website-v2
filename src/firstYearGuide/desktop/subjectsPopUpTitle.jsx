@@ -9,8 +9,8 @@ const Subjects = (props) => {
             <div 
                 className="desktopView__subtitle"
                 style={{
-                    top: `${baseAnchor.y + baseAnchor.height * 0.05}px`,
-                    left: `${baseAnchor.x + baseAnchor.width * 0.1}px`,
+                    top: `${baseAnchor.y + baseAnchor.height * 0.08}px`,
+                    left: `${baseAnchor.x + baseAnchor.width * 0.12}px`,
                     fontSize: `${subtitleSize}px`,
                 }}>
                 Subjects
@@ -19,11 +19,11 @@ const Subjects = (props) => {
 
 
                 <PopupButton 
-                    text="Coruse Planning" 
+                    text="Course Planning" 
                     speechBubble={{
-                        anchor: [baseAnchor.x + baseAnchor.width * 0.24, baseAnchor.y + baseAnchor.height * 0.24],
+                        anchor: [baseAnchor.x + baseAnchor.width * 0.22, baseAnchor.y + baseAnchor.height * 0.24],
                         maxWidth: 150,
-                        align: 'right'
+                        align: 'left'
                         //bound: false
                     }}
                 >
@@ -61,7 +61,7 @@ const Subjects = (props) => {
                 <PopupButton 
                     text="STUDY SPOTS" 
                     speechBubble={{
-                        anchor: [baseAnchor.x + baseAnchor.width * 0.24, baseAnchor.y + baseAnchor.height * 0.4],
+                        anchor: [baseAnchor.x + baseAnchor.width * 0.23, baseAnchor.y + baseAnchor.height * 0.41],
                         maxWidth: 300,
                         //bound: false
                     }}
@@ -87,8 +87,9 @@ const Subjects = (props) => {
                 <PopupButton 
                     text="SUBJECTS NOT TO DOs" 
                     speechBubble={{
-                        anchor: [baseAnchor.x + baseAnchor.width * 0.05, baseAnchor.y + baseAnchor.height * 0.52],
+                        anchor: [baseAnchor.x + baseAnchor.width * 0.15, baseAnchor.y + baseAnchor.height * 0.5],
                         maxWidth: 300,
+                        align: "right",
                         //bound: false
                     }}
                 >

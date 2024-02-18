@@ -10,7 +10,7 @@ const WelcomeChecklistPopUpTitle = (props) => {
                 className="desktopView__subtitle"
                 style={{
                     top: `${baseAnchor.y + baseAnchor.height * 0.01}px`,
-                    left: `${baseAnchor.x + baseAnchor.width * 0.405}px`,
+                    left: `${baseAnchor.x + baseAnchor.width * 0.40}px`,
                     fontSize: `${subtitleSize}px`,
                 }}>
                 WELCOME CHECKLIST
@@ -39,7 +39,7 @@ const WelcomeChecklistPopUpTitle = (props) => {
             <PopupButton 
                 text="International Students" 
                 speechBubble={{
-                    anchor: [baseAnchor.x + baseAnchor.width * 0.42, baseAnchor.y + baseAnchor.height * 0.36],
+                    anchor: [baseAnchor.x + baseAnchor.width * 0.43, baseAnchor.y + baseAnchor.height * 0.36],
                     maxWidth: 200,
                     //bound: false
                 }}
@@ -63,7 +63,7 @@ const WelcomeChecklistPopUpTitle = (props) => {
             <PopupButton 
                 text="UMSU Support" 
                 speechBubble={{
-                    anchor: [baseAnchor.x + baseAnchor.width * 0.4, baseAnchor.y + baseAnchor.height * 0.5],
+                    anchor: [baseAnchor.x + baseAnchor.width * 0.42, baseAnchor.y + baseAnchor.height * 0.51],
                     maxWidth: 200,
                     align: 'right',
                     //bound: false
