@@ -113,6 +113,14 @@ const MobileView = (props) => {
             <div className="appTestContainer">
                 <div className="headingText">CISSA FIRST YEAR GUIDE</div>
 
+                {/* First year Camp Add */}
+                <a href="https://fb.me/e/1FDTIzzlL" target="_blank">
+                    <div className="campAd">
+                        CAMP
+                    </div>
+                </a>
+
+                {/* Slider */}
                 <div ref={scrl} className="appTest">
                 
                     <div className="starsContainer"/>
@@ -120,6 +128,7 @@ const MobileView = (props) => {
                     {PageList.map(elem => <AppFrame content={elem} frameWidth={windowWidth} slidingFunc={slide}/>)}
                 </div>
 
+                {/* Navigation Tab */}
                 <div className="navRoadContainer">
                     <div className="frameNavigation">
                         <ScrollButton direction="Left" onClickFunc={() => {slide(-windowWidth)}} />
@@ -128,7 +137,8 @@ const MobileView = (props) => {
                             style={{
                                 marginLeft: "5px",
                                 marginRight: "5px",
-                            }}>
+                            }}
+                            target = "_blank">
                             <img
                                 src={discordLogo}
                                 style={{
@@ -144,7 +154,8 @@ const MobileView = (props) => {
                             style={{
                                 marginLeft: "5px",
                                 marginRight: "5px",
-                            }}>
+                            }}
+                            target = "_blank">
                             <img 
                                 src={instagramLogo}
                                 style={{
