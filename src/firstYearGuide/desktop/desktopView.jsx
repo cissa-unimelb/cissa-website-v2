@@ -6,6 +6,8 @@ import Moon from "../components/moon/moon";
 
 import SocialPopUpTitle from "./socialPopUpTitle";
 import CareersPopupTitle from "./careersPopUpTitle";
+import WelcomeChecklistTitle from "./welcomeChecklistPopUpTitle";
+import InterviewTipsPopupTitle from "./interviewTipsPopUpTitle";
 
 import {useRef, useState} from 'react'
 
@@ -65,6 +67,12 @@ const DesktopView = (props) => {
 
                 {/* Careers */}
                 <CareersPopupTitle baseAnchor={baseAnchor}/>
+
+                {/* Welcome Checklist */}
+                <WelcomeChecklistTitle baseAnchor={baseAnchor}/>
+
+                {/* Interview Tips */}
+                <InterviewTipsPopupTitle baseAnchor={baseAnchor}/>
             </div>
             }
 
