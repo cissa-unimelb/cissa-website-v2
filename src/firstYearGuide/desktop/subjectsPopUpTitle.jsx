@@ -19,7 +19,7 @@ const Subjects = (props) => {
 
 
                 <PopupButton 
-                    text="Coruse Planning" 
+                    text="Course Planning" 
                     speechBubble={{
                         anchor: [baseAnchor.x + baseAnchor.width * 0.22, baseAnchor.y + baseAnchor.height * 0.24],
                         maxWidth: 150,
