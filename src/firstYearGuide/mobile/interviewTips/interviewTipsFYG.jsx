@@ -32,7 +32,7 @@ const interviewTipsFYGt = (props) => {
     }, [])
 
     return (
-        <div>
+        <div className='interviewTipsContainer'>
             {/* Text container */}
             <div className='interviewHeading'>Interview Tips</div>
 
