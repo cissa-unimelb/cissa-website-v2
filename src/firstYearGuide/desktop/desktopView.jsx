@@ -76,7 +76,6 @@ const DesktopView = (props) => {
 
                 {/* Subjects */}
                 <SubjectsPopUpTitle baseAnchor={baseAnchor}/>
-
                 {/* Welcome Checklist */}
                 <WelcomeChecklistPopUpTitle baseAnchor={baseAnchor}/>
 
