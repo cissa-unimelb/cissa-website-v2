@@ -1,6 +1,9 @@
 import "./assets/css/mobileView.css";
 import { useState, useRef, useEffect} from "react";
 
+import discordLogo from "./assets/images/discord_logo.png";
+import instagramLogo from "./assets/images/instagram_logo.png";
+
 import ScrollButton from "../components/scrollButton/scrollButton";
 import Road from "../components/road/road";
 import Stars from "../components/stars/stars";
@@ -68,6 +71,37 @@ const AppFrame = (props) => {
                 <Road />
                 <div className="frameNavigation">
                     <ScrollButton direction="Left" onClickFunc={() => {props.slidingFunc(-props.frameWidth)}} />
+                    <a 
+                        href="https://discord.gg/g9fD7DBQrU"
+                        style={{
+                            marginLeft: "5px",
+                            marginRight: "5px",
+                        }}>
+                        <img
+                            src={discordLogo}
+                            style={{
+                                width: "10vw",
+                                maxWidth: "40px"
+                            }}
+                        />
+                    </a>
+                    
+                    <div style={{ width: "50px" }}></div>
+                    <a 
+                        href="https://www.instagram.com/cissa_unimelb/"
+                        style={{
+                            marginLeft: "5px",
+                            marginRight: "5px",
+                        }}>
+                        <img 
+                            src={instagramLogo}
+                            style={{
+                                width: "10vw",
+                                maxWidth: "40px"
+                            }}
+                        />
+                    </a>
+                    
                     <ScrollButton direction="Right" onClickFunc={() => {props.slidingFunc(props.frameWidth)}} />
                 </div>
             </div>
