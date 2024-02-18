@@ -3,6 +3,9 @@ import "./assets/css/desktopView.css";
 import Road from "../components/road/road";
 import Stars from "../components/stars/stars"
 import Moon from "../components/moon/moon";
+import Tree from "../components/assets/images/components/mobile-tree-night@2x.png";
+import LampPost from "../components/assets/images/components/mobile-lamp-post@2x.png";
+import Bench from "../components/assets/images/components/mobile-bench@2x.png";
 
 import SocialPopUpTitle from "./socialPopUpTitle";
 import SubjectsPopUpTitle from "./subjectsPopUpTitle";
@@ -50,6 +53,41 @@ const DesktopView = (props) => {
                 />
             </div>
             
+            {/* Trees */}
+            <div className="desktopView__treeContainer" 
+                style={{
+                    left: `${baseAnchor.x + 0.02 * baseAnchor.width}px`,
+                    bottom: "1vh"
+                }}>
+                <img src={Tree}/>
+            </div>
+
+            <div className="desktopView__treeContainer" 
+                style={{
+                    right: `${baseAnchor.x - 0.08 * baseAnchor.width}px`,
+                    bottom: `10vh`
+                }}>
+                <img src={Tree}/>
+            </div>
+
+            {/* Lamp Post */}
+            <div className="desktopView__lampPostContainer" 
+                style={{
+                    left: `${baseAnchor.x + 0.1 * baseAnchor.width}px`,
+                    bottom: "1vh"
+                }}>
+                <img src={LampPost}/>
+            </div>
+
+            {/* Bench */}
+            <div className="desktopView__benchContainer" 
+                style={{
+                    left: `${baseAnchor.x + 0.15 * baseAnchor.width}px`,
+                    bottom: "1vh"
+                }}>
+                <img src={Bench}/>
+            </div>           
+
             <div className="desktopView__roadContainer">
                 <Road />
             </div>
@@ -68,6 +106,8 @@ const DesktopView = (props) => {
             <></>
             :
             <div>
+                {/* Lamp Post */}
+
                 {/* Social */}
                 <SocialPopUpTitle baseAnchor={baseAnchor} />
 
