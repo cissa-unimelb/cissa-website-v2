@@ -62,6 +62,8 @@ const DesktopView = (props) => {
                 <Moon />
             </div>
 
+            <div className="desktopView_headingText">CISSA FIRST YEAR GUIDE</div>
+
             {baseAnchor.width == 0? 
             <></>
             :
@@ -74,7 +76,6 @@ const DesktopView = (props) => {
 
                 {/* Subjects */}
                 <SubjectsPopUpTitle baseAnchor={baseAnchor}/>
-
                 {/* Welcome Checklist */}
                 <WelcomeChecklistPopUpTitle baseAnchor={baseAnchor}/>
 

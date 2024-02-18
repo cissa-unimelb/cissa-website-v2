@@ -9,8 +9,8 @@ const Subjects = (props) => {
             <div 
                 className="desktopView__subtitle"
                 style={{
-                    top: `${baseAnchor.y + baseAnchor.height * 0.08}px`,
-                    left: `${baseAnchor.x + baseAnchor.width * 0.12}px`,
+                    top: `${baseAnchor.y + baseAnchor.height * 0.05}px`,
+                    left: `${baseAnchor.x + baseAnchor.width * 0.125}px`,
                     fontSize: `${subtitleSize}px`,
                 }}>
                 Subjects
@@ -19,7 +19,7 @@ const Subjects = (props) => {
 
 
                 <PopupButton 
-                    text="Course Planning" 
+                    text="Coruse Planning" 
                     speechBubble={{
                         anchor: [baseAnchor.x + baseAnchor.width * 0.22, baseAnchor.y + baseAnchor.height * 0.24],
                         maxWidth: 150,
