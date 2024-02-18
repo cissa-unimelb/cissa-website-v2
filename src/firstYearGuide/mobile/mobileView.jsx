@@ -67,7 +67,9 @@ const AppFrame = (props) => {
     return (
         <div className="appFrame" style={{ width: `${props.frameWidth}px` }}>
             <div><props.content /></div>
-            
+            <div className="navRoadContainer">
+                <Road />
+            </div>
         </div>
     )
 }
@@ -80,9 +82,6 @@ const AppFrame = (props) => {
 
 const MobileView = (props) => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    // useEffect(() => {
-    //     window.globalScroll = scrl.current.scrollLeft;
-    // })
     let scrl = useRef(null);
 
     useEffect(() => {
@@ -112,7 +111,8 @@ const MobileView = (props) => {
     return (
         <div>
             <div className="appTestContainer">
-            <div className="headingText">CISSA FIRST YEAR GUIDE</div>
+                <div className="headingText">CISSA FIRST YEAR GUIDE</div>
+
                 <div ref={scrl} className="appTest">
                 
                     <div className="starsContainer"/>
@@ -121,7 +121,6 @@ const MobileView = (props) => {
                 </div>
 
                 <div className="navRoadContainer">
-                    <Road />
                     <div className="frameNavigation">
                         <ScrollButton direction="Left" onClickFunc={() => {slide(-windowWidth)}} />
                         <a 
