@@ -120,7 +120,7 @@ const careersFYG = (props) => {
                         //bound: false
                     }}
                 >
-                    <h3>EXTRA CURRICULAR</h3>
+                    <h3>EXTRA <br/> CURRICULAR</h3>
                     <ul>
                         <li>Join CISSA + UMSU club forms</li>
                         <li>Hackathon / product-a-thon</li>
@@ -144,7 +144,7 @@ const careersFYG = (props) => {
                 <PopupButton 
                     text="Resume tips" 
                     speechBubble={{
-                        anchor: [baseAnchor.x + baseAnchor.width * 0.1, baseAnchor.y + baseAnchor.height * 0.6],
+                        anchor: [baseAnchor.x + baseAnchor.width * 0.1, baseAnchor.y + baseAnchor.height * 0.55],
                         maxWidth: 300,
                         //bound: false
                     }}
@@ -168,7 +168,7 @@ const careersFYG = (props) => {
                 <PopupButton 
                     text="How to start" 
                     speechBubble={{
-                        anchor: [baseAnchor.x + baseAnchor.width * 0.6, baseAnchor.y + baseAnchor.height * 0.9],
+                        anchor: [baseAnchor.x + baseAnchor.width * 0.6, baseAnchor.y + baseAnchor.height * 0.7],
                         maxWidth: 300,
                         //bound: false
                     }}

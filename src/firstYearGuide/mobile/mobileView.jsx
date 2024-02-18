@@ -147,6 +147,11 @@ const MobileView = (props) => {
         <div>
             <div className="appTestContainer">
             <div className="headingText">CISSA FIRST YEAR GUIDE</div>
+            <a href="https://fb.me/e/1FDTIzzlL" target="_blank">
+                <div className="campAd">
+                    CAMP
+                </div>
+            </a>
                 <div ref={scrl} className="appTest">
                 
                     <div className="starsContainer"/>
