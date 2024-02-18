@@ -76,7 +76,8 @@ const AppFrame = (props) => {
                         style={{
                             marginLeft: "5px",
                             marginRight: "5px",
-                        }}>
+                        }}
+                        target = "_blank">
                         <img
                             src={discordLogo}
                             style={{
@@ -92,7 +93,8 @@ const AppFrame = (props) => {
                         style={{
                             marginLeft: "5px",
                             marginRight: "5px",
-                        }}>
+                        }}
+                        target = "_blank">
                         <img 
                             src={instagramLogo}
                             style={{

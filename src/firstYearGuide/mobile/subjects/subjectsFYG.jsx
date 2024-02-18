@@ -155,7 +155,7 @@ const subjectsFYG = (props) => {
 					<PopupButton text="SUBJECT TO DOs" speechBubble={{
 						anchor: [
 							anchor.x + anchor.width * 0.65,
-							anchor.y + anchor.height * 0.85
+							anchor.y + anchor.height * 0.8
 						],
 					}}>
 						<h3>SUBJECT TO DOs</h3>
