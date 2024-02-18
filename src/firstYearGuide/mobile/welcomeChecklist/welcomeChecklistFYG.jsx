@@ -45,7 +45,7 @@ const welcomeChecklistFYG = (props) => {
     return (
         // store everything to return in appropriate container
         <div className='welcomeChecklistFYGContainer'>
-			<div className='welcomeChecklistHeading'>WELCOME CHECKLIST</div>
+			<div className='welcomeChecklistHeading'>WELCOME <br/> CHECKLIST</div>
 
 			<div className="janeStreetBuilding">
 				<img ref={div} src={BuildingImage} className='building' onLoad={callback}
@@ -103,9 +103,8 @@ const welcomeChecklistFYG = (props) => {
 			<PopupButton
 			text="UMSU SUPPORT" 
 			speechBubble={{
-				anchor: [baseAnchor.x + baseAnchor.width*0.7, baseAnchor.y + baseAnchor.height*0.9],
+				anchor: [baseAnchor.x + baseAnchor.width*0.5, baseAnchor.y + baseAnchor.height*0.7],
 				bound: false,
-				align: 'right'
 			}}
 			>
 				<h3>Student Support</h3>

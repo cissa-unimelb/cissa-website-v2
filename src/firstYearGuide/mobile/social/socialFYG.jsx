@@ -130,13 +130,13 @@ const socialFYG = (props) => {
                 <PopupButton 
                     text="Event list" 
                     speechBubble={{
-                        anchor: [baseAnchor.x + baseAnchor.width * 0.1, baseAnchor.y + baseAnchor.height * 0.8],
+                        anchor: [baseAnchor.x + baseAnchor.width * 0.1, baseAnchor.y + baseAnchor.height * 0.7],
                         maxWidth: 200,
                     }}
                 >
                     <h3>EVENTS</h3>
                     <ul>
-                        <li>Big O-camp</li>
+                        <li><a href='https://fb.me/e/1FDTIzzlL' target='_blank'>1st Year Camp!</a></li>
                         <li>Hirefest</li>
                         <li>Diversi-tea</li>
                         <li>Industry Connect</li>

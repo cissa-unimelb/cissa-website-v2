@@ -5,7 +5,7 @@
 }
 
 .desktopView_headingText {
-    position: absolute;
+    position: relative;
     top: 5svh;
 
     width: 100vw;
@@ -48,6 +48,27 @@
     left: 50px;
     width: 60px;
     height: 60px;
+
+    z-index: 3;
+}
+
+.desktopView__treeContainer{
+    position: absolute;
+    width: 120px; 
+
+    z-index: 3;
+}
+
+.desktopView__lampPostContainer{
+    position: absolute;
+    width: 60px; 
+
+    z-index: 3;
+}
+
+.desktopView__benchContainer{
+    position: absolute;
+    width: 70px; 
 
     z-index: 3;
 }

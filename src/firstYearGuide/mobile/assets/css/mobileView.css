@@ -43,6 +43,35 @@ body {
     z-index: 2;
 }
 
+.campAd {
+    position: fixed;
+    bottom: 10svh;
+    right: 3svw;
+
+    width: 10svw;
+    height: 10svw;
+
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 5px solid white;
+    border-radius: 50vw;
+
+    background-color: #FBBF66;
+    /* background-color: #E6A41A; */
+
+    z-index: 2;
+
+    font-family: 'Good Times';
+
+    color: black;
+
+    padding: 2em;
+}
+
 .navRoadContainer {
     position: sticky;
     bottom: 0;
