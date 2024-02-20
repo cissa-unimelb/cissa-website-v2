@@ -8,6 +8,7 @@ import ScrollButton from "../components/scrollButton/scrollButton";
 import Road from "../components/road/road";
 import Stars from "../components/stars/stars";
 import PageList from "./pageList";
+import PopupButton from "../components/popup/popupButton";
 
 // Helper functions
 
@@ -114,11 +115,22 @@ const MobileView = (props) => {
                 <div className="headingText">CISSA FIRST YEAR GUIDE</div>
 
                 {/* First year Camp Add */}
+
                 <a href="https://events.humanitix.com/orientation-camp-2024" target="_blank">
                     <div className="campAd">
-                        CAMP
+                        <div className="campAd__inner">
+                            <div className="campAd__content">
+                                <div className="campAd__content__wrapper">
+                                    <p>
+                                        CAMP
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
                 </a>
+
 
                 {/* Slider */}
                 <div ref={scrl} className="appTest">
