@@ -132,6 +132,24 @@ const MobileView = (props) => {
                 </a>
 
 
+                {/* Join US Add */}
+
+                <a href="https://umsu.unimelb.edu.au/buddy-up/clubs/clubs-listing/join/6525/" target="_blank">
+                    <div className="joinAd">
+                        <div className="joinAd__inner">
+                            <div className="joinAd__content">
+                                <div className="joinAd__content__wrapper">
+                                    <p>
+                                        MEMBERSHIP
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </a>
+
+
                 {/* Slider */}
                 <div ref={scrl} className="appTest">
                 
