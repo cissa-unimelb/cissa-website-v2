@@ -14,10 +14,10 @@ function NavList ({ isOpen, isMobile }) {
     { id: 3, text: 'Committee Archive', link: "/committee-archive"}, 
     { id: 4, text: 'Sponsors', link: "/sponsors" },
     { id: 5, text: 'Careers Portal', link: "/careers" },
-    { id: 6, text: 'Blog', link: "https://medium.com/cissa-unimelb" },
-    { id: 7, text: 'Contact', link: "/contact" },
-    { id: 8, text: 'First Year Guide', link: "/first-year-guide"},
-    { id: 9, text: 'Join us', link: "https://umsu.unimelb.edu.au/buddy-up/clubs/clubs-listing/join/6525/", isBold: true }
+    // { id: 6, text: 'Blog', link: "https://medium.com/cissa-unimelb" },
+    { id: 6, text: 'Contact', link: "/contact" },
+    { id: 7, text: 'First Year Guide', link: "/first-year-guide"},
+    { id: 8, text: 'Join us', link: "https://umsu.unimelb.edu.au/buddy-up/clubs/clubs-listing/join/6525/", isBold: true }
   ]
   let classes = 'nav__list'
   if (!isMobile) {
