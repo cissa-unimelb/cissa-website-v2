@@ -8,9 +8,9 @@
 
 .subtitle {
     position: absolute;
-    top: 10vh;
+    top: 10svh;
 
-    height: 5vh;
+    height: 5svh;
     width: 100vw;
 
     flex-shrink: 0;

@@ -11,8 +11,23 @@ import PopupButton from '../../components/popup/popupButton.jsx';
 
 
 const socialFYG = (props) => {
+    const [roadOffset, setRoadOffset] = useState('')
     const buildingImg = useRef(null);
     const [baseAnchor, setAnchor] = useState({x: 0, y: 0, width: 0, height: 0});
+
+	useEffect(() => {
+		// Calculate road offset
+		const road = document.querySelector('.navRoadContainer')
+		const roadRect = road.getBoundingClientRect()
+		setRoadOffset(roadRect.height - 15)
+
+        const id = setInterval(() => {
+			if (buildingImg.current.y) {
+				callback()
+				clearInterval(id)
+			}
+		}, 50)
+    }, [])
 
     const callback = () => {
         const rect = buildingImg.current.getBoundingClientRect()
@@ -40,11 +55,13 @@ const socialFYG = (props) => {
                     ref={buildingImg} 
                     alt="Alan Gilbert"
                     style={{
-                        marginBottom: "8vh",
                         width: '100vw',
-                        maxWidth: '500px',
-                        objectFit: 'overflow',
-                        zIndex: 3
+                        zIndex: 3,
+                        bottom: roadOffset + 'px',
+                        position: "absolute",
+                        height: '50svh',
+                        maxHeight: '500px',
+                        maxWidth: '700px',
                     }}
                     
                     onLoad={callback}
@@ -73,7 +90,6 @@ const socialFYG = (props) => {
                         anchor: [baseAnchor.x + baseAnchor.width * 0.65, baseAnchor.y + baseAnchor.height * 0.17],
                         maxWidth: 200,
                         align: 'right',
-                        // bound: false
                     }}
                 >
                     <h3>MAKING FRIENDS</h3>
@@ -98,7 +114,6 @@ const socialFYG = (props) => {
                     speechBubble={{
                         anchor: [baseAnchor.x + baseAnchor.width * 0.6, baseAnchor.y + baseAnchor.height * 0.5],
                         maxWidth: 200,
-                        //bound: false
                     }}
                 >
                     <h3>GROUP MATES</h3>
@@ -115,14 +130,13 @@ const socialFYG = (props) => {
                 <PopupButton 
                     text="Event list" 
                     speechBubble={{
-                        anchor: [baseAnchor.x + baseAnchor.width * 0.1, baseAnchor.y + baseAnchor.height * 0.8],
+                        anchor: [baseAnchor.x + baseAnchor.width * 0.1, baseAnchor.y + baseAnchor.height * 0.7],
                         maxWidth: 200,
-                        //bound: false
                     }}
                 >
                     <h3>EVENTS</h3>
                     <ul>
-                        <li>Big O-camp</li>
+                        <li><a href='https://fb.me/e/1FDTIzzlL' target='_blank'>1st Year Camp!</a></li>
                         <li>Hirefest</li>
                         <li>Diversi-tea</li>
                         <li>Industry Connect</li>

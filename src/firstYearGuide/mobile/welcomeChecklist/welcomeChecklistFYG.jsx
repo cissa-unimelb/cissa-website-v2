@@ -7,8 +7,23 @@ import { useEffect, useRef, useState } from 'react'
 
 // This is the welcome checklist section which sits inside an app frame
 const welcomeChecklistFYG = (props) => {
+	const [roadOffset, setRoadOffset] = useState('')
 	const div = useRef(null)
 	const [baseAnchor, setAnchor] = useState([])
+
+	useEffect(() => {
+		// Calculate road offset
+		const road = document.querySelector('.navRoadContainer')
+		const roadRect = road.getBoundingClientRect()
+		setRoadOffset(roadRect.height - 10)
+
+		const id = setInterval(() => {
+			if (div.current.y) {
+				callback()
+				clearInterval(id)
+			}
+		}, 50)
+  }, [])
 
 	const callback = () => {
 		const rect = div.current.getBoundingClientRect()
@@ -30,10 +45,14 @@ const welcomeChecklistFYG = (props) => {
     return (
         // store everything to return in appropriate container
         <div className='welcomeChecklistFYGContainer'>
-			<div className='welcomeChecklistHeading'>WELCOME CHECKLIST</div>
+			<div className='welcomeChecklistHeading'>WELCOME <br/> CHECKLIST</div>
 
 			<div className="janeStreetBuilding">
-				<img ref={div} src={BuildingImage} className='building' onLoad={callback}></img>
+				<img ref={div} src={BuildingImage} className='building' onLoad={callback}
+					style={{
+						bottom: roadOffset + 'px'
+					}}
+				/>
 			</div>
 
 			<PopupButton
@@ -42,9 +61,8 @@ const welcomeChecklistFYG = (props) => {
 				anchor: [baseAnchor.x + baseAnchor.width*0.5, baseAnchor.y + baseAnchor.height*0.15],
 				bound: false
 			}}
-			
-			
 
+			
 			>
 				<h3>ALL STUDENTS</h3>
 				<ol>
@@ -85,9 +103,8 @@ const welcomeChecklistFYG = (props) => {
 			<PopupButton
 			text="UMSU SUPPORT" 
 			speechBubble={{
-				anchor: [baseAnchor.x + baseAnchor.width*0.7, baseAnchor.y + baseAnchor.height*0.9],
+				anchor: [baseAnchor.x + baseAnchor.width*0.5, baseAnchor.y + baseAnchor.height*0.7],
 				bound: false,
-				align: 'right'
 			}}
 			>
 				<h3>Student Support</h3>

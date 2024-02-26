@@ -1,8 +1,13 @@
+.interviewTipsContainer{
+    width: 100vw;
+    height: 100svh
+}
+
 .interviewHeading {
     position: absolute;
-    top: 10vh;
+    top: 10svh;
 
-    height: 5vh;
+    height: 5svh;
     width: 100vw;
 
     flex-shrink: 0;
@@ -16,4 +21,13 @@
     line-height: normal;
 
     z-index: 2;
+}
+
+
+.artsWestBuilding {
+    position: relative;
+    width: 100vw;
+    max-width: 100vw;
+    height: 100svh;
+    z-index: 3;
 }

@@ -5,16 +5,17 @@
     left: 0;
 
     width: 100%;
-    height: 100vh
+    height: 100svh
 }
 
 
 .imgWrapper {
+    position: absolute;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
+    height: 100svh;
 }
 
 @font-face {
@@ -27,9 +28,9 @@
 
 .socialHeading {
     position: absolute;
-    top: 10vh;
+    top: 10svh;
 
-    height: 5vh;
+    height: 5svh;
     width: 100vw;
 
     flex-shrink: 0;

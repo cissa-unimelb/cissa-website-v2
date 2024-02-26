@@ -3,6 +3,16 @@ import "./assets/css/desktopView.css";
 import Road from "../components/road/road";
 import Stars from "../components/stars/stars"
 import Moon from "../components/moon/moon";
+import Tree from "../components/assets/images/components/mobile-tree-night@2x.png";
+import LampPost from "../components/assets/images/components/mobile-lamp-post@2x.png";
+import Bench from "../components/assets/images/components/mobile-bench@2x.png";
+
+import SocialPopUpTitle from "./socialPopUpTitle";
+import SubjectsPopUpTitle from "./subjectsPopUpTitle";
+import WelcomeChecklistPopUpTitle from "./welcomeChecklistPopUpTitle";
+import InterviewTipsPopUpTitle from "./interviewTipsPopUpTitle";
+import CareersPopupTitle from "./careersPopUpTitle";
+import ActivitiesPopUpTitle from "./activitiesPopUpTitle";
 
 import {useRef, useState} from 'react'
 
@@ -15,39 +25,67 @@ const DesktopView = (props) => {
 
         const rect = buildingImg.current.getBoundingClientRect()
         let { x, y, width, height } = rect
-        x = (Math.ceil(x + window.globalScroll)) % window.innerWidth
+        x = (Math.ceil(x)) % window.innerWidth
         y = y % window.innerHeight
-
-        // For landscape object with overflow section (image not fit in frame)
-        // or image spanning entire width
-        if (width > window.innerWidth || Math.abs(width - window.innerWidth) < EPSILON){
-            x = 0;
-            width = window.innerWidth;
-        }
 
         setAnchor({ x, y, width, height })
         console.log(x, y, width, height)
+        // console.log(rect)
         // console.log(window.globalScroll)
         // console.log(x)
-        // console.log(rect)
     }
 
     return(
-        <div className="desktopView">
+        <div className="desktopView appFrame">
             <div className="desktopView__buildingWrapper">
                 <img
                     ref={buildingImg} 
                     src={buildingCluster}
                     style={{
                         width: "100vw",
-                        maxWidth: '1100px',
-                        zIndex: 3
+                        maxWidth: '1000px',
+                        zIndex: 3,
                     }}
 
                     onLoad={callback}
                 />
             </div>
             
+            {/* Trees */}
+            <div className="desktopView__treeContainer" 
+                style={{
+                    left: `${baseAnchor.x + 0.02 * baseAnchor.width}px`,
+                    bottom: "1vh"
+                }}>
+                <img src={Tree}/>
+            </div>
+
+            <div className="desktopView__treeContainer" 
+                style={{
+                    right: `${baseAnchor.x - 0.08 * baseAnchor.width}px`,
+                    bottom: `10vh`
+                }}>
+                <img src={Tree}/>
+            </div>
+
+            {/* Lamp Post */}
+            <div className="desktopView__lampPostContainer" 
+                style={{
+                    left: `${baseAnchor.x + 0.1 * baseAnchor.width}px`,
+                    bottom: "1vh"
+                }}>
+                <img src={LampPost}/>
+            </div>
+
+            {/* Bench */}
+            <div className="desktopView__benchContainer" 
+                style={{
+                    left: `${baseAnchor.x + 0.15 * baseAnchor.width}px`,
+                    bottom: "1vh"
+                }}>
+                <img src={Bench}/>
+            </div>           
+
             <div className="desktopView__roadContainer">
                 <Road />
             </div>
@@ -59,6 +97,31 @@ const DesktopView = (props) => {
             <div className="desktopView__moonContainer">
                 <Moon />
             </div>
+
+            <div className="desktopView_headingText">CISSA FIRST YEAR GUIDE</div>
+
+            {baseAnchor.width == 0? 
+            <></>
+            :
+            <div>
+                {/* Social */}
+                <SocialPopUpTitle baseAnchor={baseAnchor} />
+
+                {/* Careers */}
+                <CareersPopupTitle baseAnchor={baseAnchor}/>
+
+                {/* Subjects */}
+                <SubjectsPopUpTitle baseAnchor={baseAnchor}/>
+                {/* Welcome Checklist */}
+                <WelcomeChecklistPopUpTitle baseAnchor={baseAnchor}/>
+
+                {/* Interview Tips */}
+                <InterviewTipsPopUpTitle baseAnchor={baseAnchor}/>
+
+                {/* Activities */}
+                <ActivitiesPopUpTitle baseAnchor={baseAnchor}/>
+            </div>
+            }
 
         </div>
     )

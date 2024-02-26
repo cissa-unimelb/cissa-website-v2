@@ -10,8 +10,22 @@ import PopupButton from '../../components/popup/popupButton.jsx';
 
 
 const careersFYG = (props) => {
+    const [roadOffset, setRoadOffset] = useState('')
     const buildingImg = useRef(null);
     const [baseAnchor, setAnchor] = useState({x: 0, y: 0, width: 0, height: 0});
+
+    useEffect(() => {
+        const road = document.querySelector('.navRoadContainer')
+		const roadRect = road.getBoundingClientRect()
+		setRoadOffset(roadRect.height - 25)
+
+        const id = setInterval(() => {
+			if (buildingImg.current.y) {
+				callback()
+				clearInterval(id)
+			}
+		}, 50)
+    }, [])
 
     const callback = () => {
         const rect = buildingImg.current.getBoundingClientRect()
@@ -41,17 +55,17 @@ const careersFYG = (props) => {
             {/* Because of flex, the image size is determined by height + width */}
             {/* Might need to find some other way around. A bit scuff. */}
             <div className='imgWrapper'>
-                    <img 
+                    <img
                         src={mobile_Student_Pavillion}
                         ref={buildingImg} 
                         alt="Alan Gilbert"
                         style={{
-                            height: '50vh',
+                            position: "absolute",
+                            height: '50svh',
                             maxHeight: '500px',
                             maxWidth: '700px',
-                            marginBottom: "7vh",
-                            objectFit: 'overflow',
-                            zIndex: 3
+                            zIndex: 3,
+                            bottom: roadOffset + 'px'
                         }}
                         
                         onLoad={callback}
@@ -65,7 +79,7 @@ const careersFYG = (props) => {
                             position: "absolute",
                             left: baseAnchor.x,
                             width: '8svh',
-                            bottom: '7vh',
+                            bottom: '7svh',
                             zIndex: 4
                         }}
                     />
@@ -92,7 +106,6 @@ const careersFYG = (props) => {
                             <li>Apply to as many as you can, some students worry about getting multiple offers then having to reject one… Better than not getting any offers.</li>
                             <li>Write your resume early, and get it proofread by at least 2 people.</li>
                         </ul>
-                        <li>Write your resume early, and get it proofread by at least 2 people.</li>
                         <li>Do hackathons: show employers that you are technically capable</li>
                         <li>Aiming for big tech: start doing leetcode at the end of your first year</li>
                         <li>Student organisations</li>
@@ -107,7 +120,7 @@ const careersFYG = (props) => {
                         //bound: false
                     }}
                 >
-                    <h3>EXTRA CURRICULAR</h3>
+                    <h3>EXTRA <br/> CURRICULAR</h3>
                     <ul>
                         <li>Join CISSA + UMSU club forms</li>
                         <li>Hackathon / product-a-thon</li>
@@ -115,7 +128,7 @@ const careersFYG = (props) => {
                             <li>Good for jobs</li>
                             <li>Forcing yourself to learn how a complete product gets built, 
                                 think about the 4 stages of any project: analysis, design, 
-                                development and evaluation, and goes on in each stage. </li>
+                                development and evaluation, and what goes on in each stage. </li>
                             <li>IT project</li>
                             <li>Many of CISSA members got their first job by winning/participating in CISSA hackathon</li>
                         </ul>
@@ -131,7 +144,7 @@ const careersFYG = (props) => {
                 <PopupButton 
                     text="Resume tips" 
                     speechBubble={{
-                        anchor: [baseAnchor.x + baseAnchor.width * 0.1, baseAnchor.y + baseAnchor.height * 0.6],
+                        anchor: [baseAnchor.x + baseAnchor.width * 0.1, baseAnchor.y + baseAnchor.height * 0.55],
                         maxWidth: 300,
                         //bound: false
                     }}
@@ -155,7 +168,7 @@ const careersFYG = (props) => {
                 <PopupButton 
                     text="How to start" 
                     speechBubble={{
-                        anchor: [baseAnchor.x + baseAnchor.width * 0.6, baseAnchor.y + baseAnchor.height * 0.9],
+                        anchor: [baseAnchor.x + baseAnchor.width * 0.6, baseAnchor.y + baseAnchor.height * 0.7],
                         maxWidth: 300,
                         //bound: false
                     }}

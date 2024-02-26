@@ -4,6 +4,26 @@
     background-color: black;
 }
 
+.desktopView_headingText {
+    position: relative;
+    top: 5svh;
+
+    width: 100vw;
+    height: 5svh;
+
+    flex-shrink: 0;
+ 
+    color: #21D8D8;
+    text-align: center;
+    font-family: 'Good Times';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: normal;
+
+    z-index: 2;
+}
+
 .desktopView__buildingWrapper{
     width: 100%;
     height: 100%;
@@ -30,4 +50,57 @@
     height: 60px;
 
     z-index: 3;
+}
+
+.desktopView__treeContainer{
+    position: absolute;
+    width: 120px; 
+
+    z-index: 3;
+}
+
+.desktopView__lampPostContainer{
+    position: absolute;
+    width: 60px; 
+
+    z-index: 3;
+}
+
+.desktopView__benchContainer{
+    position: absolute;
+    width: 70px; 
+
+    z-index: 3;
+}
+
+@font-face {
+    font-family: 'Good Times';
+    src: url('../fonts/Good Times.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.desktopView__subtitle {
+    position: absolute;
+
+    height: 3svh;
+    width: 8vw;
+
+    flex-shrink: 0;
+
+    color: #21D8D8;
+    text-align: center;
+    font-family: 'Good Times';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    z-index: 11;
+}
+
+/* Overwrite speech bubble padding for desktop */
+.speech-bubble{
+    --padding: 5px 5px;
 }

@@ -1,8 +1,8 @@
 .activitiesContainer {
     --building-width: 150px;
-    --tree-width: 100px;
+    --tree-width: 9svh;
     --tree-offset: calc(50vw + var(--building-width) / 2 - 10px);
-    --lamp-width: 60px;
+    --lamp-width: 7svh;
     --lamp-offset: calc(50vw - var(--building-width) / 2 - var(--lamp-width) + 10px);
 
     position: relative;
@@ -10,7 +10,7 @@
     left: 0;
 
     width: 100vw;
-    height: 100vh;
+    height: 100svh;
 }
 
 .imgWrapper {
@@ -33,9 +33,9 @@
 
 .activitiesHeading {
     position: absolute;
-    top: 10vh;
+    top: 10svh;
 
-    height: 5vh;
+    height: 5svh;
     width: 100vw;
 
     flex-shrink: 0;

@@ -1,5 +1,7 @@
 import {BrowserRouter, HashRouter, Route, Routes} from "react-router-dom"; 
 
+import { Analytics } from '@vercel/analytics/react';
+
 import './assets/css/headerFooter/headerFooter.css'
 import './assets/css/main.css'
 
@@ -18,6 +20,7 @@ import CommitteeArchive from './committeeArchive/CommitteeArchive'
 import './assets/css/main.css'
 
 import FirstYearGuidePage from "./firstYearGuide/firstYearGuidePage.jsx";
+import NfcPage from "./nfc/nfcPage.jsx";
 
 // import SpeechBubbleDemoPage from './firstYearGuide/components/speechBubbleDemoPage.jsx'
 // import PopupDemoPage from './firstYearGuide/components/popupDemoPage.jsx'
@@ -43,10 +46,12 @@ function App() {
             <Route path="upcoming-events" element={<UpEventPage />} />
             <Route path="past-events" element={<PastEventPage />} />
             <Route path="first-year-guide" element={<FirstYearGuidePage />} />
+            <Route path="nfc" element={<NfcPage />} />
             <Route path="*" element={<Error />} />
           </Route>
         </Routes>
       </BrowserRouter>
+      <Analytics />
     </div>
   )
 }
