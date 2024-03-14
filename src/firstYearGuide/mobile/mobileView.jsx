@@ -114,23 +114,6 @@ const MobileView = (props) => {
             <div className="appTestContainer">
                 <div className="headingText">CISSA FIRST YEAR GUIDE</div>
 
-                {/* First year Camp Add */}
-
-                <a href="https://events.humanitix.com/orientation-camp-2024" target="_blank">
-                    <div className="campAd">
-                        <div className="campAd__inner">
-                            <div className="campAd__content">
-                                <div className="campAd__content__wrapper">
-                                    <p>
-                                        CAMP
-                                    </p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </a>
-
 
                 {/* Join US Add */}
 

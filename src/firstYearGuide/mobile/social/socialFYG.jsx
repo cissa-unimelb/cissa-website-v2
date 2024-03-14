@@ -136,7 +136,6 @@ const socialFYG = (props) => {
                 >
                     <h3>EVENTS</h3>
                     <ul>
-                        <li><a href='https://fb.me/e/1FDTIzzlL' target='_blank'>1st Year Camp!</a></li>
                         <li>Hirefest</li>
                         <li>Diversi-tea</li>
                         <li>Industry Connect</li>
