@@ -10,7 +10,6 @@ function HeroPanel (props) {
           <img src={logo} id='banner-logo' />
           <div id='tagline-container'>
             <span id='tagline'>
-            <a className = 'campLink' href='https://fb.me/e/1FDTIzzlL' target='_blank'>Join our First Year Camp HERE!</a>
               <Typewriter
                 options={{
                   strings: [

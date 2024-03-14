@@ -36,7 +36,6 @@ const SocialPopUpTitle = (props) => {
                         <li>UMSU O-week meetups </li>
                         <li>Mixers</li>
                         <li>Pub nights</li>
-                        <li>CISSA Big O-Camp</li>
                     </ul>
                 </ul>
 
@@ -70,7 +69,6 @@ const SocialPopUpTitle = (props) => {
             >
                 <h3>EVENTS</h3>
                 <ul>
-                    <li>Big O-camp</li>
                     <li>Hirefest</li>
                     <li>Diversi-tea</li>
                     <li>Industry Connect</li>
