@@ -97,3 +97,14 @@
     font-size: calc(16px + 1.5vw);
     color: white;
 }
+
+.merchLink {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    line-height: 85%;
+    border-radius: 5px;
+    font-weight: bold;
+}
