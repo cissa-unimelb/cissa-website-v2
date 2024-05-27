@@ -10,6 +10,7 @@ function HeroPanel (props) {
           <img src={logo} id='banner-logo' />
           <div id='tagline-container'>
             <span id='tagline'>
+            <a className = 'merchLink' href='https://cissa.bigcartel.com' target='_blank'>2024 MERCH PRE-SALE ON NOW</a>
               <Typewriter
                 options={{
                   strings: [
@@ -25,7 +26,7 @@ function HeroPanel (props) {
                   deleteSpeed: 10
                 }}
               />
-            </span>
+              </span>                
           </div>
         </div>
       </div>

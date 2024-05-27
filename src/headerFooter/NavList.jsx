@@ -17,7 +17,8 @@ function NavList ({ isOpen, isMobile }) {
     // { id: 6, text: 'Blog', link: "https://medium.com/cissa-unimelb" },
     { id: 6, text: 'Contact', link: "/contact" },
     { id: 7, text: 'First Year Guide', link: "/first-year-guide"},
-    { id: 8, text: 'Join us', link: "https://umsu.unimelb.edu.au/buddy-up/clubs/clubs-listing/join/6525/", isBold: true }
+    { id: 8, text: 'Store', link: "https://cissa.bigcartel.com"},
+    { id: 9, text: 'Join us', link: "https://umsu.unimelb.edu.au/buddy-up/clubs/clubs-listing/join/6525/", isBold: true }
   ]
   let classes = 'nav__list'
   if (!isMobile) {
