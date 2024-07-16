@@ -2,6 +2,7 @@ import Hamburger from './Hamburger'
 import NavList from './NavList'
 import { useState, useEffect } from 'react'
 import '../../public/only_circle_white.svg'
+import discordLogo from '../../src/firstYearGuide/mobile/assets/images/discord_logo.png'
 import PropTypes from 'prop-types'
 
 function Header ({ mobileBreakpoint }) {
@@ -33,6 +34,9 @@ function Header ({ mobileBreakpoint }) {
         <div className='nav__content'>
           <a href="/">
             <img className='nav__logo' width='50' height='50' src='only_circle_white.svg' alt='Logo' />
+          </a>
+          <a href="https://discord.gg/b66f8eN65G" target='_blank'>
+            <img className='nav__logo' height='30' src={discordLogo} alt='Logo' style={{ paddingLeft: '20px' }}/>
           </a>
           <Hamburger clickHandler={handleToggle} isOpen={isOpen} isMobile={isMobile} />
         </div>
