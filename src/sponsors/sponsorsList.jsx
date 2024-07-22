@@ -9,6 +9,7 @@ import Algohub_img from "../assets/images/sponsors/algohub.png";
 import Atlassian_img from "../assets/images/sponsors/atlassian-2022.png";
 import Optiver_img from "../assets/images/sponsors/optiver.png";
 import REA_img from "../assets/images/sponsors/rea.png";
+import QuickRelease_img from "../assets/images/sponsors/quickrelease.png";
 
 // Gold
 import Amazon_img from "../assets/images/sponsors/amazon.png";
@@ -39,7 +40,8 @@ const allSponsors = {
         {images: Algohub_img, alt: "Algohub"},
         {images: Atlassian_img, alt: "Atlassian"},
         {images: Optiver_img, alt: "Optiver"},
-        {images: REA_img, alt: "REA Group"}
+        {images: REA_img, alt: "REA Group"},
+        {images: QuickRelease_img, alt: "Quick Release"}
     ],
     "Gold": [
         {images: Amazon_img, alt: "Amazon"},
