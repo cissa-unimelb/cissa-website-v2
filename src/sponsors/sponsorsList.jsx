@@ -35,7 +35,7 @@ const allSponsors = {
         {images: IMC_img, alt: "IMC"},
         {images: JaneStreet_img, alt: "Jane Street"}
     ],
-    "Platinium": [
+    "Platinum": [
         {images: Airwallex_img, alt: "Airwallex"},
         {images: Algohub_img, alt: "Algohub"},
         {images: Atlassian_img, alt: "Atlassian"},
