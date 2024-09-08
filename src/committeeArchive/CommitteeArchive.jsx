@@ -28,7 +28,7 @@ const CommitteeArchive = () => {
 
                 <div className='row'>
                   <div className='col'>
-                    <h3>Executives</h3>
+                    <h3 className="text-white">Executives</h3>
                     <br/>
 
                     <CommitteeList roles={roles} isExecutive={true}/>
@@ -36,7 +36,7 @@ const CommitteeArchive = () => {
                   </div>
 
                   <div className='col'>
-                    <h3>General Committee</h3>
+                    <h3 className="text-white">General Committee</h3>
                     <br />
 
                     <CommitteeList roles={roles} isExecutive={false}/>
