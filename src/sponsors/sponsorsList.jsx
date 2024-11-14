@@ -1,64 +1,60 @@
 // Diamond
-import ANZ_img from "../assets/images/sponsors/anz.png";
 import IMC_img from "../assets/images/sponsors/imc.png";
 import JaneStreet_img from "../assets/images/sponsors/janestreet.png";
 
 // Platinum
 import Airwallex_img from "../assets/images/sponsors/airwallex.png";
-import Algohub_img from "../assets/images/sponsors/algohub.png";
 import Atlassian_img from "../assets/images/sponsors/atlassian-2022.png";
 import Optiver_img from "../assets/images/sponsors/optiver.png";
-import REA_img from "../assets/images/sponsors/rea.png";
+import Churchill_img from "../assets/images/sponsors/churchill-AM.png";
 import QuickRelease_img from "../assets/images/sponsors/quickrelease.png";
 
 // Gold
-import Amazon_img from "../assets/images/sponsors/amazon.png";
 import ACS_img from "../assets/images/sponsors/acs.png";
-import Churchill_img from "../assets/images/sponsors/churchill-AM.png";
+import Bukapalak_img from "../assets/images/sponsors/bukapalak.png";
+import REA_img from "../assets/images/sponsors/rea.png";
 import Citadel_img from "../assets/images/sponsors/citadel.png";
-import Coles_img from "../assets/images/sponsors/coles.png";
 import Commbank_img from "../assets/images/sponsors/commbank.png";
 import JDS_img from "../assets/images/sponsors/jds.png";
-import McGrathNicol_img from "../assets/images/sponsors/mcgrathnicol.png";
-import ClearDynamic_img from "../assets/images/sponsors/clear-dynamics.svg";
-import Mantel_img from "../assets/images/sponsors/mantel-group.png";
-import SecDim_img from "../assets/images/sponsors/secdim.png";
+import SIG_img from "../assets/images/sponsors/sig.png"
+import VivCourt_img from "../assets/images/sponsors/vivCourt.png"
 
 // Silver
-import Bukapalak_img from "../assets/images/sponsors/bukapalak.png";
 import Tiktok_img from "../assets/images/sponsors/tiktok.png";
+import Canva_img from "../assets/images/sponsors/canva.png";
+import Accenture_img from "../assets/images/sponsors/accenture.png";
+import KPMG_img from "../assets/images/sponsors/kpmg.png";
 
 
 const allSponsors = {
     "Diamond": [
-        {images: ANZ_img, alt: "ANZ"},
         {images: IMC_img, alt: "IMC"},
         {images: JaneStreet_img, alt: "Jane Street"}
     ],
     "Platinum": [
         {images: Airwallex_img, alt: "Airwallex"},
-        {images: Algohub_img, alt: "Algohub"},
         {images: Atlassian_img, alt: "Atlassian"},
         {images: Optiver_img, alt: "Optiver"},
-        {images: REA_img, alt: "REA Group"},
-        {images: QuickRelease_img, alt: "Quick Release"}
+        {images: Churchill_img, alt: "Churchill AM"},
+        {images: QuickRelease_img, alt: "Quick Release"},
+
     ],
     "Gold": [
-        {images: Amazon_img, alt: "Amazon"},
         {images: ACS_img, alt: "ACS"},
-        {images: Churchill_img, alt: "Churchill AM"},
+        {images: REA_img, alt: "REA Group"},
+        {images: Bukapalak_img, alt: "Bukalapak"},
         {images: Citadel_img, alt: "Citadel Securities"},
-        {images: Coles_img, alt: "Coles"},
         {images: Commbank_img, alt: "Commbank"},
         {images: JDS_img, alt: "JDS"},
-        {images: McGrathNicol_img, alt: "McGrathNicol"},
-        {images: ClearDynamic_img, alt: "Clear Dynamics"},
-        {images: Mantel_img, alt: "Mantel group"},
-        {images: SecDim_img, alt: "SecDim"}
+        {images: SIG_img, alt: "SIG"},
+        {images: VivCourt_img, alt: "VivCourt"},
     ],
     "Silver": [
-        {images: Bukapalak_img, alt: "Bukalapak"},
+        {images: Accenture_img, alt: "Accenture"},
+        {images: Canva_img, alt: "Canva"},
+        {images: KPMG_img, alt: "KPMG"},
         {images: Tiktok_img, alt: "Tiktok"}
+
     ]
 }
 
